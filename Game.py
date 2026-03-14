@@ -1,7 +1,6 @@
 import pygame
 import json
 from Button import *
-from Battle import *
 from Battle2 import *
 from Dialogue_box import *
 
@@ -84,7 +83,7 @@ class Game:
 
       for button in self.buttons:
         button.handle_event(event, self)
-        
+
       if self.battle and self.mode=="battle":
         self.battle.handle_event(event)
 

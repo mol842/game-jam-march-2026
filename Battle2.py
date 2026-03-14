@@ -84,21 +84,21 @@ class Battle2:
     elif self.stage == "battle":
 
       ## HEALTH CUTSCENES
-      if self.enemy.curr_health <= (0.5 * self.enemy.start_health) and not self.intermission_50_triggered:
+      if self.enemy.curr_health <= (0.5 * self.enemy.start_health) and not self.intermission_50_triggered and not self.game.dialogue_box.dialogue_list:
         self.intermission_50_triggered = True
         self.stage = "intermisison-50%"
         self.game.dialogue_box.init_dialogue(self.battle_script["intermisison-50%"], lambda: self.set_stage("battle"))
       
-      elif self.enemy.curr_health <= (0.25 * self.enemy.start_health) and not self.intermission_25_triggered:
+      elif self.enemy.curr_health <= (0.25 * self.enemy.start_health) and not self.intermission_25_triggered and not self.game.dialogue_box.dialogue_list:
         self.intermission_25_triggered = True
         self.stage = "intermisison-25%"
         self.game.dialogue_box.init_dialogue(self.battle_script["intermisison-25%"], lambda: self.set_stage("battle"))
 
       ## WIN / LOSE!
-      elif self.enemy.curr_health <= 0:
+      elif self.enemy.curr_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.game.dialogue_box.init_dialogue(self.battle_script["win"])
-      elif self.player_health <= 0:
+      elif self.player_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.game.dialogue_box.init_dialogue(self.battle_script["lose"])
       else:
@@ -129,9 +129,10 @@ class Battle2:
           btn.handle_event(event, self.game)
 
   def draw(self, game):
-    self.enemy.draw(game)
-    self.player_health_bar.draw(game)
-    if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
-      for btn in self.move_buttons.values():
-        if btn.clickable:
-          btn.draw(game)
+    if (self.stage != "end"):
+      self.enemy.draw(game)
+      self.player_health_bar.draw(game)
+      if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
+        for btn in self.move_buttons.values():
+          if btn.clickable:
+            btn.draw(game)
