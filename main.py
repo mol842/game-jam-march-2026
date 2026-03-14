@@ -5,7 +5,7 @@ def main():
     game = Game()
     while not game.stopped:
         game.update()
-        game.render()
+        game.draw()
         
 
 if __name__ == "__main__":
