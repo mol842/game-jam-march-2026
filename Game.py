@@ -1,18 +1,22 @@
 import pygame
 import json
 from Button import *
+from Battle import *
 
-WIDTH = 1000
-HEIGHT = 1000
+WIDTH = 800
+HEIGHT = 500
 
 class Game:
   def __init__(self):
-    self.buttons = []
-    self.background = None
-
     pygame.init()
     pygame.font.init()
     pygame.mixer.init()
+
+
+    self.buttons = []
+    self.background = None
+    self.battle = None
+    self.battle = Battle("fred", self)
 
     self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("hmmm")
@@ -34,18 +38,27 @@ class Game:
     for button in self.buttons:
       button.draw(self)
 
+    if self.battle:
+      self.battle.draw(self)
+
     pygame.display.update()
 
   def update(self):
+    if self.battle:
+      self.battle.update()
+
     for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-        self.stopped = True
-
-
-      for button in self.buttons:
-        button.handle_event(event, self)
-
       if event.type == pygame.MOUSEBUTTONUP:
         if event.button == 1:
           print("CLICKED: ", event.pos)
+
+
+      if event.type == pygame.QUIT:
+        self.stopped = True
+
+      if self.battle:
+        self.battle.handle_event(event)
+
+      for button in self.buttons:
+        button.handle_event(event, self)
 

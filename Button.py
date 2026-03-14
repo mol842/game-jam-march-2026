@@ -23,8 +23,9 @@ class Button:
   def handle_event(self, event, game):
     if event.type == pygame.MOUSEBUTTONUP and event.button == 1:
       if self.rect.collidepoint(event.pos):
-        print('CLICKED A BUTTON')
+        print('CLICKED A BUTTON: ', self.text)
         if (self.action):
+          print("RUNNING ACTION")
           self.action()
 
   def enable(self):

@@ -1,0 +1,12 @@
+{
+  "name": "Fred",
+  "description": "Loser conspiracy theorist uncle",
+  "type": "Divorcee",
+  "start_health": 100,
+  "curr_health": 100,
+  "x": 500,
+  "y": 200,
+  "width": 64,
+  "height": 64,
+  "image": ""
+}
