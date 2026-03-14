@@ -3,11 +3,8 @@ import json
 import os
 from HealthBar import HealthBar
 
-class Enemy:
-  def __init__(self, json_file):
-    with open(json_file, 'r') as f:
-      data = json.load(f)
-
+class Enemy2:
+  def __init__(self, data):
     self.name = data.get('name', 'WHO KNOWS')
     self.description = data.get('description', 'WHO KNOWS')
     self.type = data.get('type', '???')

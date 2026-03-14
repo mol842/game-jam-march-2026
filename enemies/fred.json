@@ -16,11 +16,11 @@
       [
         {
           "speaker": "You",
-          "text": "whatever"
+          "text": "whatevereer"
         },
         {
           "speaker": "Fred",
-          "text": "whatever"
+          "text": "whatever2.0"
         }
 
       ],
@@ -44,10 +44,37 @@
           }
 
 
+        ],
+
+        "Blatant Lie": [
+          {
+            "move": "lie1",
+            "description": "You tell a blatant lie",
+            "damage": 5,
+            "response": "WHAT? THAT'S NOT TRUE!"
+          }
+        ],
+
+        "Emotional Manipulation": [
+          {
+            "move": "manip1",
+            "description": "You manipulate emotionally",
+            "damage": 10,
+            "response": "HOW DARE YOU!"
+          }
+        ],
+
+        "Unnecessary Escalation": [
+          {
+            "move": "esc1",
+            "description": "You escalate unnecessarily",
+            "damage": 15,
+            "response": "THIS IS WAR!"
+          }
         ]
 
       },
-      
+
       "their-moves":
       [
         {
@@ -61,6 +88,21 @@
 
       ],
 
+
+      "intermisison-50%":       [
+        {
+          "speaker": "You",
+          "text": "whatever"
+        }
+      ],
+
+      
+      "intermisison-25%":       [
+        {
+          "speaker": "You",
+          "text": "whatever"
+        }
+      ],
 
       "win":
       [

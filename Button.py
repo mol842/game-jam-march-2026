@@ -21,22 +21,31 @@ class Button:
     self.rect = pygame.Rect(x, y, width, height)
 
   def handle_event(self, event, game):
-    if event.type == pygame.MOUSEBUTTONUP and event.button == 1:
+    if event.type == pygame.MOUSEBUTTONUP and event.button == 1 and self.clickable:
       if self.rect.collidepoint(event.pos):
         print('CLICKED A BUTTON: ', self.text)
         if (self.action):
           print("RUNNING ACTION")
           self.action()
 
-  def enable(self):
-    self.clickable = True
-    self.visible = True
-    
+  # def enable(self):
+  #   self.clickable = True
+  #   self.visible = True
+  # def disable(self):
+  #   self.clickable = False
 
-  def disable(self):
-    self.clickable = False
+
+  def show(self):
+    self.visible = True
+    self.clickable = True
+
+    print("THIS BUTTON IS NOW VISIBLE")
+    
+    print(self.visible, self.clickable)
+
 
   def hide(self):
+    print("HIDINGGGG")
     self.clickable = False
     self.visible = False
 
@@ -44,6 +53,7 @@ class Button:
     self.text = text
 
   def draw(self, game):
+    # print(self.visible)
     if self.visible:
       pygame.draw.rect(game.screen, Color(self.color), self.rect, 2)
       text = self.font.render(self.text, False, Color(self.color))
@@ -54,3 +64,4 @@ class Button:
       topPadding = (self.height - text_size[1])/2
 
       game.screen.blit(text, (self.x + leftPadding, self.y + topPadding))
+      # print(self.text)

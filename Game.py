@@ -2,6 +2,7 @@ import pygame
 import json
 from Button import *
 from Battle import *
+from Battle2 import *
 from Dialogue_box import *
 
 WIDTH = 800
@@ -17,9 +18,9 @@ class Game:
     self.buttons = []
     self.background = None
     self.battle = None
-    self.battle = Battle("fred", self)
+    self.battle = Battle2("fred", self)
 
-    self.dialogue_box = DialogueBox(100, 100, 100, 100, "what?")
+    self.dialogue_box = DialogueBox(self, 100, 100, 100, 100, "what?", self)
     self.dialogue_box.init_dialogue(
       [
         {
@@ -30,19 +31,28 @@ class Game:
           "speaker": "Fred",
           "text": "yayyyyyy"
         }
-      ]
-      )
+      ], callback=(lambda: self.battle.start_intro()))
     self.buttons.append(self.dialogue_box)
+
+
 
     self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("hmmm")
     clock = pygame.time.Clock()
     clock.tick(60)
 
-    # self.buttons.append(Button(100, 100, 100, 100, "text", None))
-
     self.stopped = False
+
+    self.mode = "dialogue"
     print('STARTED')
+
+
+  def init_dialogue(self, dialogue):
+    self.dialogue_box.init_dialogue(dialogue)
+    self.mode = "dialogue"
+
+  def battle_mode(self):
+    self.mode = "battle"
 
 
   def draw(self):
@@ -54,14 +64,13 @@ class Game:
     for button in self.buttons:
       button.draw(self)
 
-    if self.battle:
+    if self.battle and self.mode=="battle":
       self.battle.draw(self)
 
     pygame.display.update()
 
+
   def update(self):
-    if self.battle:
-      self.battle.update()
 
     for event in pygame.event.get():
       if event.type == pygame.MOUSEBUTTONUP:
@@ -72,9 +81,12 @@ class Game:
       if event.type == pygame.QUIT:
         self.stopped = True
 
-      if self.battle:
-        self.battle.handle_event(event)
 
       for button in self.buttons:
         button.handle_event(event, self)
+        
+      if self.battle and self.mode=="battle":
+        self.battle.handle_event(event)
 
+    if self.battle:
+      self.battle.update()
