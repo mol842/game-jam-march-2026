@@ -2,6 +2,7 @@ import pygame
 import json
 from Button import *
 from Battle import *
+from Dialogue_box import *
 
 WIDTH = 800
 HEIGHT = 500
@@ -18,12 +19,27 @@ class Game:
     self.battle = None
     self.battle = Battle("fred", self)
 
+    self.dialogue_box = DialogueBox(100, 100, 100, 100, "what?")
+    self.dialogue_box.init_dialogue(
+      [
+        {
+          "speaker": "You",
+          "text": "whatever"
+        },
+        {
+          "speaker": "Fred",
+          "text": "yayyyyyy"
+        }
+      ]
+      )
+    self.buttons.append(self.dialogue_box)
+
     self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("hmmm")
     clock = pygame.time.Clock()
     clock.tick(60)
 
-    self.buttons.append(Button(100, 100, 100, 100, "text", None))
+    # self.buttons.append(Button(100, 100, 100, 100, "text", None))
 
     self.stopped = False
     print('STARTED')

@@ -8,5 +8,76 @@
   "y": 200,
   "width": 64,
   "height": 64,
-  "image": ""
+  "image": "",
+  "battles":
+  [
+    {
+      "intro":
+      [
+        {
+          "speaker": "You",
+          "text": "whatever"
+        },
+        {
+          "speaker": "Fred",
+          "text": "whatever"
+        }
+
+      ],
+
+      "your-moves":
+      {
+        "Facts & Logic": [
+          {
+            "move": "snopes",
+            "description": "you pull up snopes and wave your phone at him",
+            "damage": 0,
+            "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
+
+          },
+
+          {
+            "move": "wikipedia",
+            "description": "you pull up wikipedia and wave your phone at him",
+            "damage": 0,
+            "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
+          }
+
+
+        ]
+
+      },
+      
+      "their-moves":
+      [
+        {
+          "move": "4chan conspiracy",
+          "description": "LOOK AT THIS",
+          "damage": 1,
+          "response": "this is... unreadable. you take psychic damage"
+        }
+
+
+
+      ],
+
+
+      "win":
+      [
+        {
+          "speaker": "You",
+          "text": "whatever"
+        }
+      ],
+      "lose":
+      [
+        {
+          "speaker": "You",
+          "text": "whatever"
+        }
+
+      ]
+    }
+
+  ]
 }

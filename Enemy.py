@@ -19,6 +19,8 @@ class Enemy:
     self.height = data.get('height', 50)
     self.image_path = data.get('image', '')
 
+    self.battle_script = data.get('battles', [])
+
     # NO IMAGE OH GOD MAGENTA CUBE TIME
     self.image = pygame.Surface((self.width, self.height))
     self.image.fill((255, 0, 255)) 

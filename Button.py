@@ -32,7 +32,11 @@ class Button:
     self.clickable = True
     self.visible = True
     
+
   def disable(self):
+    self.clickable = False
+
+  def hide(self):
     self.clickable = False
     self.visible = False
 
@@ -42,11 +46,11 @@ class Button:
   def draw(self, game):
     if self.visible:
       pygame.draw.rect(game.screen, Color(self.color), self.rect, 2)
-      text_surface = self.font.render(self.text, False, Color(self.color))
-      text_size = text_surface.get_rect().size
+      text = self.font.render(self.text, False, Color(self.color))
+      text_size = text.get_rect().size
 
       ## fix this it was wayyyy more complicated last game. yay.
       leftPadding = (self.width - text_size[0])/2
       topPadding = (self.height - text_size[1])/2
 
-      game.screen.blit(text_surface, (self.x + leftPadding, self.y + topPadding))
+      game.screen.blit(text, (self.x + leftPadding, self.y + topPadding))
