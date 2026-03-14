@@ -12,7 +12,7 @@ class Enemy:
     self.description = data.get('description', 'WHO KNOWS')
     self.type = data.get('type', '???')
     self.start_health = data.get('start_health', 100)
-    self.curr_health = data.get('curr_health', self.start_health)
+    self.curr_health = self.start_health
     self.x = data.get('x', 0)
     self.y = data.get('y', 0)
     self.width = data.get('width', 50)

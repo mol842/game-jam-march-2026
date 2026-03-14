@@ -2,8 +2,7 @@
   "name": "Fred",
   "description": "Loser conspiracy theorist uncle",
   "type": "Divorcee",
-  "start_health": 100,
-  "curr_health": 100,
+  "start_health": 10,
   "x": 500,
   "y": 200,
   "width": 64,
@@ -92,7 +91,7 @@
       "intermisison-50%":       [
         {
           "speaker": "You",
-          "text": "whatever"
+          "text": "you reached 50% health"
         }
       ],
 
@@ -100,7 +99,7 @@
       "intermisison-25%":       [
         {
           "speaker": "You",
-          "text": "whatever"
+          "text": "you reached 25% health"
         }
       ],
 
@@ -108,14 +107,14 @@
       [
         {
           "speaker": "You",
-          "text": "whatever"
+          "text": "you won"
         }
       ],
       "lose":
       [
         {
           "speaker": "You",
-          "text": "whatever"
+          "text": "you lost"
         }
 
       ]
