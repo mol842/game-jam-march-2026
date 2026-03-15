@@ -1,0 +1,13 @@
+{
+  "name": "Thi Há",
+  "description": "Costasiella Sea Slug",
+  "type": "",
+  "relationship": "Your aunt",
+  "start_health": 10,
+  "x": 500,
+  "y": 200,
+  "width": 64,
+  "height": 64,
+  "image": "Thi Há.png",
+  "battles": []
+}

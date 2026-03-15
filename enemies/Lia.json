@@ -1,0 +1,13 @@
+{
+  "name": "Lia",
+  "description": "Vampire Moth - Calyptra minuticornis",
+  "type": "",
+  "relationship": "Your cousin",
+  "start_health": 10,
+  "x": 500,
+  "y": 200,
+  "width": 64,
+  "height": 64,
+  "image": "Lia.png",
+  "battles": []
+}

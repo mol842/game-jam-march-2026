@@ -1,0 +1,13 @@
+{
+  "name": "Quân",
+  "description": "Old World Bearded Vulture",
+  "type": "",
+  "relationship": "Your uncle",
+  "start_health": 10,
+  "x": 500,
+  "y": 200,
+  "width": 64,
+  "height": 64,
+  "image": "Quân.png",
+  "battles": []
+}

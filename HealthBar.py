@@ -3,8 +3,13 @@ from pygame.locals import Color
 import random
 
 class HealthBar:
-  def __init__(self, game, x, y, width, height, max_health, curr_health):
+  def __init__(self, game, x, y, width, height, text, max_health, curr_health):
     self.game = game
+    self.text = text
+    font = pygame.font.Font(None, int(22 * (game.height / 500.0)))
+    self.label = font.render(self.text, True, (220, 220, 220))
+
+    
     self.original_x = x
     self.original_y = y
     self.original_width = width
@@ -55,6 +60,7 @@ class HealthBar:
   def draw(self, game):
     self.update_size()
 
+
     offset_x = 0
     if self.shake_frames > 0:
       offset_x = random.randint(-int(self.shake_intensity), int(self.shake_intensity))
@@ -62,6 +68,10 @@ class HealthBar:
       self.shake_intensity = max(0, self.shake_intensity - 0.3)
 
     x = self.x + offset_x
+
+    if self.label:
+      game.screen.blit(self.label, self.label.get_rect(centerx=x + self.width / 2, bottom=self.y - 4))
+
 
     pygame.draw.rect(game.screen, (60, 20, 20), (x, self.y, self.width, self.height), border_radius=4)
     if self.max_health > 0:

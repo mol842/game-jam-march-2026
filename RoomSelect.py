@@ -11,7 +11,7 @@ class RoomSelect:
     self.current_room = None
     self.room_enemies = [
       ["Louis", "fred"],
-      ["fred", "fred"],
+      ["Quân", "fred"],
       ["fred", "fred"] ,
       ["fred", "fred"]
     ]
@@ -32,7 +32,7 @@ class RoomSelect:
     if not self.visited_rooms[room_index]:
       self.visited_rooms[room_index] = True
       self.room_buttons[room_index].disable()
-      self.room_buttons[room_index].set_text(f"Room {room_index+1}\n(VISITED)")
+      self.room_buttons[room_index].set_text(f"{self.room_names[room_index]}\n(VISITED)")
       self.current_room = room_index
       self.current_enemy_index = 0
       self.start_next_battle()

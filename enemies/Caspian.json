@@ -1,0 +1,13 @@
+{
+  "name": "Caspian",
+  "description": "Cuckoo Bird - Heteroscenes pallidus",
+  "type": "",
+  "relationship": "Your brother",
+  "start_health": 10,
+  "x": 500,
+  "y": 200,
+  "width": 64,
+  "height": 64,
+  "image": "Caspian.png",
+  "battles": []
+}

@@ -37,7 +37,7 @@ class Enemy2:
     # {text, x, y, timer, amount}
 
 
-    self.health_bar = HealthBar(self.game, 0, 0, 0, 0, self.start_health, self.curr_health)
+    self.health_bar = HealthBar(self.game, 0, 0, 0, 0, self.name, self.start_health, self.curr_health)
     self.update_size()
 
   def update_size(self):
