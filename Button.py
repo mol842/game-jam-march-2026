@@ -3,7 +3,7 @@ import os
 from pygame.locals import Color
 
 class Button:
-  def __init__(self, game, x, y, width, height, text, action, color=(93, 93, 93), font=None):
+  def __init__(self, game, x, y, width, height, text, action, color=(90, 93, 93), font=None, text_color=None):
     self.game = game
     self.original_x = x
     self.original_y = y
@@ -11,6 +11,7 @@ class Button:
     self.original_height = height
 
     self.color = color
+    self.text_color = text_color if text_color else (0,0,0)
     self.text = text
     self.font = pygame.font.Font(None, 28) if not font else font
 
@@ -18,7 +19,6 @@ class Button:
     self.visible = True
 
     self.action = action
-
     self.update_size()
 
   def update_size(self):
@@ -66,8 +66,8 @@ class Button:
     self.update_size()
     # print(self.visible)
     if self.visible:
-      pygame.draw.rect(game.screen, Color(self.color), self.rect, 2)
-      text = self.font.render(self.text, False, Color(self.color))
+      pygame.draw.rect(game.screen, Color(self.color), self.rect, 0)
+      text = self.font.render(self.text, False, Color(self.text_color))
       text_size = text.get_rect().size
 
       ## fix this it was wayyyy more complicated last game. yay.
