@@ -1,0 +1,1123 @@
+{
+  "name": "Louis",
+  "description": "Lobster",
+  "type": "Incel",
+  "relationship": "Your dipshit cousin",
+  "start_health": 10,
+  "x": 500,
+  "y": 200,
+  "width": 64,
+  "height": 64,
+  "image": "fred.png",
+  "battles": [
+    {
+      "intro": [
+        {
+          "speaker": "You",
+          "text": "Louis! Haven’t seen you in a while. How’s it been?"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "Louis?"
+        },
+        {
+          "speaker": "You",
+          "text": "Hello?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Huh? Oh, it’s you."
+        },
+        {
+          "speaker": "Louis",
+          "text": "What do you want?"
+        },
+        {
+          "speaker": "You",
+          "text": "I Just haven’t seen you in a while, is all."
+        },
+        {
+          "speaker": "You",
+          "text": "You’re looking… rough."
+        },
+        {
+          "speaker": "You",
+          "text": "Are those bruises? On your face?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "It’s bone-smashing."
+        },
+        {
+          "speaker": "You",
+          "text": "It’s what now?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Bone-smashing. To fix my face structure."
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t think that’s how bones work."
+        },
+        {
+          "speaker": "You",
+          "text": "In fact I’m pretty sure that’s the opposite of how bones work."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Well what would you know? Huh?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "You’ve been getting mogged and academically-cucked by Caspian for years!"
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t actually know what that means, but screw you Louis, I always thought your bone structure was shit anyway."
+        }
+      ],
+      "your-moves": {
+        "Facts & Logic": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It wasn’t very effective"
+              },
+              {
+                "speaker": "You",
+                "text": "You can’t reconfigure your face by breaking it! That doesn’t make any sense"
+              },
+              {
+                "speaker": "You",
+                "text": "What are you even trying to accomplish here?"
+              },
+              {
+                "speaker": "You",
+                "text": "Even if it did work I don’t see how caving your cheekbones in is gonna make you look any better."
+              },
+              {
+                "speaker": "You",
+                "text": "Not that that face doesn’t need the help."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It wasn’t very effective"
+              },
+              {
+                "speaker": "You",
+                "text": "Louis, have you tried going outside and talking to real people?"
+              },
+              {
+                "speaker": "You",
+                "text": "Maybe that’ll help with this whole bullshit you’ve got going on."
+              },
+              {
+                "speaker": "You",
+                "text": "Touch come grass, witness real human interacting,"
+              },
+              {
+                "speaker": "You",
+                "text": "Stop trying to make your jawline better by chewing tires."
+              },
+              {
+                "speaker": "You",
+                "text": "Seriously, this is kind of pathetic."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s not very effective"
+              },
+              {
+                "speaker": "You",
+                "text": "You know all these ‘looks-maxxing gurus’ are grifters right?"
+              },
+              {
+                "speaker": "You",
+                "text": "They’re literally giving you your insecurities just to sell you an overpriced and ineffective solution."
+              },
+              {
+                "speaker": "You",
+                "text": "You are getting conned right now."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+        "Blatant Lie": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "You know, I think I remember hearing somewhere that bone-smashing only works in the sun."
+              },
+              {
+                "speaker": "You",
+                "text": "The sunlight heals your bones stronger or something."
+              },
+              {
+                "speaker": "You",
+                "text": "Maybe you should take a bit of time to go outside and heal… all that."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "Protein’s super bad for you, actually."
+              },
+              {
+                "speaker": "You",
+                "text": "Yeah, there was a recent study, definitely legit stuff, where they found that too much protein without anything else sucks the joy out of life."
+              },
+              {
+                "speaker": "You",
+                "text": "And gives you cancer, or something."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "I too have done ‘looks-maxxing’ actually."
+              },
+              {
+                "speaker": "You",
+                "text": "Yeah, really, I have."
+              },
+              {
+                "speaker": "You",
+                "text": "Worked pretty well, right. Come on, give me a compliment."
+              },
+              {
+                "speaker": "You",
+                "text": "I mean, if you don’t admit it, that just proves it’s ineffective."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+        "Emotional Manipulation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "You",
+                "text": "You know I do care about you, right, Louis?"
+              },
+              {
+                "speaker": "You",
+                "text": "You’re my cousin, and the youngest in the family to boot."
+              },
+              {
+                "speaker": "You",
+                "text": "I’m just worried this kind of behaviour is gonna push people away"
+              },
+              {
+                "speaker": "You",
+                "text": "And you might be alone forever."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "You",
+                "text": "I’ve missed you, you know?"
+              },
+              {
+                "speaker": "You",
+                "text": "We used to hang out all the time as kids."
+              },
+              {
+                "speaker": "You",
+                "text": "Before everything happened…"
+              },
+              {
+                "speaker": "You",
+                "text": "Don’t you want to go back to those days?"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "You",
+                "text": "I just feel like I’m supposed to look out for you, set you on the right path in life."
+              },
+              {
+                "speaker": "You",
+                "text": "And that I screwed up by not being around."
+              },
+              {
+                "speaker": "You",
+                "text": "…Your dad told me to take care of you…"
+              },
+              {
+                "speaker": "You",
+                "text": "But you’re not making it easy."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+        "Unnecessary Escalation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "Your bone structure’s bad, your hair is terrible and you look like shit in general."
+              },
+              {
+                "speaker": "You",
+                "text": "You’re a little bitch of a man, Louis!"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "I’ve always thought you were the most pathetic of us cousins."
+              },
+              {
+                "speaker": "You",
+                "text": "I mean, look at yourself, Louis!"
+              },
+              {
+                "speaker": "You",
+                "text": "Even I’ve got my shit together more than you!"
+              },
+              {
+                "speaker": "You",
+                "text": "You’re just causing all your own problems!"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "I don’t know why I ever tried with you, Louis."
+              },
+              {
+                "speaker": "You",
+                "text": "You are as sad, pathetic and nauseating to be around as always."
+              },
+              {
+                "speaker": "You",
+                "text": "How you turned out like this with parents like yours is a mystery I’ll never understand."
+              },
+              {
+                "speaker": "You",
+                "text": "… who knows, maybe I’m not the only one who’s father isn’t why we thought."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ]
+      },
+      "their-moves": [
+        {
+          "move": "4chan insult",
+          "description": "",
+          "damage": 5,
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "LOUIS used 4CHAN INSULT"
+            },
+            {
+              "speaker": "Louis",
+              "text": "You’re just upset because you’ve got beta, true-cel, prey eyes."
+            },
+            {
+              "speaker": "Louis",
+              "text": "Negative cantal-tilt, lesser-Melvin ass, bitch."
+            },
+            {
+              "speaker": "You",
+              "text": "What does that even mean?"
+            }
+          ]
+        },
+        { 
+          "move": "Reddit Conspiracy",
+          "description": "",
+          "damage": 5,
+          
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "LOUIS used REDDIT CONSPIRACY"
+            },
+            {
+              "speaker": "Louis",
+              "text": "Outside? That’s where the satellites can reach you."
+            },
+            {
+              "speaker": "Louis",
+              "text": "Look, just…"
+            },
+            {
+              "speaker": "Louis",
+              "text": "pulls out phone*"
+            },
+            {
+              "speaker": "Louis",
+              "text": "The government uses satellites to watch you."
+            },
+            {
+              "speaker": "Louis",
+              "text": "We’re in a surveillance state! Who knows what kinds of brainwashing those lizards can do."
+            },
+            {
+              "speaker": "Louis",
+              "text": "Look at this stuff!"
+            },
+            {
+              "speaker": "You",
+              "text": "Louis, this is all American stuff."
+            },
+            {
+              "speaker": "You",
+              "text": "We are in Australia."
+            },
+            {
+              "speaker": "Louis",
+              "text": "Whatever, same thing."
+            },
+            {
+              "speaker": "Louis",
+              "text": "Hyper-specific slurs"
+            }
+          ]
+        },
+        { 
+          "move": "Hyper-Specific Slurs",
+          "description": "",
+          "damage": 7,
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "LOUIS used HYPER-SPECIFIC SLURS"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "It’s super effective!"
+            },
+            {
+              "speaker": "Louis",
+              "text": "Fuck you, you ********* stupid *** bitch-ass ******* **** ***** *******!"
+            },
+            {
+              "speaker": "Louis",
+              "text": "*****oid, ******* *** **** fucker *****, noodle **** ***!"
+            },
+            {
+              "speaker": "You",
+              "text": "Jesus, where did you learn all that?"
+            },
+            {
+              "speaker": "You",
+              "text": "You’re literally Vietnamese too!"
+            },
+            {
+              "speaker": "You",
+              "text": "I don’t even know what some of these mean!"
+            },
+            {
+              "speaker": "You",
+              "text": "Jordan Peterson’s self-help book"
+            }
+          ] 
+        },
+        { 
+          "move": "Hyper-Specific Slurs",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "You",
+              "text": "LOUIS used JORDAN PETERSON’S SELF-HELP BOOK"
+            },
+            {
+              "speaker": "You",
+              "text": "LOUIS healed"
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        }
+      ],
+      "intermission-50%": [
+        {
+          "speaker": "You",
+          "text": "Louis, man, I’m gonna be real. This is kind of sad."
+        },
+        {
+          "speaker": "You",
+          "text": "I mean, what happened? Last I saw you, you were a real cheerful kid…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "I don’t know. I grew up? The world kind of sucks, if you haven’t noticed."
+        },
+        {
+          "speaker": "Louis",
+          "text": "And people are the worst."
+        },
+        {
+          "speaker": "Louis",
+          "text": "They’re shallow and judgemental and real fucking open about how I don’t meet their standards."
+        },
+        {
+          "speaker": "Louis",
+          "text": "… like you."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m not trying to be judgemental here, but look at yourself."
+        },
+        {
+          "speaker": "You",
+          "text": "You look like you haven’t slept or seen the sun in years, and instead of doing anything useful you’re bashing your own face in and talking about ‘prey eyes’ or whatever."
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t mean to be rude, but you kind of… seem like you could use some advice."
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t know, man… I’m kind of worried about you…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Oh, you’re so nice, aren’t you? What a real turn around from the shit you were saying before."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Do you feel better about yourself?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Have you deemed me enough of a disappointment that you don’t feel threatened anymore?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "You can turn around and pat yourself on the back for being such a good person and helping out poor, pathetic Louis."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Why? Feeling guilty for never fucking being around?"
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t know what you’re talking about."
+        },
+        {
+          "speaker": "Louis",
+          "text": "You don’t know? Could have used your ‘advice’ a couple years back."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Would’ve been helpful after dad died."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "… I’m sorry. I just… didn’t really know what to say."
+        },
+        {
+          "speaker": "You",
+          "text": "I was going through some shit myself… didn’t really… think about you."
+        },
+        {
+          "speaker": "You",
+          "text": "… kind of thought Thi Ha would have it covered."
+        },
+        {
+          "speaker": "You",
+          "text": "Or Caspian."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Mum wasn’t exactly in the best place herself."
+        },
+        {
+          "speaker": "Louis",
+          "text": "And Caspian was fine, but…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "You’ve always had this weird idea that Caspian is some super-human, perfect person…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "… he’s just a guy. A really awkward, kind of condescending and not particularly fun to talk to guy."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Plus he’s older… it’s not like we ever talked much before."
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "It would’ve been nice to talk to you."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Without you around, there weren’t really any other guys I could talk to."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m sorry… I didn’t…"
+        },
+        {
+          "speaker": "You",
+          "text": "… I guess uncle Quân is a bit too intimidating to talk about most life problems with."
+        },
+        {
+          "speaker": "You",
+          "text": "And twelve is not a good age to be set adrift in…"
+        },
+        {
+          "speaker": "You",
+          "text": "Fifteen is hardly a better age, but my dad didn’t actually die…"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "You had to ask about a lot of… teenage insecurity stuff online, I guess."
+        },
+        {
+          "speaker": "Louis",
+          "text": "You’re saying that like it’s some terrible tragedy."
+        },
+        {
+          "speaker": "Louis",
+          "text": "I’m fine now, no thanks to you."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m not saying you’re not fine."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m just saying we can talk about stuff now, if you want."
+        },
+        {
+          "speaker": "Louis",
+          "text": "I don’t need to talk to you about anything anymore!"
+        },
+        {
+          "speaker": "Louis",
+          "text": "I have people to talk to now."
+        },
+        {
+          "speaker": "You",
+          "text": "I meant if you wanted to talk to real people."
+        },
+        {
+          "speaker": "You",
+          "text": "… who aren’t on 4chan."
+        },
+        {
+          "speaker": "Louis",
+          "text": "You know what, fuck you!"
+        },
+        {
+          "speaker": "Louis",
+          "text": "You think you can just waltz back into my life five years after you left me in a fucking ditch and get all high and mighty about how I got myself out?"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m not trying to fight right now, Louis!"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Oh wait, I guess you do think that!"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Because you’re still just waiting around, open armed, for YOUR dad to walk back into your life like he didn’t ditch you without a second thought."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Newsflash, moron, you’re the only one waiting around for some loser that’s NEVER GONNA FUCKING SHOW!"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "… maybe I do remember why I never talk to you anymore."
+        }
+      ],
+      "intermission-25%": [],
+      "win": [
+        {
+          "speaker": "Louis",
+          "text": "I thought you were the coolest, back then, y’know."
+        },
+        {
+          "speaker": "Louis",
+          "text": "The others were all so much older that I barely interacted with them, used to get Dian and Lia mixed up all the time, and Caspian always seemed like he was too busy to indulge me… but you…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "You’re such an asshole."
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "How could you just say nothing?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "My dad just died and you avoided me like the plague."
+        },
+        {
+          "speaker": "You",
+          "text": "… it wasn't about you."
+        },
+        {
+          "speaker": "You",
+          "text": "Which is a shit thing to say, but it’s the truth. I was avoiding everyone."
+        },
+        {
+          "speaker": "You",
+          "text": "The divorce… how it all went down… got to me."
+        },
+        {
+          "speaker": "You",
+          "text": "Way more than it should have, I guess, if Dian and Caspian are so fine…"
+        },
+        {
+          "speaker": "You",
+          "text": "You’re not wrong, when you said it’s like I’m still waiting for him to come back."
+        },
+        {
+          "speaker": "You",
+          "text": "And I was worse, back then."
+        },
+        {
+          "speaker": "You",
+          "text": "Way worse."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "But I am sorry that me… being like that… happened at such a bad time for you."
+        },
+        {
+          "speaker": "Louis",
+          "text": "… You’re such a coward."
+        },
+        {
+          "speaker": "Louis",
+          "text": "You’re sorry you ‘being like that happened at a bad time’?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Just say you’re sorry for being an asshole."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Say you’re sorry for being an absolute dick and acting like you’re the centre of the universe and all your problems outweigh anyone else."
+        },
+        {
+          "speaker": "Louis",
+          "text": "… admit that you just didn’t care."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Admit that you didn’t care about me, or my dad, or anyone but yourself."
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "Take some fucking responsibility for it."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m……. Sorry……. For…………….being a dick."
+        },
+        {
+          "speaker": "You",
+          "text": "I cared but… not enough, I guess."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "I still think you’re a loser now, and seriously need to touch grass, but…"
+        },
+        {
+          "speaker": "You",
+          "text": "You didn’t deserve to be ignored, back then."
+        },
+        {
+          "speaker": "Louis",
+          "text": "You’re still an asshole, but… not as much of one I guess."
+        },
+        {
+          "speaker": "Louis",
+          "text": "And everyone’s a bit of a dick. Humanity is terrible, people are the worst."
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "My bad for giving you shit about your dad too. I know the situation with you and him was… rough."
+        },
+        {
+          "speaker": "Louis",
+          "text": "… I don’t really remember your dad, to be honest."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Didn’t have much interaction with him as a kid."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Most of what I know is just paraphrased from the rest of the family, and they’re… unreliable narrators at times…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "But If mine was capable of it, I’d be hoping he’d come back too…"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m sorry I wasn’t around when he died."
+        },
+        {
+          "speaker": "You",
+          "text": "I was caught up in my own shit, and it was bad shit, but somehow you ended up getting the brunt of my bad handling of it."
+        },
+        {
+          "speaker": "You",
+          "text": "And you fell into some… interesting ideas in the meantime."
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "It’s not like I don’t know what people think about all this looks-maxxing, conspiracy stuff, I just…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "I don’t know."
+        },
+        {
+          "speaker": "Louis",
+          "text": "I just feel… bad. Like, all the time."
+        },
+        {
+          "speaker": "Louis",
+          "text": "And misery loves company, right?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "It’s nice to be part of something."
+        },
+        {
+          "speaker": "Louis",
+          "text": "It’s a whole lot of people trying to get better, at the heart of it."
+        },
+        {
+          "speaker": "Louis",
+          "text": "…"
+        },
+        {
+          "speaker": "Louis",
+          "text": "I don’t want to always be like this."
+        },
+        {
+          "speaker": "You",
+          "text": "Louis, did you ever, like, see someone? After your dad dies?"
+        },
+        {
+          "speaker": "You",
+          "text": "A psychologist or something."
+        },
+        {
+          "speaker": "Louis",
+          "text": "The school gave me a counselling session, once."
+        },
+        {
+          "speaker": "Louis",
+          "text": "But you know mum believes more in, like, spiritual crystal healing and meditation than therapy."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Seems to have worked wonders for her."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Besides… it’s not like I don’t know what’s wrong with me already."
+        },
+        {
+          "speaker": "You",
+          "text": "… I didn’t see anyone about the whole… thing… with my parents either."
+        },
+        {
+          "speaker": "You",
+          "text": "Looking back, maybe I really should have."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "Caspian’s been trying to convince me to go, recently…"
+        },
+        {
+          "speaker": "You",
+          "text": "Maybe you should consider it too."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Maybe."
+        }
+      ],
+      "lose": [
+        {
+          "speaker": "Louis",
+          "text": "I used to think you were so cool back then, Y’know?"
+        },
+        {
+          "speaker": "Louis",
+          "text": "But now I realise you’re just some sad, beta male, cuck."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Just like your dad."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Oh, sorry, you’re not-real dad, who got actually cucked so bad that you exist."
+        },
+        {
+          "speaker": "You",
+          "text": "You’re such a fucking barstard now Louis."
+        },
+        {
+          "speaker": "You",
+          "text": "You don’t know anything about me, or my dad or that entire situation."
+        },
+        {
+          "speaker": "You",
+          "text": "You were fucking twelve when it all went down, you don’t remember shit!"
+        },
+        {
+          "speaker": "You",
+          "text": "… But I remember your dad."
+        },
+        {
+          "speaker": "You",
+          "text": "Nicest, most kind and understanding man in the world."
+        },
+        {
+          "speaker": "You",
+          "text": "And then you turn out like this."
+        },
+        {
+          "speaker": "You",
+          "text": "If he could only see you now,"
+        },
+        {
+          "speaker": "You",
+          "text": "What a fucking disappointment."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Ironic of you to call me a barstard."
+        },
+        {
+          "speaker": "Louis",
+          "text": "At least I know my dad loved me to his dying breath."
+        },
+        {
+          "speaker": "Louis",
+          "text": "Everybody in this family knows yours doesn’t give a shit about you."
+        },
+        {
+          "speaker": "Louis",
+          "text": "May as well go kill yourself."
+        },
+        {
+          "speaker": "You",
+          "text": "God, fuck you Louis."
+        },
+        {
+          "speaker": "You",
+          "text": "really, just… fuck you."
+        }
+      ]
+    }
+  ]
+}
