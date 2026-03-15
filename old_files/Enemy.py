@@ -48,9 +48,3 @@ class Enemy:
     self.curr_health += amount
     self.health_bar.update_health(self.curr_health)
 
-  def act(self):
-    # PLACEHOLDER ADD ACTUAL WHATEVER
-    # self.heal(5)
-
-    self.attacks
-    pass

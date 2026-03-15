@@ -19,6 +19,7 @@ class DialogueBox(Button):
     self.dialogue_list = []
     self.dialogue_index = 0
     self.callback = None
+    self.triangle_size = 20
 
   def update_size(self):
     super().update_size()
@@ -32,6 +33,8 @@ class DialogueBox(Button):
       # print("NO FONT FOR", self.current_speaker)
       font_size = 28 * (self.game.height / 500.0)
       self.font = pygame.font.Font(None, int(font_size))
+    self.triangle_size = 20 * (self.game.height / 500.0)
+    self.triangle_rect = pygame.Rect(self.x, self.y + self.height - self.triangle_size, self.triangle_size, self.triangle_size)
 
   def init_dialogue(self, dialogue, callback=None):
     print("INITIALISING DIALOGUE", dialogue[0]["text"], callback)
@@ -90,6 +93,30 @@ class DialogueBox(Button):
       print("ENDING!")
       self.end_dialogue()
 
+  def previous_dialogue(self):
+    print("PREVIOUS")
+    if self.dialogue_index > 0:
+      self.dialogue_index -= 1
+
+      self.current_speaker = self.dialogue_list[self.dialogue_index]["speaker"]
+      if self.current_speaker in self.font_mapping:
+        mapping = self.font_mapping[self.current_speaker]
+        self.color = eval(mapping["box-colour"])
+        self.text_color = eval(mapping["text-colour"])
+      else:
+        self.color = (93, 93, 93)
+        self.text_color = (93, 93, 93)
+      self.set_text(self.dialogue_list[self.dialogue_index]["text"])
+    else:
+      print("AT FIRST, DO NOTHING")
+
+  def handle_event(self, event, game):
+    if event.type == pygame.MOUSEBUTTONUP and event.button == 1 and self.clickable and self.visible:
+      if self.triangle_rect.collidepoint(event.pos):
+        self.previous_dialogue()
+      else:
+        super().handle_event(event, game)
+
   def draw(self, game):
     super().draw(game)
     ## ADD THE NAME OF WHOEVER IS SPEAKING
@@ -97,4 +124,11 @@ class DialogueBox(Button):
       speaker_text = self.font.render(self.current_speaker, False, Color(self.text_color))
       speaker_rect = speaker_text.get_rect(center=(self.x + self.width / 2, self.y + 20))
       game.screen.blit(speaker_text, speaker_rect)
+      # Draw the previous triangle
+      points = [
+        (self.x, self.y + self.height - self.triangle_size / 2),
+        (self.x + self.triangle_size, self.y + self.height - self.triangle_size),
+        (self.x + self.triangle_size, self.y + self.height)
+      ]
+      pygame.draw.polygon(game.screen, (128, 128, 128), points)
   

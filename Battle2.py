@@ -129,9 +129,12 @@ class Battle2:
       elif self.enemy.curr_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.game.dialogue_box.init_dialogue(self.battle_script["win"])
+        self.game.update_score(True, self.enemy.name)
       elif self.player_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.game.dialogue_box.init_dialogue(self.battle_script["lose"])
+        self.game.update_score(False, self.enemy.name)
+
       else:
         if self.turn == 'enemy' and not self.game.dialogue_box.dialogue_list:
           self.enemy_move()
@@ -143,7 +146,8 @@ class Battle2:
         if self.end_callback:
           self.end_callback()
         else:
-          self.game.mode = "room_select"
+          self.game.start_room_select()
+          # self.game.mode = "room_select"
 
 
   def handle_event(self, event):

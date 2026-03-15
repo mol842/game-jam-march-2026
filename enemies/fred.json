@@ -2,6 +2,7 @@
   "name": "Fred",
   "description": "Loser conspiracy theorist uncle",
   "type": "Divorcee",
+  "relationship": "uncle",
   "start_health": 10,
   "x": 500,
   "y": 200,

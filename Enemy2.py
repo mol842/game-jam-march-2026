@@ -9,6 +9,7 @@ class Enemy2:
     self.name = data.get('name', 'WHO KNOWS')
     self.description = data.get('description', 'WHO KNOWS')
     self.type = data.get('type', '???')
+    self.type = data.get('relationship', '???')
     self.start_health = data.get('start_health', 100)
     self.curr_health = data.get('curr_health', self.start_health)
     self.original_x = data.get('x', 0)
@@ -63,10 +64,3 @@ class Enemy2:
   def heal(self, amount):
     self.curr_health += amount
     self.health_bar.update_health(self.curr_health)
-
-  def act(self):
-    # PLACEHOLDER ADD ACTUAL WHATEVER
-    # self.heal(5)
-
-    self.attacks
-    pass

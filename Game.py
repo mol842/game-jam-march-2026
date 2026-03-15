@@ -41,6 +41,9 @@ class Game:
     self.mode = "start_page"
     print('STARTED')
 
+    self.wins = 0
+    self.losses = 0
+
   def set_background_image(self, filename):
     try:
       print("SETTING BACKGROUND IMAGE TO", filename)
@@ -73,6 +76,11 @@ class Game:
     self.end_screen.start()
     self.mode = "end_screen"
 
+  def update_score(self, win, enemy):
+    if win:
+      self.wins += 1
+    else:
+      self.losses +=1
 
   def draw(self):
     # BACKGROUND
