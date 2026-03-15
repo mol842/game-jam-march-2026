@@ -18,7 +18,7 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
@@ -42,7 +42,7 @@
         },
         {
           "speaker": "You",
-          "text": "You’re looking… rough."
+          "text": "You’re looking... rough."
         },
         {
           "speaker": "You",
@@ -203,7 +203,7 @@
               },
               {
                 "speaker": "You",
-                "text": "Maybe you should take a bit of time to go outside and heal… all that."
+                "text": "Maybe you should take a bit of time to go outside and heal... all that."
               }
             ],
             "damage": 0,
@@ -317,7 +317,7 @@
               },
               {
                 "speaker": "You",
-                "text": "Before everything happened…"
+                "text": "Before everything happened..."
               },
               {
                 "speaker": "You",
@@ -345,7 +345,7 @@
               },
               {
                 "speaker": "You",
-                "text": "…Your dad told me to take care of you…"
+                "text": "...Your dad told me to take care of you..."
               },
               {
                 "speaker": "You",
@@ -427,7 +427,7 @@
               },
               {
                 "speaker": "You",
-                "text": "… who knows, maybe I’m not the only one who’s father isn’t why we thought."
+                "text": "... who knows, maybe I’m not the only one who’s father isn’t why we thought."
               }
             ],
             "damage": 0,
@@ -475,7 +475,7 @@
             },
             {
               "speaker": "Louis",
-              "text": "Look, just…"
+              "text": "Look, just..."
             },
             {
               "speaker": "Louis",
@@ -504,12 +504,8 @@
             {
               "speaker": "Louis",
               "text": "Whatever, same thing."
-            },
-            {
-              "speaker": "Louis",
-              "text": "Hyper-specific slurs"
             }
-          ]
+        ]
         },
         { 
           "move": "Hyper-Specific Slurs",
@@ -574,7 +570,7 @@
         },
         {
           "speaker": "You",
-          "text": "I mean, what happened? Last I saw you, you were a real cheerful kid…"
+          "text": "I mean, what happened? Last I saw you, you were a real cheerful kid..."
         },
         {
           "speaker": "Louis",
@@ -590,7 +586,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "… like you."
+          "text": "... like you."
         },
         {
           "speaker": "You",
@@ -602,11 +598,11 @@
         },
         {
           "speaker": "You",
-          "text": "I don’t mean to be rude, but you kind of… seem like you could use some advice."
+          "text": "I don’t mean to be rude, but you kind of... seem like you could use some advice."
         },
         {
           "speaker": "You",
-          "text": "I don’t know, man… I’m kind of worried about you…"
+          "text": "I don’t know, man... I’m kind of worried about you..."
         },
         {
           "speaker": "Louis",
@@ -642,19 +638,19 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "… I’m sorry. I just… didn’t really know what to say."
+          "text": "... I’m sorry. I just... didn’t really know what to say."
         },
         {
           "speaker": "You",
-          "text": "I was going through some shit myself… didn’t really… think about you."
+          "text": "I was going through some shit myself... didn’t really... think about you."
         },
         {
           "speaker": "You",
-          "text": "… kind of thought Thi Ha would have it covered."
+          "text": "... kind of thought Thi Ha would have it covered."
         },
         {
           "speaker": "You",
@@ -666,27 +662,27 @@
         },
         {
           "speaker": "Louis",
-          "text": "And Caspian was fine, but…"
+          "text": "And Caspian was fine, but..."
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
-          "text": "You’ve always had this weird idea that Caspian is some super-human, perfect person…"
+          "text": "You’ve always had this weird idea that Caspian is some super-human, perfect person..."
         },
         {
           "speaker": "Louis",
-          "text": "… he’s just a guy. A really awkward, kind of condescending and not particularly fun to talk to guy."
+          "text": "... he’s just a guy. A really awkward, kind of condescending and not particularly fun to talk to guy."
         },
         {
           "speaker": "Louis",
-          "text": "Plus he’s older… it’s not like we ever talked much before."
+          "text": "Plus he’s older... it’s not like we ever talked much before."
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
@@ -698,27 +694,27 @@
         },
         {
           "speaker": "You",
-          "text": "I’m sorry… I didn’t…"
+          "text": "I’m sorry... I didn’t..."
         },
         {
           "speaker": "You",
-          "text": "… I guess uncle Quân is a bit too intimidating to talk about most life problems with."
+          "text": "... I guess uncle Quân is a bit too intimidating to talk about most life problems with."
         },
         {
           "speaker": "You",
-          "text": "And twelve is not a good age to be set adrift in…"
+          "text": "And twelve is not a good age to be set adrift in..."
         },
         {
           "speaker": "You",
-          "text": "Fifteen is hardly a better age, but my dad didn’t actually die…"
+          "text": "Fifteen is hardly a better age, but my dad didn’t actually die..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "You had to ask about a lot of… teenage insecurity stuff online, I guess."
+          "text": "You had to ask about a lot of... teenage insecurity stuff online, I guess."
         },
         {
           "speaker": "Louis",
@@ -750,7 +746,7 @@
         },
         {
           "speaker": "You",
-          "text": "… who aren’t on 4chan."
+          "text": "... who aren’t on 4chan."
         },
         {
           "speaker": "Louis",
@@ -778,15 +774,15 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "… maybe I do remember why I never talk to you anymore."
+          "text": "... maybe I do remember why I never talk to you anymore."
         }
       ],
       "intermission-25%": [],
@@ -797,7 +793,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "The others were all so much older that I barely interacted with them, used to get Dian and Lia mixed up all the time, and Caspian always seemed like he was too busy to indulge me… but you…"
+          "text": "The others were all so much older that I barely interacted with them, used to get Dian and Lia mixed up all the time, and Caspian always seemed like he was too busy to indulge me... but you..."
         },
         {
           "speaker": "Louis",
@@ -805,7 +801,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
@@ -817,7 +813,7 @@
         },
         {
           "speaker": "You",
-          "text": "… it wasn't about you."
+          "text": "... it wasn't about you."
         },
         {
           "speaker": "You",
@@ -825,11 +821,11 @@
         },
         {
           "speaker": "You",
-          "text": "The divorce… how it all went down… got to me."
+          "text": "The divorce... how it all went down... got to me."
         },
         {
           "speaker": "You",
-          "text": "Way more than it should have, I guess, if Dian and Caspian are so fine…"
+          "text": "Way more than it should have, I guess, if Dian and Caspian are so fine..."
         },
         {
           "speaker": "You",
@@ -845,15 +841,15 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "But I am sorry that me… being like that… happened at such a bad time for you."
+          "text": "But I am sorry that me... being like that... happened at such a bad time for you."
         },
         {
           "speaker": "Louis",
-          "text": "… You’re such a coward."
+          "text": "... You’re such a coward."
         },
         {
           "speaker": "Louis",
@@ -869,7 +865,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "… admit that you just didn’t care."
+          "text": "... admit that you just didn’t care."
         },
         {
           "speaker": "Louis",
@@ -877,7 +873,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
@@ -885,27 +881,27 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "I’m……. Sorry……. For…………….being a dick."
+          "text": "I’m....... Sorry....... For................being a dick."
         },
         {
           "speaker": "You",
-          "text": "I cared but… not enough, I guess."
+          "text": "I cared but... not enough, I guess."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "I still think you’re a loser now, and seriously need to touch grass, but…"
+          "text": "I still think you’re a loser now, and seriously need to touch grass, but..."
         },
         {
           "speaker": "You",
@@ -913,7 +909,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "You’re still an asshole, but… not as much of one I guess."
+          "text": "You’re still an asshole, but... not as much of one I guess."
         },
         {
           "speaker": "Louis",
@@ -921,15 +917,15 @@
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
-          "text": "My bad for giving you shit about your dad too. I know the situation with you and him was… rough."
+          "text": "My bad for giving you shit about your dad too. I know the situation with you and him was... rough."
         },
         {
           "speaker": "Louis",
-          "text": "… I don’t really remember your dad, to be honest."
+          "text": "... I don’t really remember your dad, to be honest."
         },
         {
           "speaker": "Louis",
@@ -937,15 +933,15 @@
         },
         {
           "speaker": "Louis",
-          "text": "Most of what I know is just paraphrased from the rest of the family, and they’re… unreliable narrators at times…"
+          "text": "Most of what I know is just paraphrased from the rest of the family, and they’re... unreliable narrators at times..."
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
-          "text": "But If mine was capable of it, I’d be hoping he’d come back too…"
+          "text": "But If mine was capable of it, I’d be hoping he’d come back too..."
         },
         {
           "speaker": "You",
@@ -957,15 +953,15 @@
         },
         {
           "speaker": "You",
-          "text": "And you fell into some… interesting ideas in the meantime."
+          "text": "And you fell into some... interesting ideas in the meantime."
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
-          "text": "It’s not like I don’t know what people think about all this looks-maxxing, conspiracy stuff, I just…"
+          "text": "It’s not like I don’t know what people think about all this looks-maxxing, conspiracy stuff, I just..."
         },
         {
           "speaker": "Louis",
@@ -973,7 +969,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "I just feel… bad. Like, all the time."
+          "text": "I just feel... bad. Like, all the time."
         },
         {
           "speaker": "Louis",
@@ -989,7 +985,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Louis",
@@ -1017,11 +1013,11 @@
         },
         {
           "speaker": "Louis",
-          "text": "Besides… it’s not like I don’t know what’s wrong with me already."
+          "text": "Besides... it’s not like I don’t know what’s wrong with me already."
         },
         {
           "speaker": "You",
-          "text": "… I didn’t see anyone about the whole… thing… with my parents either."
+          "text": "... I didn’t see anyone about the whole... thing... with my parents either."
         },
         {
           "speaker": "You",
@@ -1029,11 +1025,11 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "Caspian’s been trying to convince me to go, recently…"
+          "text": "Caspian’s been trying to convince me to go, recently..."
         },
         {
           "speaker": "You",
@@ -1063,7 +1059,7 @@
         },
         {
           "speaker": "You",
-          "text": "You’re such a fucking barstard now Louis."
+          "text": "You’re such a fucking bastard now Louis."
         },
         {
           "speaker": "You",
@@ -1075,7 +1071,7 @@
         },
         {
           "speaker": "You",
-          "text": "… But I remember your dad."
+          "text": "... But I remember your dad."
         },
         {
           "speaker": "You",
@@ -1095,7 +1091,7 @@
         },
         {
           "speaker": "Louis",
-          "text": "Ironic of you to call me a barstard."
+          "text": "Ironic of you to call me a bastard."
         },
         {
           "speaker": "Louis",
@@ -1115,7 +1111,7 @@
         },
         {
           "speaker": "You",
-          "text": "really, just… fuck you."
+          "text": "really, just... fuck you."
         }
       ]
     }

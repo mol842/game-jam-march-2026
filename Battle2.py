@@ -17,7 +17,7 @@ class Battle2:
     self.stage = "intro"
     self.player_start_health = 10
     self.player_health = self.player_start_health
-    self.player_health_bar = HealthBar(self.game, 100, 400, 200, 20, self.player_start_health, self.player_health)
+    self.player_health_bar = HealthBar(self.game, 100, 100, 300, 40, self.player_start_health, self.player_health)
 
     self.turn = 'player'
     self.enemy_moveion_time = 0
@@ -167,12 +167,18 @@ class Battle2:
   def draw(self, game):
     # print(self.stage)
     if (self.stage != "stopped"):
-      show_health = not self.game.dialogue_box.visible
-      scale = 2.0 if self.game.dialogue_box.visible else 1.0
+      # scale = 2.0 if self.game.dialogue_box.visible else 1.0
+      scale = 1.0
+      show_health = True
+      if self.game.dialogue_box.visible and self.stage != "battle" and self.stage !="intermisison-50%":
+        show_health = False
+        scale = 2.0
       self.enemy.draw(game, scale=scale, show_health=show_health)
-      if self.stage == "battle":
+
+
+      if self.stage == "battle" or self.stage =="intermisison-50%":
+        self.player_health_bar.draw(game)
         if self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
-          self.player_health_bar.draw(game)
           for btn in self.move_buttons.values():
             if btn.clickable:
               btn.draw(game)

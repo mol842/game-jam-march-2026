@@ -2,6 +2,7 @@ import pygame
 import json
 import os
 from HealthBar import HealthBar
+import random
 
 class Enemy2:
   def __init__(self, data, game):
@@ -30,6 +31,12 @@ class Enemy2:
       if os.path.exists(full_path):
         self.original_image = pygame.image.load(full_path)
 
+    self.shake_frames = 0
+    self.shake_intensity = 0
+    self.damage_popups = [] 
+    # {text, x, y, timer, amount}
+
+
     self.health_bar = HealthBar(self.game, 0, 0, 0, 0, self.start_health, self.curr_health)
     self.update_size()
 
@@ -54,21 +61,57 @@ class Enemy2:
 
   def draw(self, game, scale=1.0, show_health=True):
     self.update_size()
+
+
+    offset_x, offset_y = 0, 0
+    if self.shake_frames > 0:
+      offset_x = random.randint(-int(self.shake_intensity), int(self.shake_intensity))
+      offset_y = random.randint(-int(self.shake_intensity), int(self.shake_intensity))
+      self.shake_frames -= 1
+      self.shake_intensity = max(0, self.shake_intensity - 0.3)
+
+
     if scale != 1.0:
         scaled_width = int(self.width * scale)
         scaled_height = int(self.height * scale)
         scaled_image = pygame.transform.scale(self.image, (scaled_width, scaled_height))
         scaled_x = self.x - (self.width * (scale - 1) / 2)
         scaled_y = self.y - (self.height * (scale - 1) / 2)
-        game.screen.blit(scaled_image, (scaled_x, scaled_y))
+        # game.screen.blit(scaled_image, (scaled_x, scaled_y))
+        game.screen.blit(scaled_image, (scaled_x + offset_x, scaled_y + offset_y))
+
     else:
-        game.screen.blit(self.image, (self.x, self.y))
+        # game.screen.blit(self.image, (self.x, self.y))
+        game.screen.blit(self.image, (self.x + offset_x, self.y + offset_y))
+
     if show_health:
         self.health_bar.draw(game)
+
+    # font = pygame.font.Font(None, int(28 * (game.height / 500.0)))
+    # for popup in self.damage_popups[:]:
+    #     alpha = min(255, popup['timer'] * 6)
+    #     progress = 1 - (popup['timer'] / 60)
+    #     draw_y = popup['y'] - progress * 40  # floats upward
+    #     text = font.render(popup['text'], True, (255, 80, 80))
+    #     text.set_alpha(alpha)
+    #     rect = text.get_rect(center=(popup['x'], draw_y))
+    #     game.screen.blit(text, rect)
+    #     popup['timer'] -= 1
+    #     if popup['timer'] <= 0:
+    #         self.damage_popups.remove(popup)
 
   def take_damage(self, damage):
     self.curr_health -= damage
     self.health_bar.update_health(self.curr_health)
+    self.shake_frames = 20
+    self.shake_intensity = 8
+    self.damage_popups.append({
+        'text': f'-{damage}',
+        'x': self.x + self.width / 2,
+        'y': self.y,
+        'timer': 60  
+    })
+
 
   def heal(self, amount):
     self.curr_health += amount
