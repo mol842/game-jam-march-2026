@@ -6,12 +6,14 @@ class RoomSelect:
   def __init__(self, game):
     self.game = game
     self.visited_rooms = [False, False, False, False]
+    # photo names are also uhhhhhhhhh the same .png
+    self.room_names = ["lounge", "library", "verandah", "kitchen"]
     self.current_room = None
     self.room_enemies = [
-      ["fred", "fred", "fred"],
-      ["fred", "fred", "fred"],
-      ["fred", "fred", "fred"] ,
-      ["fred", "fred", "fred"]
+      ["fred", "fred"],
+      ["fred", "fred"],
+      ["fred", "fred"] ,
+      ["fred", "fred"]
     ]
     self.current_enemy_index = 0
     
@@ -19,7 +21,7 @@ class RoomSelect:
     self.room_buttons = []
     ### SQUARE OF BUTTTONSNSSS
     for i in range(4):
-      button = Button(self.game, 200 + (i % 2) * 200, 150 + (i // 2) * 100, 150, 50, f"Room {i+1}", lambda idx=i: self.start_room(idx))
+      button = Button(self.game, 200 + (i % 2) * 200, 150 + (i // 2) * 100, 150, 50, self.room_names[i], lambda idx=i: self.start_room(idx))
       self.room_buttons.append(button)
     
     # PROCEED BUTTON BUT HIDDEN (REVEALED WHEN YOUVE DONE ALL THE ROOMS)
@@ -35,18 +37,26 @@ class RoomSelect:
       self.current_enemy_index = 0
       self.start_next_battle()
       
+      self.game.set_background_image(f"{self.room_names[self.current_room]}.png")
+
       # Check if all rooms visited
       if all(self.visited_rooms):
         self.proceed_button.show()
 
   def start_next_battle(self):
     if self.current_room is not None and self.current_enemy_index < len(self.room_enemies[self.current_room]):
+
       print("STARTING BATTLE",self.current_enemy_index, "FOR ROOM", self.current_room)
       enemy_name = self.room_enemies[self.current_room][self.current_enemy_index]
       self.game.battle = Battle2(enemy_name, self.game, self.battle_ended)
       self.game.battle.start_intro()
       self.game.mode = "battle"
       self.current_enemy_index += 1
+
+
+    else:
+      # self.game.set_background_image("house.png")
+      self.game.start_room_select()
 
   def battle_ended(self):
     # GO TO NEXT ENEMY OR ROOM SELECT

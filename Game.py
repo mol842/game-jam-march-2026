@@ -97,7 +97,7 @@ class Game:
 
 
   def update(self):
-
+    # print(self.mode)
     for event in pygame.event.get():
       if event.type == pygame.MOUSEBUTTONUP:
         if event.button == 1:
