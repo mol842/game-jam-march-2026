@@ -124,11 +124,13 @@ class DialogueBox(Button):
       speaker_text = self.font.render(self.current_speaker, False, Color(self.text_color))
       speaker_rect = speaker_text.get_rect(center=(self.x + self.width / 2, self.y + 20))
       game.screen.blit(speaker_text, speaker_rect)
-      # Draw the previous triangle
+      # TRIAMGLE TO GO BACKWARDS
+
+      pad = 3
       points = [
-        (self.x, self.y + self.height - self.triangle_size / 2),
-        (self.x + self.triangle_size, self.y + self.height - self.triangle_size),
-        (self.x + self.triangle_size, self.y + self.height)
+        (self.x, self.y + self.height - self.triangle_size / 2 - pad),
+        (self.x + self.triangle_size, self.y + self.height - self.triangle_size- pad),
+        (self.x + self.triangle_size, self.y + self.height- pad)
       ]
-      pygame.draw.polygon(game.screen, (128, 128, 128), points)
+      pygame.draw.polygon(game.screen,  self.text_color, points)
   
