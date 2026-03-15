@@ -12,7 +12,7 @@ class Battle:
     self.battle_script = self.enemy.battle_script[0]
 
     self.turn = 'player' 
-    self.enemy_action_time = 0
+    self.enemy_moveion_time = 0
     
 
     self.show_popup = False
@@ -61,10 +61,10 @@ class Battle:
   def switch_turn(self):
     if self.turn == 'player':
       self.turn = 'enemy'
-      self.enemy_action_time = time.time()
+      self.enemy_moveion_time = time.time()
     elif self.turn == 'enemy':
       self.turn = 'player'
-      self.enemy_action_time = 0
+      self.enemy_moveion_time = 0
 
     print("TURN NOW:", self.turn)
 
@@ -74,14 +74,14 @@ class Battle:
         button.handle_event(event, self.game)
 
   def update(self):
-    if self.turn == 'enemy' and time.time() >= self.enemy_action_time and not self.show_popup:
-      self.enemy_act()
+    if self.turn == 'enemy' and time.time() >= self.enemy_moveion_time and not self.show_popup:
+      self.enemy_move()
 
     if self.show_popup and time.time() > self.popup_timer:
       self.show_popup = False
       self.switch_turn()
 
-  def enemy_act(self):
+  def enemy_move(self):
     # PLACEHOLDERRR
     print("ENEMY ACTED")
     self.popup_message = "Enemy used PLACEHOLDER ATTACKKKKKK"

@@ -25,23 +25,23 @@ class Button:
       if self.rect.collidepoint(event.pos):
         print('CLICKED A BUTTON: ', self.text)
         if (self.action):
-          print("RUNNING ACTION")
+          print("RUNNING ACTION", self.action.__name__)
           self.action()
 
   # def enable(self):
   #   self.clickable = True
   #   self.visible = True
-  # def disable(self):
-  #   self.clickable = False
+  
+  def disable(self):
+    self.clickable = False
 
 
   def show(self):
     self.visible = True
     self.clickable = True
 
-    print("THIS BUTTON IS NOW VISIBLE")
-    
-    print(self.visible, self.clickable)
+    # print("THIS BUTTON IS NOW VISIBLE")
+    # print(self.visible, self.clickable)
 
 
   def hide(self):

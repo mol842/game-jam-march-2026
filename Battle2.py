@@ -6,30 +6,36 @@ from Button import Button
 from HealthBar import HealthBar
 
 class Battle2:
-  def __init__(self, enemy_name, game):
+  def __init__(self, enemy_name, game, end_callback=None):
     self.game = game
+    self.end_callback = end_callback
     with open(f"enemies/{enemy_name}.json", 'r') as f:
       self.data = json.load(f)
     self.enemy = Enemy2(self.data)
     self.battle_script = self.data['battles'][0]
 
     self.stage = "intro"
-    self.player_health = 100
-    self.player_health_bar = HealthBar(100, 400, 200, 20, 100, self.player_health)
+    self.player_start_health = 10
+    self.player_health = self.player_start_health
+    self.player_health_bar = HealthBar(100, 400, 200, 20, self.player_start_health, self.player_health)
 
     self.turn = 'player'
-    self.enemy_action_time = 0
+    self.enemy_moveion_time = 0
 
     self.move_buttons = {}
     self.move_indices = {}
 
     ## MAKE THE BUTTONS
     move_names = ["Facts & Logic", "Blatant Lie", "Emotional Manipulation", "Unnecessary Escalation"]
-    positions = [(100, 350), (250, 350), (400, 350), (100, 420)]
+    button_width = 300
+    button_height = 50
+    start_y = 100
+    x = 100
     for i, move_name in enumerate(move_names):
       if move_name in self.battle_script["your-moves"]:
-        x, y = positions[i]
-        self.move_buttons[move_name] = Button(x, y, 120, 50, move_name, lambda mn=move_name: self.player_move(mn))
+        # x, y = positions[i]
+        self.move_buttons[move_name] = Button(x, start_y + i*(button_height + 20), button_width, button_height, move_name, lambda mn=move_name: self.player_move(mn))
+        # self.move_buttons[move_name] = Button(x, y, 120, 50, move_name, lambda mn=move_name: self.player_move(mn))
         self.move_indices[move_name] = 0
 
     self.their_moves = self.battle_script["their-moves"]
@@ -43,14 +49,18 @@ class Battle2:
 
   def start_intro(self):
     print("STARTING THE INTRO")
+    # reset health because annoyingly it sometimes persists
+    self.enemy.curr_health = self.enemy.start_health
+    self.player_health = self.player_start_health
     self.game.dialogue_box.init_dialogue(self.battle_script["intro"], lambda: self.set_stage("battle"))
 
   def player_move(self, move_name):
+
     if self.move_indices[move_name] < len(self.battle_script["your-moves"][move_name]):
-      move_data = self.battle_script["your-moves"][move_name][self.move_indices[move_name]]
-      self.pending_response = move_data["response"]
-      self.enemy.take_damage(move_data["damage"])
-      self.game.dialogue_box.init_dialogue([{"speaker": "You", "text": move_data["description"]}], lambda: self.show_response())
+      move_info = self.battle_script["your-moves"][move_name][self.move_indices[move_name]]
+      self.pending_response = move_info["response"]
+      self.enemy.take_damage(move_info["damage"])
+      self.game.dialogue_box.init_dialogue([{"speaker": "You", "text": move_info["description"]}], lambda: self.show_response())
       print("SHOWING YOUR MOVE")
 
       
@@ -58,20 +68,41 @@ class Battle2:
       if self.move_indices[move_name] >= len(self.battle_script["your-moves"][move_name]):
         self.move_buttons[move_name].hide()
 
+  def enemy_move(self):
+    move = self.their_moves[self.their_move_index]
+    self.game.dialogue_box.init_dialogue([{"speaker": self.enemy.name, "text": move["description"]}], lambda: self.switch_turn())
+    self.game.dialogue_box.show()
+    print("ENEMY MOVED!")
+
+    # TAKE DAMAGE
+    self.player_health -= move["damage"]
+    self.player_health_bar.update_health(self.player_health)
+    self.their_move_index = (self.their_move_index + 1) % len(self.their_moves)
+
+
+
   def show_response(self):
     print("SHOWING THEIR RESPONSE")
-    self.game.dialogue_box.init_dialogue([{"speaker": "Fred", "text": self.pending_response}], lambda: self.switch_turn())
+    self.game.dialogue_box.init_dialogue([{"speaker": self.enemy.name, "text": self.pending_response}], lambda: self.switch_turn())
+
     self.pending_response = None
     self.game.dialogue_box.show()
+    self.switch_turn()
 
   def set_stage(self, stage):
+    print("SETTING THE STAGE FOOORRRR", stage)
     self.stage = stage
 
   def switch_turn(self):
+    print("SWITCHING TURN")
     if self.turn == 'player':
       self.turn = 'enemy'
+      print("ENEMY MOVE!")
+
     else:
       self.turn = 'player'
+      print("YOUR MOVE!")
+
 
   def update(self):
     if self.stage == "intro":
@@ -79,7 +110,7 @@ class Battle2:
       # ONCE THE DIALOGUE IS DONE BASICALLY
       if not self.game.dialogue_box.dialogue_list:
         self.stage = "battle"
-        # print("FINISHED THE INTRO")
+        print("FINISHED THE INTRO")
 
     elif self.stage == "battle":
 
@@ -103,24 +134,16 @@ class Battle2:
         self.game.dialogue_box.init_dialogue(self.battle_script["lose"])
       else:
         if self.turn == 'enemy' and not self.game.dialogue_box.dialogue_list:
-          self.enemy_act()
+          self.enemy_move()
+
     elif self.stage == "end":
       if not self.game.dialogue_box.dialogue_list:
         # enddddd battle
-        pass
+        if self.end_callback:
+          self.end_callback()
+        else:
+          self.game.mode = "room_select"  # Default fallback
 
-  def enemy_act(self):
-    move = self.their_moves[self.their_move_index]
-    self.game.dialogue_box.init_dialogue([{"speaker": self.enemy.name, "text": move["description"]}], lambda: self.switch_turn())
-    self.player_health -= move["damage"]
-    self.player_health_bar.update_health(self.player_health)
-    self.their_move_index = (self.their_move_index + 1) % len(self.their_moves)
-
-  def switch_turn(self):
-    if self.turn == 'player':
-      self.turn = 'enemy'
-    else:
-      self.turn = 'player'
 
   def handle_event(self, event):
     if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
@@ -129,10 +152,12 @@ class Battle2:
           btn.handle_event(event, self.game)
 
   def draw(self, game):
+    # print(self.stage)
     if (self.stage != "end"):
-      self.enemy.draw(game)
-      self.player_health_bar.draw(game)
-      if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
-        for btn in self.move_buttons.values():
-          if btn.clickable:
-            btn.draw(game)
+      if self.stage == "battle":
+        self.enemy.draw(game)
+        if self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
+          self.player_health_bar.draw(game)
+          for btn in self.move_buttons.values():
+            if btn.clickable:
+              btn.draw(game)

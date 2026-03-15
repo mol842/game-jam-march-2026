@@ -30,7 +30,7 @@
           {
             "move": "snopes",
             "description": "you pull up snopes and wave your phone at him",
-            "damage": 0,
+            "damage": 1,
             "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
 
           },
@@ -38,7 +38,7 @@
           {
             "move": "wikipedia",
             "description": "you pull up wikipedia and wave your phone at him",
-            "damage": 0,
+            "damage": 1,
             "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
           }
 
@@ -59,7 +59,7 @@
             "move": "manip1",
             "description": "You manipulate emotionally",
             "damage": 10,
-            "response": "HOW DARE YOU!"
+            "response": "HOW COULD YOU!"
           }
         ],
 
@@ -67,8 +67,8 @@
           {
             "move": "esc1",
             "description": "You escalate unnecessarily",
-            "damage": 15,
-            "response": "THIS IS WAR!"
+            "damage": 10,
+            "response": "ARGGHIUUUGH!"
           }
         ]
 

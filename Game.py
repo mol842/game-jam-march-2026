@@ -2,7 +2,10 @@ import pygame
 import json
 from Button import *
 from Battle2 import *
-from Dialogue_box import *
+from DialogueBox import *
+from StartPage import *
+from RoomSelect import *
+from EndScreen import *
 
 WIDTH = 800
 HEIGHT = 500
@@ -17,23 +20,12 @@ class Game:
     self.buttons = []
     self.background = None
     self.battle = None
-    self.battle = Battle2("fred", self)
+    self.start_page = StartPage(self)
+    self.room_select = RoomSelect(self)
+    self.end_screen = EndScreen(self)
 
-    self.dialogue_box = DialogueBox(self, 100, 100, 100, 100, "what?", self)
-    self.dialogue_box.init_dialogue(
-      [
-        {
-          "speaker": "You",
-          "text": "whatever"
-        },
-        {
-          "speaker": "Fred",
-          "text": "yayyyyyy"
-        }
-      ], callback=(lambda: self.battle.start_intro()))
+    self.dialogue_box = DialogueBox(self)
     self.buttons.append(self.dialogue_box)
-
-
 
     self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("hmmm")
@@ -42,7 +34,7 @@ class Game:
 
     self.stopped = False
 
-    self.mode = "dialogue"
+    self.mode = "start_page"
     print('STARTED')
 
 
@@ -53,6 +45,13 @@ class Game:
   def battle_mode(self):
     self.mode = "battle"
 
+  def start_room_select(self):
+    self.mode = "room_select"
+
+  def start_end_screen(self):
+    self.end_screen.start()
+    self.mode = "end_screen"
+
 
   def draw(self):
     # BACKGROUND
@@ -60,11 +59,18 @@ class Game:
     if (self.background):
       self.screen.blit(self.background, (0, 0))
 
-    for button in self.buttons:
-      button.draw(self)
+    if self.mode == "start_page":
+      self.start_page.draw(self)
+    elif self.mode == "room_select":
+      self.room_select.draw(self)
+    elif self.mode == "end_screen":
+      self.end_screen.draw(self)
+    else:
+      for button in self.buttons:
+        button.draw(self)
 
-    if self.battle and self.mode=="battle":
-      self.battle.draw(self)
+      if self.battle and self.mode=="battle":
+        self.battle.draw(self)
 
     pygame.display.update()
 
@@ -80,12 +86,21 @@ class Game:
       if event.type == pygame.QUIT:
         self.stopped = True
 
+      if self.mode == "start_page":
+        self.start_page.handle_event(event, self)
+      elif self.mode == "room_select":
+        self.room_select.handle_event(event, self)
+      elif self.mode == "end_screen":
+        self.end_screen.handle_event(event, self)
+      else:
+        if len(self.dialogue_box.dialogue_list) > 0:
 
-      for button in self.buttons:
-        button.handle_event(event, self)
+          for button in self.buttons:
+            button.handle_event(event, self)
 
-      if self.battle and self.mode=="battle":
-        self.battle.handle_event(event)
+        elif self.battle and self.mode=="battle":
+          self.battle.handle_event(event)
+        
 
     if self.battle:
       self.battle.update()
