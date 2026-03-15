@@ -138,11 +138,12 @@ class Battle2:
 
     elif self.stage == "end":
       if not self.game.dialogue_box.dialogue_list:
+        # print("ENDING BATTLE")
         # enddddd battle
         if self.end_callback:
           self.end_callback()
         else:
-          self.game.mode = "room_select"  # Default fallback
+          self.game.mode = "room_select"
 
 
   def handle_event(self, event):

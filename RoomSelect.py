@@ -53,16 +53,20 @@ class RoomSelect:
       self.game.mode = "battle"
       self.current_enemy_index += 1
 
-
-    else:
-      # self.game.set_background_image("house.png")
+    elif self.current_room is not None:
       self.game.start_room_select()
+      self.current_room = None
+
+
+
 
   def battle_ended(self):
     # GO TO NEXT ENEMY OR ROOM SELECT
+    # THIS ISNT WORKING... WHY>
     if self.current_enemy_index < 3:
       self.start_next_battle()
     else:
+      self.game.start_room_select()
       self.game.mode = "room_select"
 
   def go_to_end(self):
