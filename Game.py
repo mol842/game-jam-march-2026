@@ -41,8 +41,8 @@ class Game:
     self.mode = "start_page"
     print('STARTED')
 
-    self.wins = 0
-    self.losses = 0
+    self.wins = []
+    self.losses = []
 
   def set_background_image(self, filename):
     try:
@@ -78,9 +78,9 @@ class Game:
 
   def update_score(self, win, enemy):
     if win:
-      self.wins += 1
+      self.wins.append(enemy)
     else:
-      self.losses +=1
+      self.losses.append(enemy)
 
   def draw(self):
     # BACKGROUND
@@ -95,11 +95,13 @@ class Game:
     elif self.mode == "end_screen":
       self.end_screen.draw(self)
     else:
+
       for button in self.buttons:
         button.draw(self)
-
+        
       if self.battle and self.mode=="battle":
         self.battle.draw(self)
+
 
     pygame.display.update()
 

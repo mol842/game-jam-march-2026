@@ -6,8 +6,149 @@
   "start_health": 10,
   "x": 500,
   "y": 200,
-  "width": 64,
-  "height": 64,
+  "width": 300,
+  "height": 300,
   "image": "Quân.png",
-  "battles": []
+  "battles":
+  [
+    {
+      "intro":
+      [
+        {
+          "speaker": "You",
+          "text": "whatevereer"
+        },
+        {
+          "speaker": "Fred",
+          "text": "whatever2.0"
+        }
+
+      ],
+
+      "your-moves":
+      {
+        "Facts & Logic": [
+          {
+            "move": "snopes",
+            "description": "you pull up snopes and wave your phone at him",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used SNOPES \n It was not effective."
+
+              },
+
+
+              {
+                "speaker": "You",
+                "text": "Bro look at this"
+
+              }
+
+            ],
+            "damage": 1,
+            "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
+
+          },
+
+          {
+            "move": "wikipedia",
+            "description": "you pull up wikipedia and wave your phone at him",
+            "damage": 1,
+            "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
+          }
+
+
+        ],
+
+        "Blatant Lie": [
+          {
+            "move": "lie1",
+            "description": "You tell a blatant lie",
+            "damage": 5,
+            "response": "WHAT? THAT'S NOT TRUE!"
+          }
+        ],
+
+        "Emotional Manipulation": [
+          {
+            "move": "manip1",
+            "description": "You manipulate emotionally",
+            "damage": 10,
+            "response": "HOW COULD YOU!"
+          }
+        ],
+
+        "Unnecessary Escalation": [
+          {
+            "move": "esc1",
+            "description": "You escalate unnecessarily",
+            "damage": 10,
+            "response": "ARGGHIUUUGH!"
+          }
+        ]
+
+      },
+
+      "their-moves":
+      [
+        
+        {
+          "move": "4chan conspiracy",
+          "description": "LOOK AT THIS",
+          "damage": 1,
+          "response": "this is... unreadable. you take psychic damage",
+          "dialogue":
+          [
+            {
+                "speaker": "Narrator",
+                "text": "Fred used 4chan conspiracy \n It was SUPER effective!"
+
+              },
+              {
+                "speaker": "You",
+                "text": "this is... unreadable. you take 1 psychic damage"
+
+              }
+        ]     
+        }
+
+
+
+      ],
+
+
+      "intermisison-50%":       [
+        {
+          "speaker": "You",
+          "text": "you reached 50% health"
+        }
+      ],
+
+      
+      "intermisison-25%":       [
+        {
+          "speaker": "You",
+          "text": "you reached 25% health"
+        }
+      ],
+
+      "win":
+      [
+        {
+          "speaker": "You",
+          "text": "you won"
+        }
+      ],
+      "lose":
+      [
+        {
+          "speaker": "You",
+          "text": "you lost"
+        }
+
+      ]
+    }
+
+  ]
 }

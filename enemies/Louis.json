@@ -6,8 +6,8 @@
   "start_health": 10,
   "x": 500,
   "y": 200,
-  "width": 64,
-  "height": 64,
+  "width": 300,
+  "height": 300,
   "image": "fred.png",
   "battles": [
     {

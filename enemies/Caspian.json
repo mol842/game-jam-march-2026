@@ -1,13 +1,1173 @@
 {
   "name": "Caspian",
-  "description": "Cuckoo Bird - Heteroscenes pallidus",
+  "description": "Pallid Cuckoo bird - Heteroscenes pallidus",
   "type": "",
-  "relationship": "Your brother",
+  "relationship": "Your adopted brother",
   "start_health": 10,
   "x": 500,
-  "y": 200,
-  "width": 64,
-  "height": 64,
+  "y": 300,
+  "width": 200,
+  "height": 300,
   "image": "Caspian.png",
-  "battles": []
+  "battles": [
+    {
+      "intro": [
+        {
+          "speaker": "You",
+          "text": "Caspian, Hey. How have you been?"
+        },
+        {
+          "speaker": "You",
+          "text": "We haven’t talked in... a while."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I’ve been good."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Started my residency this year, working at a more rural hospital further inland."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "It was nice being in the city as an intern, but I have to say, city hospitals are a nightmare to work in."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Guess dad was right about one thing afterall."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "How have you been? How’s uni?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "The VCA is a pretty competitive place to get into."
+        },
+        {
+          "speaker": "You",
+          "text": "... Yeah, uni’s been good."
+        },
+        {
+          "speaker": "You",
+          "text": "Lots of jazz improv... and theory and stuff."
+        },
+        {
+          "speaker": "You",
+          "text": "... it’s not that impressive."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I’ve never been able to make heads or tails of music besides just playing what’s in front of me."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Composition is beyond me, really."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "... it is impressive."
+        },
+        {
+          "speaker": "You",
+          "text": "... It’s not like being a doctor, though, is it?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "They’re different things."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "It’s not a competition."
+        },
+        {
+          "speaker": "You",
+          "text": "It never is to you."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Don’t be like this."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "You always do this."
+        },
+        {
+          "speaker": "You",
+          "text": "Do what?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "THIS!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "God, you’re so over-emotional sometimes!"
+        },
+        {
+          "speaker": "You",
+          "text": "Over-emotional?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I didn’t mean–"
+        },
+        {
+          "speaker": "You",
+          "text": "Better than being an emotionless dick, like you."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "God dammit."
+        }
+      ],
+      "your-moves": {
+        "Facts & Logic": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You are too emotional to use FACTS AND LOGIC"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+        "Blatant Lie": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "You",
+                "text": "People used to talk about how much of a robot you were in school."
+              },
+              {
+                "speaker": "You",
+                "text": "There was a rumour that used to cheat your exams."
+              },
+              {
+                "speaker": "You",
+                "text": "I never believed the cheating, but god to the robot rumours make sense."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "You",
+                "text": "My friends and Uni didn’t even realise I have a brother, you know?"
+              },
+              {
+                "speaker": "You",
+                "text": "I guess you were distant and background enough that you never came up."
+              },
+              {
+                "speaker": "You",
+                "text": "They thought I was an only child."
+              }
+            ],
+            "damage": 2,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "You",
+                "text": "I blocked him, you know?"
+              },
+              {
+                "speaker": "You",
+                "text": "That’s why dad never talked to me. He tried, I’m sure."
+              },
+              {
+                "speaker": "You",
+                "text": "You all talk about how I’m ‘waiting around for him’, but I’m not..."
+              },
+              {
+                "speaker": "You",
+                "text": "I’m not."
+              }
+            ],
+            "damage": 2,
+            "response": ""
+          }
+        ],
+        "Emotional Manipulation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "You’re always trying to show me up, you know?"
+              },
+              {
+                "speaker": "You",
+                "text": "Every time I talk to you I just feel worse because nothing I achieve ever matches up."
+              },
+              {
+                "speaker": "You",
+                "text": "..."
+              },
+              {
+                "speaker": "You",
+                "text": "Made for a pretty shit childhood."
+              }
+            ],
+            "damage": 4,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "Dad really did love you more than he loved me, didn’t he?"
+              },
+              {
+                "speaker": "You",
+                "text": "That’s fair, I suppose."
+              },
+              {
+                "speaker": "You",
+                "text": "Every fight, every competition... you always seemed to win."
+              },
+              {
+                "speaker": "You",
+                "text": "And I always lost."
+              }
+            ],
+            "damage": 4,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "We really do seem to do nothing but fight."
+              },
+              {
+                "speaker": "You",
+                "text": "I feel like I can never think straight when we start arguing."
+              },
+              {
+                "speaker": "You",
+                "text": "... I don’t like the person I become when I’m around you sometimes."
+              },
+              {
+                "speaker": "You",
+                "text": "..."
+              },
+              {
+                "speaker": "You",
+                "text": "Do you like who you become?"
+              }
+            ],
+            "damage": 4,
+            "response": ""
+          }
+        ],
+        "Unnecessary Escalation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "You’re the worst sometimes, did you know that?"
+              },
+              {
+                "speaker": "You",
+                "text": "A condescending, unrepentant asshole."
+              },
+              {
+                "speaker": "You",
+                "text": "Does hearing everyone tell you how successful you are make you feel better?"
+              }
+            ],
+            "damage": 1,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "How does it feel to be so chosen?"
+              },
+              {
+                "speaker": "You",
+                "text": "Dad certainly chose you over me so often."
+              },
+              {
+                "speaker": "You",
+                "text": "Everyone did, if they could."
+              },
+              {
+                "speaker": "You",
+                "text": "...I really hated you for that, back in the day."
+              }
+            ],
+            "damage": 1,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "..."
+              },
+              {
+                "speaker": "You",
+                "text": "Sometimes I used to wish I was an only child."
+              },
+              {
+                "speaker": "You",
+                "text": "..."
+              },
+              {
+                "speaker": "You",
+                "text": "...sometimes I remember I actually am."
+              }
+            ],
+            "damage": 1,
+            "response": ""
+          }
+        ]
+      },
+      "their-moves": [
+        {
+          "move": "Academic flex",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "CASPIAN used ACADEMIC FLEX"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "It’s super effective!"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "How is the workload for music majors?"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Medicine was pretty tough, but I managed to graduate with honours."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "It’s not really important, but it can help if you want to go into masters or something."
+            },
+            {
+              "speaker": "You",
+              "text": "My grades are fine. The work is fine."
+            },
+            {
+              "speaker": "You",
+              "text": "Music is more about performance and practical implementation anyway."
+            },
+            {
+              "speaker": "You",
+              "text": "No one in the industry really cares about the ‘music education’ portion of it outside of technical stuff."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Well... it can’t hurt, can it?"
+            }
+          ],
+          "damage": 4,
+          "response": ""
+        },
+        {
+          "move": "Condescension",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "CASPIAN used CONSESCENSION"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "You’re doing great, you know? I don’t know why you’re always so insecure."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "You’ve had some struggles and are coming out the other side just fine."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Better than expected even."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I’m proud of you."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Really, I am."
+            },
+            {
+              "speaker": "You",
+              "text": "Sure you are."
+            }
+          ],
+          "damage": 2,
+          "response": ""
+        },
+        {
+          "move": "High ground",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "CASPIAN used HIGH GROUND"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "It’s not very effective."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "You know what? I’m not engaging in this."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "You’re picking a fight because you’ve got some sort of inferiority complex, and I don’t need to respond to this."
+            },
+            {
+              "speaker": "You",
+              "text": "Quit psychoanalysing me."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I am above petty fights."
+            }
+          ],
+          "damage": 1,
+          "response": ""
+        },
+        {
+          "move": "Forbidden knowledge",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "CASPIAN used FORBIDDEN KNOWLEDGE"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I know you’re trying to start an argument, but it’s very hard to take you seriously when I remember all the dumb shit you did as a kid."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Like, seriously."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Remember when I tricked you into eating literal dog poop because I convinced you it was a wafer?"
+            },
+            {
+              "speaker": "You",
+              "text": "Can you not bring that up? I was three, of course I don’t remember!"
+            },
+            {
+              "speaker": "You",
+              "text": "That whole thing was your fault anyway."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Well I didn’t think you’d actually do it!"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "God, you cried to mum immediately, I got lectured for two hours afterwards."
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        }
+      ],
+      "intermission-50%": [
+            {
+              "speaker": "Narrator",
+              "text": "Health trigger: 50%"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Stop."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Just... stop."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Why can’t we ever seem to have a conversation that doesn’t turn into a fight?"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "... stupid question."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "It’s because dad was always trying to make everything worse."
+            },
+            {
+              "speaker": "You",
+              "text": "Don’t say that about him."
+            },
+            {
+              "speaker": "You",
+              "text": "He wasn’t.... He’s got nothing to do with us."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Of course he does. Even when he’s out of our lives and as good as dead, everything always comes back to him."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "It was unfair, you know?"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "He was always comparing us to each other, like that was going to help anything."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "All it did was fuck us up."
+            },
+            {
+              "speaker": "You",
+              "text": "...He always liked you better, anyway."
+            },
+            {
+              "speaker": "You",
+              "text": "Nothing I did ever seemed to impress him, but you always did better than me anyway."
+            },
+            {
+              "speaker": "You",
+              "text": "Won more competitions, got better grades. You’re a fucking doctor."
+            },
+            {
+              "speaker": "You",
+              "text": "You’re even, somehow, the only cousin that actually knows Vietnamese."
+            },
+            {
+              "speaker": "You",
+              "text": "... not that dad was Vietnamese, but still."
+            },
+            {
+              "speaker": "You",
+              "text": "...It’s not dads fault we fight."
+            },
+            {
+              "speaker": "You",
+              "text": "It’s not really your fault either."
+            },
+            {
+              "speaker": "You",
+              "text": "..."
+            },
+            {
+              "speaker": "You",
+              "text": "I guess that means it’s my fault."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I mean, yeah, it’s mostly your fault, but I wouldn’t say dad is blameless."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Of course it seemed like I was better than you at everything, I’m five years older than you."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "He was comparing you to me when you were thirteen and I was an actual adult."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "And he wasn’t shy with his favouritism either."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I’m only in this family because I was his best friend's son, or whatever."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "He wouldn’t let me forget that either..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I learned Vietnamese because I thought it would make me feel like I was part of all of this... more than part of just him."
+            },
+            {
+              "speaker": "You",
+              "text": "... You are my brother, you know."
+            },
+            {
+              "speaker": "You",
+              "text": "That’s not something I ever really questioned."
+            },
+            {
+              "speaker": "You",
+              "text": "..."
+            },
+            {
+              "speaker": "You",
+              "text": "Not because of you, anyway."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "The whole adoption thing added something to it, though."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Dad kind of ignored you in favour of a boy that wasn’t even his real son."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "... Of course, we know how that turned out."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "He was a hypocrite to the end."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "And his competitive ‘pitting his kids against each other’ bullshit was just another reason he was a shit dad."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "...five years makes a big difference when you’re a kid."
+            },
+            {
+              "speaker": "You",
+              "text": "It’s not like if we lined up our achievements at the same age you weren’t beating me anyway."
+            },
+            {
+              "speaker": "You",
+              "text": "You were winning national academic awards when you were sixteen."
+            },
+            {
+              "speaker": "You",
+              "text": "At sixteen I was barely scraping through with a B average. Not even an A–."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "When I was sixteen I had a complete family and my biggest issue in life was that I was contemplating dying my hair."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "When you were sixteen our uncle died, our parents had just gotten a divorce, we found out mum had an affair, dad wasn’t your real dad and he had decided to ghost you entirely for something completely out of your control and our entire family was honestly just going to shit."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Of course you got worse grades than me then."
+            },
+            {
+              "speaker": "You",
+              "text": "I was always worse than you even before that."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Who gives a fuck about grades anymore? You were better at music and art."
+            },
+            {
+              "speaker": "You",
+              "text": "And we can’t blame dad for his reaction to what happened."
+            },
+            {
+              "speaker": "You",
+              "text": "It wasn’t his fault."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "We can absolutely blame dad for his reaction."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "He was terrible."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "He was favouritest, and judgemental, downright mean at times, never showed up to anything we did and was, retrospectively, kind of homophobic."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "Retrospectively kind of racist too, I don’t know what mum ever saw in him."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "And the way he handled everything was to screw you over."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "you specifically!"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "I don’t understand how you can still defend him."
+            },
+            {
+              "speaker": "You",
+              "text": "I don’t understand how you can just cut him out of your life like he meant nothing at all!"
+            },
+            {
+              "speaker": "You",
+              "text": "He’s our dad!"
+            },
+            {
+              "speaker": "You",
+              "text": "It’s like you flipped a switch and just decided not to love him anymore."
+            },
+            {
+              "speaker": "You",
+              "text": "Sorry I’m an actual human being with real emotions and can’t do that like you can."
+            },
+            {
+              "speaker": "You",
+              "text": "He’s literally the reason you’re in this family in the first place!"
+            },
+            {
+              "speaker": "You",
+              "text": "You wouldn’t even be my brother if it wasn’t for him!"
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "..."
+            },
+            {
+              "speaker": "Caspian",
+              "text": "You really are your fathers’ son."
+            }
+      ],
+      "intermission-25%": [],
+      "win": [
+        {
+          "speaker": "Caspian",
+          "text": "He contacted me, you know?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "When everything went down and he’d left us all."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "After months of watching you staring out the window like you thought he might come back."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He messaged me."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Said he still wanted to be part of my life."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "The life of his friend's son."
+        },
+        {
+          "speaker": "You",
+          "text": "He talked to you?"
+        },
+        {
+          "speaker": "You",
+          "text": "What did you say?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I asked around, and realised he hadn’t talked to you at all."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Not even to say he was actually leaving."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "And I asked him about it."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He said he had no intention of talking to you again at all."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "That you... weren’t his real son."
+        },
+        {
+          "speaker": "You",
+          "text": "...he..."
+        },
+        {
+          "speaker": "You",
+          "text": "...."
+        },
+        {
+          "speaker": "You",
+          "text": ".... you never told me that."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "...How was I ever supposed to tell you that?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He was a hypocrite, an asshole and just... a bad person."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I blocked him on everything. Told him I never wanted to talk to him again and to get the fuck out of m life and away from my family."
+        },
+        {
+          "speaker": "You",
+          "text": "So it was me?"
+        },
+        {
+          "speaker": "You",
+          "text": "...am I the reason you don’t have a father?"
+        },
+        {
+          "speaker": "You",
+          "text": "...was I really such a disappointment that he didn’t even try?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "No, listen to me."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "We don’t have a dad because he was a shit person and we’re better off without him."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "You were fine."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Kind of insecure, but nothing you ever did or didn’t do was the cause of anything that happened with him."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "You were fifteen when it all went down. It was never on you to be the lead in your relationship."
+        },
+        {
+          "speaker": "You",
+          "text": "You’re even better at dealing with this than I am."
+        },
+        {
+          "speaker": "You",
+          "text": "I find that I seem to be shit any family relationships anyway."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Stop thinking about everything we do in terms of beating each other."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I’m not better than you at anything."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I’m just... older."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I was twenty when dad left... I... didn’t really need him anymore."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Him being gone didn’t... hurt me the same way it hurt you."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "That’s why I dealt with it better, not because you’re worse at anything."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m twenty now... and I don’t feel any more mature than I did back then."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m still... over-emotional and insecure, as you put it."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Emotional regulation. That’s what talking to a psychologist is for."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "It’s why i sent you that list of them to check out."
+        },
+        {
+          "speaker": "You",
+          "text": "I kind of thought that text was some passive aggressive attack."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Why would I...?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "No. I really think you could use a psychologist."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "We kind of... dropped the ball on you back then, when we didn’t make you see one."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "It helped me sort through some shit."
+        },
+        {
+          "speaker": "You",
+          "text": "I’ll consider it."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "That’s good enough for me."
+        }
+      ],
+      "lose": [
+        {
+          "speaker": "Caspian",
+          "text": "You’re so frustrating."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I’m trying to be a good person, you know?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "A good brother."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "But you are impossible!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Honestly, no wonder dad left you."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He tried to contact me after he left, did I ever tell you that?"
+        },
+        {
+          "speaker": "You",
+          "text": "... You did not tell me that."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Well he did!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Said he wanted me in his life and that he loved me like a son."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "And I asked him about you, and do you want to know what he said?"
+        },
+        {
+          "speaker": "You",
+          "text": "... I... don’t think–"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Well too bad, I’m telling you anyway."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He said you’re not his real son!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He said you’re just some affair baby and thank god for that!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "He said you were an emotional, insecure disappointment and he’s glad he doesn’t ever have to talk to you again!"
+        },
+        {
+          "speaker": "You",
+          "text": "Caspian... I really–"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "And you know what I did!"
+        },
+        {
+          "speaker": "You",
+          "text": "Stop.. just... calm down–"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I cut him out!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Told him to fuck off and fuck out of my life!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "For you!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I was angry at him FOR YOU!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "And all you do or have ever done for me is pick fights and ignore every attempt I make at a real fucking familial connection!"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Why do I even bother?"
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Why did I ever try to make anything with you at all?"
+        },
+        {
+          "speaker": "You",
+          "text": "I didn’t know..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Of course you didn’t."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "You never paid attention to anyone but yourself."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "..."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "Don’t talk to me."
+        },
+        {
+          "speaker": "Caspian",
+          "text": "I need some time away from you."
+        }
+      ]
+    }
+  ]
 }
