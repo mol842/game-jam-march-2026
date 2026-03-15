@@ -31,6 +31,21 @@
           {
             "move": "snopes",
             "description": "you pull up snopes and wave your phone at him",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used SNOPES \n It was not effective."
+
+              },
+
+
+              {
+                "speaker": "You",
+                "text": "Bro look at this"
+
+              }
+
+            ],
             "damage": 1,
             "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
 
@@ -77,11 +92,27 @@
 
       "their-moves":
       [
+        
         {
           "move": "4chan conspiracy",
           "description": "LOOK AT THIS",
           "damage": 1,
-          "response": "this is... unreadable. you take psychic damage"
+          "response": "this is... unreadable. you take psychic damage",
+          "dialogue":
+          [
+            {
+                "speaker": "Narrator",
+                "text": "Fred used 4chan conspiracy \n It was SUPER effective!"
+
+              },
+
+
+              {
+                "speaker": "You",
+                "text": "this is... unreadable. you take 1 psychic damage"
+
+              }
+        ]     
         }
 
 

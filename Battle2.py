@@ -60,7 +60,10 @@ class Battle2:
       move_info = self.battle_script["your-moves"][move_name][self.move_indices[move_name]]
       self.pending_response = move_info["response"]
       self.enemy.take_damage(move_info["damage"])
-      self.game.dialogue_box.init_dialogue([{"speaker": "You", "text": move_info["description"]}], lambda: self.show_response())
+      if "dialogue" in move_info:
+        self.game.dialogue_box.init_dialogue(move_info["dialogue"], lambda: self.show_response())
+      else:
+       self.game.dialogue_box.init_dialogue([{"speaker": "You", "text": move_info["description"]}], lambda: self.show_response())
       print("SHOWING YOUR MOVE")
 
       
@@ -69,13 +72,17 @@ class Battle2:
         self.move_buttons[move_name].hide()
 
   def enemy_move(self):
-    move = self.their_moves[self.their_move_index]
-    self.game.dialogue_box.init_dialogue([{"speaker": self.enemy.name, "text": move["description"]}], lambda: self.switch_turn())
+    move_info = self.their_moves[self.their_move_index]
+    if "dialogue" in move_info:
+      self.game.dialogue_box.init_dialogue(move_info["dialogue"], lambda: self.switch_turn())
+    else:
+      self.game.dialogue_box.init_dialogue([{"speaker": "Narrator", "text": move_info["description"]}], lambda: self.switch_turn())
+
     self.game.dialogue_box.show()
     print("ENEMY MOVED!")
 
     # TAKE DAMAGE
-    self.player_health -= move["damage"]
+    self.player_health -= move_info["damage"]
     self.player_health_bar.update_health(self.player_health)
     self.their_move_index = (self.their_move_index + 1) % len(self.their_moves)
 
