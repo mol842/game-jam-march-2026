@@ -52,10 +52,19 @@ class Enemy2:
     self.health_bar.original_height = 10 * (self.game.height / 500.0)
     self.health_bar.update_size()
 
-  def draw(self, game):
+  def draw(self, game, scale=1.0, show_health=True):
     self.update_size()
-    game.screen.blit(self.image, (self.x, self.y))
-    self.health_bar.draw(game)
+    if scale != 1.0:
+        scaled_width = int(self.width * scale)
+        scaled_height = int(self.height * scale)
+        scaled_image = pygame.transform.scale(self.image, (scaled_width, scaled_height))
+        scaled_x = self.x - (self.width * (scale - 1) / 2)
+        scaled_y = self.y - (self.height * (scale - 1) / 2)
+        game.screen.blit(scaled_image, (scaled_x, scaled_y))
+    else:
+        game.screen.blit(self.image, (self.x, self.y))
+    if show_health:
+        self.health_bar.draw(game)
 
   def take_damage(self, damage):
     self.curr_health -= damage

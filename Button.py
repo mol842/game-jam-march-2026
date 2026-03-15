@@ -62,17 +62,47 @@ class Button:
   def set_text(self, text): 
     self.text = text
 
+  # def draw(self, game):
+  #   self.update_size()
+  #   # print(self.visible)
+  #   if self.visible:
+  #     pygame.draw.rect(game.screen, Color(self.color), self.rect, 0)
+  #     text = self.font.render(self.text, False, Color(self.text_color))
+  #     text_size = text.get_rect().size
+
+  #     ## fix this it was wayyyy more complicated last game. yay.
+  #     leftPadding = (self.width - text_size[0])/2
+  #     topPadding = (self.height - text_size[1])/2
+
+  #     game.screen.blit(text, (self.x + leftPadding, self.y + topPadding))
+  #     # print(self.text)
+
+
   def draw(self, game):
-    self.update_size()
-    # print(self.visible)
-    if self.visible:
-      pygame.draw.rect(game.screen, Color(self.color), self.rect, 0)
-      text = self.font.render(self.text, False, Color(self.text_color))
-      text_size = text.get_rect().size
+      self.update_size()
+      if self.visible:
+          pygame.draw.rect(game.screen, Color(self.color), self.rect, 0)
+          # YANKED FROM CYANOPHOBIA
+          wrapped_lines = []
+          words = self.text.split()
+          current_line = ""
+          padding = 20 * (self.game.width / 800.0)
+          for word in words:
+              test_line = f"{current_line} {word}".strip()
+              if self.font.render(test_line, False, Color(self.text_color)).get_width() <= self.width - padding * 2:
+                  current_line = test_line
+              else:
+                  if current_line:
+                      wrapped_lines.append(current_line)
+                  current_line = word
+          if current_line:
+              wrapped_lines.append(current_line)
 
-      ## fix this it was wayyyy more complicated last game. yay.
-      leftPadding = (self.width - text_size[0])/2
-      topPadding = (self.height - text_size[1])/2
+          line_height = self.font.get_height()
+          total_text_height = len(wrapped_lines) * line_height
+          start_y = self.y + (self.height - total_text_height) / 2
 
-      game.screen.blit(text, (self.x + leftPadding, self.y + topPadding))
-      # print(self.text)
+          for i, line in enumerate(wrapped_lines):
+              rendered = self.font.render(line, False, Color(self.text_color))
+              x = self.x + (self.width - rendered.get_width()) / 2
+              game.screen.blit(rendered, (x, start_y + i * line_height))

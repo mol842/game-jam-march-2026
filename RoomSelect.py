@@ -10,7 +10,7 @@ class RoomSelect:
     self.room_names = ["lounge", "library", "verandah", "kitchen"]
     self.current_room = None
     self.room_enemies = [
-      ["fred", "fred"],
+      ["Louis", "fred"],
       ["fred", "fred"],
       ["fred", "fred"] ,
       ["fred", "fred"]

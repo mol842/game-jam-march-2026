@@ -89,11 +89,11 @@ class Battle2:
 
 
   def show_response(self):
-    print("SHOWING THEIR RESPONSE")
-    self.game.dialogue_box.init_dialogue([{"speaker": self.enemy.name, "text": self.pending_response}], lambda: self.switch_turn())
+    # print("SHOWING THEIR RESPONSE")
+    # self.game.dialogue_box.init_dialogue([{"speaker": self.enemy.name, "text": self.pending_response}], lambda: self.switch_turn())
 
-    self.pending_response = None
-    self.game.dialogue_box.show()
+    # self.pending_response = None
+    # self.game.dialogue_box.show()
     self.switch_turn()
 
   def set_stage(self, stage):
@@ -153,6 +153,7 @@ class Battle2:
         if self.end_callback:
           self.end_callback()
         else:
+          self.stage = "stopped"
           self.game.start_room_select()
           # self.game.mode = "room_select"
 
@@ -165,9 +166,11 @@ class Battle2:
 
   def draw(self, game):
     # print(self.stage)
-    if (self.stage != "end"):
+    if (self.stage != "stopped"):
+      show_health = not self.game.dialogue_box.visible
+      scale = 2.0 if self.game.dialogue_box.visible else 1.0
+      self.enemy.draw(game, scale=scale, show_health=show_health)
       if self.stage == "battle":
-        self.enemy.draw(game)
         if self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
           self.player_health_bar.draw(game)
           for btn in self.move_buttons.values():
