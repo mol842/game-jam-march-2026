@@ -11,13 +11,13 @@ class Battle2:
     self.end_callback = end_callback
     with open(f"enemies/{enemy_name}.json", 'r') as f:
       self.data = json.load(f)
-    self.enemy = Enemy2(self.data)
+    self.enemy = Enemy2(self.data, self.game)
     self.battle_script = self.data['battles'][0]
 
     self.stage = "intro"
     self.player_start_health = 10
     self.player_health = self.player_start_health
-    self.player_health_bar = HealthBar(100, 400, 200, 20, self.player_start_health, self.player_health)
+    self.player_health_bar = HealthBar(self.game, 100, 400, 200, 20, self.player_start_health, self.player_health)
 
     self.turn = 'player'
     self.enemy_moveion_time = 0
@@ -34,7 +34,7 @@ class Battle2:
     for i, move_name in enumerate(move_names):
       if move_name in self.battle_script["your-moves"]:
         # x, y = positions[i]
-        self.move_buttons[move_name] = Button(x, start_y + i*(button_height + 20), button_width, button_height, move_name, lambda mn=move_name: self.player_move(mn))
+        self.move_buttons[move_name] = Button(self.game, x, start_y + i*(button_height + 20), button_width, button_height, move_name, lambda mn=move_name: self.player_move(mn))
         # self.move_buttons[move_name] = Button(x, y, 120, 50, move_name, lambda mn=move_name: self.player_move(mn))
         self.move_indices[move_name] = 0
 

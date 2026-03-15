@@ -18,11 +18,11 @@ class RoomSelect:
     self.room_buttons = []
     ### SQUARE OF BUTTTONSNSSS
     for i in range(4):
-      button = Button(200 + (i % 2) * 200, 150 + (i // 2) * 100, 150, 50, f"Room {i+1}", lambda idx=i: self.start_room(idx))
+      button = Button(self.game, 200 + (i % 2) * 200, 150 + (i // 2) * 100, 150, 50, f"Room {i+1}", lambda idx=i: self.start_room(idx))
       self.room_buttons.append(button)
     
     # PROCEED BUTTON BUT HIDDEN (REVEALED WHEN YOUVE DONE ALL THE ROOMS)
-    self.proceed_button = Button(350, 400, 100, 50, "Proceed", self.go_to_end)
+    self.proceed_button = Button(self.game, 350, 400, 100, 50, "Proceed", self.go_to_end)
     # self.proceed_button.hide()
 
   def start_room(self, room_index):
@@ -48,7 +48,7 @@ class RoomSelect:
       self.current_enemy_index += 1
 
   def battle_ended(self):
-    # Called when a battle ends, start next enemy or return to room select
+    # GO TO NEXT ENEMY OR ROOM SELECT
     if self.current_enemy_index < 3:
       self.start_next_battle()
     else:

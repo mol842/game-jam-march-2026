@@ -20,6 +20,10 @@ class Game:
     self.buttons = []
     self.background = None
     self.battle = None
+
+    self.width = 800
+    self.height = 500
+
     self.start_page = StartPage(self)
     self.room_select = RoomSelect(self)
     self.end_screen = EndScreen(self)
@@ -27,7 +31,7 @@ class Game:
     self.dialogue_box = DialogueBox(self)
     self.buttons.append(self.dialogue_box)
 
-    self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
     pygame.display.set_caption("hmmm")
     clock = pygame.time.Clock()
     clock.tick(60)
@@ -85,6 +89,17 @@ class Game:
 
       if event.type == pygame.QUIT:
         self.stopped = True
+
+
+      ## IF RESIZE CHANGE EVRYTHING
+      if event.type == pygame.VIDEORESIZE:
+        self.width = event.w
+        self.height = event.h
+        self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
+        if hasattr(self.start_page, 'update_background'):
+          self.start_page.update_background()
+        if hasattr(self.end_screen, 'update_background'):
+          self.end_screen.update_background()
 
       if self.mode == "start_page":
         self.start_page.handle_event(event, self)

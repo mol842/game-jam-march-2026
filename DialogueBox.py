@@ -3,7 +3,7 @@ from Button import *
 
 class DialogueBox(Button):
   def __init__(self, game):
-    super().__init__(100, 300, 500, 200, "hello", self.next_dialogue)
+    super().__init__(game, 100, 300, 600, 200, "hello", self.next_dialogue)
     self.game = game
     self.dialogue_list = []
     self.dialogue_index = 0

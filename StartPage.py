@@ -4,12 +4,19 @@ from Button import *
 class StartPage:
   def __init__(self, game):
     self.game = game
-    self.background = None
+    self.original_background = None
     try:
-      self.background = pygame.image.load("images/start_background.png")
+      self.original_background = pygame.image.load("images/start_background.png")
     except:
       pass 
-    self.start_button = Button(0, 0, 800, 500, "", lambda: self.start_game())
+    self.start_button = Button(self.game, 0, 0, 800, 500, "", lambda: self.start_game())
+    self.update_background()
+
+  def update_background(self):
+    if self.original_background:
+      self.background = pygame.transform.scale(self.original_background, (self.game.width, self.game.height))
+    else:
+      self.background = None
 
   def start_game(self):
     self.game.start_room_select()

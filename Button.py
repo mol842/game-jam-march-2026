@@ -3,11 +3,12 @@ import os
 from pygame.locals import Color
 
 class Button:
-  def __init__(self, x, y, width, height, text, action, color=(93, 93, 93), font=None):
-    self.x = x
-    self.y = y
-    self.width = width
-    self.height = height
+  def __init__(self, game, x, y, width, height, text, action, color=(93, 93, 93), font=None):
+    self.game = game
+    self.original_x = x
+    self.original_y = y
+    self.original_width = width
+    self.original_height = height
 
     self.color = color
     self.text = text
@@ -18,7 +19,16 @@ class Button:
 
     self.action = action
 
-    self.rect = pygame.Rect(x, y, width, height)
+    self.update_size()
+
+  def update_size(self):
+    self.x = self.original_x * (self.game.width / 800.0)
+    self.y = self.original_y * (self.game.height / 500.0)
+    self.width = self.original_width * (self.game.width / 800.0)
+    self.height = self.original_height * (self.game.height / 500.0)
+    self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
+    font_size = 28 * (self.game.height / 500.0)
+    self.font = pygame.font.Font(None, int(font_size)) if not self.font or self.font.get_height() != int(font_size) else self.font
 
   def handle_event(self, event, game):
     if event.type == pygame.MOUSEBUTTONUP and event.button == 1 and self.clickable:
@@ -53,6 +63,7 @@ class Button:
     self.text = text
 
   def draw(self, game):
+    self.update_size()
     # print(self.visible)
     if self.visible:
       pygame.draw.rect(game.screen, Color(self.color), self.rect, 2)

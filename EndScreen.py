@@ -19,7 +19,7 @@ class EndScreen:
     ]
     self.dialogue_index = 0
     
-    self.next_button = Button(350, 400, 100, 50, "Next", self.next_dialogue)
+    self.next_button = Button(self.game, 350, 400, 100, 50, "Next", self.next_dialogue)
 
   def start(self):
     print("STARTING ENDING")
