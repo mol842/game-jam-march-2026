@@ -14,7 +14,7 @@ class DialogueBox(Button):
       self.loaded_fonts[speaker] = font_path
     self.current_speaker = "You"
 
-    super().__init__(game, 100, 300, 600, 200, "hello", self.next_dialogue)
+    super().__init__(game, 100, 300, 600, 150, "hello", self.next_dialogue)
     self.game = game
     self.dialogue_list = []
     self.dialogue_index = 0

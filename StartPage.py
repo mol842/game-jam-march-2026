@@ -5,18 +5,8 @@ class StartPage:
   def __init__(self, game):
     self.game = game
     self.original_background = None
-    try:
-      self.original_background = pygame.image.load("images/start_background.png")
-    except:
-      pass 
+    game.set_background_image("start_background.png")
     self.start_button = Button(self.game, 0, 0, 800, 500, "", lambda: self.start_game())
-    self.update_background()
-
-  def update_background(self):
-    if self.original_background:
-      self.background = pygame.transform.scale(self.original_background, (self.game.width, self.game.height))
-    else:
-      self.background = None
 
   def start_game(self):
     self.game.start_room_select()
@@ -24,13 +14,7 @@ class StartPage:
   def handle_event(self, event, game):
     self.start_button.handle_event(event, game)
 
-  def draw(self, game):
-    if self.background:
-      game.screen.blit(self.background, (0, 0))
-    else:
-      # just use colour no picture yet yay
-      game.screen.fill((100, 150, 200))
-    
+  def draw(self, game):    
     font = pygame.font.Font(None, 48)
     text = font.render("START!", True, (255, 255, 255))
     text_rect = text.get_rect(center=(400, 250))

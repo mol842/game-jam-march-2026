@@ -7,7 +7,8 @@ class EndScreen:
     self.background = None
     self.final_image = None
     self.showing_image = False
-    
+
+
     # self.background = pygame.image.load("images/end_background.png")
     # self.final_image = pygame.image.load("images/final_image.png")
   
@@ -23,6 +24,8 @@ class EndScreen:
 
   def start(self):
     print("STARTING ENDING")
+    self.game.set_background_image("end_background.png")
+
     self.dialogue_index = 0
     self.showing_image = False
     self.next_button.show()
@@ -42,11 +45,6 @@ class EndScreen:
       self.next_button.handle_event(event, game)
 
   def draw(self, game):
-    if self.background:
-      game.screen.blit(self.background, (0, 0))
-    else:
-      game.screen.fill((0, 0, 0)) 
-
     font = pygame.font.Font(None, 24)
 
     ## FINAL ANIMAL IMAGE

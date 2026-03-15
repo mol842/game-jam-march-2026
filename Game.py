@@ -7,9 +7,9 @@ from StartPage import *
 from RoomSelect import *
 from EndScreen import *
 
-WIDTH = 800
-HEIGHT = 500
-
+WIDTH = 1400
+HEIGHT = 800
+GAME_TITLE = "hmmm"
 class Game:
   def __init__(self):
     pygame.init()
@@ -21,8 +21,8 @@ class Game:
     self.background = None
     self.battle = None
 
-    self.width = 800
-    self.height = 500
+    self.width = WIDTH
+    self.height = HEIGHT
 
     self.start_page = StartPage(self)
     self.room_select = RoomSelect(self)
@@ -32,7 +32,7 @@ class Game:
     self.buttons.append(self.dialogue_box)
 
     self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
-    pygame.display.set_caption("hmmm")
+    pygame.display.set_caption(GAME_TITLE)
     clock = pygame.time.Clock()
     clock.tick(60)
 
@@ -41,6 +41,21 @@ class Game:
     self.mode = "start_page"
     print('STARTED')
 
+  def set_background_image(self, filename):
+    try:
+      print("SETTING BACKGROUND IMAGE TO", filename)
+      self.background = pygame.image.load(f"images/{filename}")
+
+    except:
+      print("didnt load background oops") 
+    self.update_background()
+
+
+  def update_background(self):
+    if self.background:
+      self.background = pygame.transform.scale(self.background, (self.width, self.height))
+    else:
+      self.background = None
 
   def init_dialogue(self, dialogue):
     self.dialogue_box.init_dialogue(dialogue)
@@ -50,6 +65,8 @@ class Game:
     self.mode = "battle"
 
   def start_room_select(self):
+    print("STARTING ROOM SELECTIONs")
+    self.set_background_image("house.png")
     self.mode = "room_select"
 
   def start_end_screen(self):
@@ -59,7 +76,7 @@ class Game:
 
   def draw(self):
     # BACKGROUND
-    self.screen.fill((255, 255, 255))
+    # self.screen.fill((255, 255, 255))
     if (self.background):
       self.screen.blit(self.background, (0, 0))
 
@@ -96,10 +113,11 @@ class Game:
         self.width = event.w
         self.height = event.h
         self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
-        if hasattr(self.start_page, 'update_background'):
-          self.start_page.update_background()
-        if hasattr(self.end_screen, 'update_background'):
-          self.end_screen.update_background()
+        # if hasattr(self.start_page, 'update_background'):
+        #   self.start_page.update_background()
+        # if hasattr(self.end_screen, 'update_background'):
+        #   self.end_screen.update_background()
+        self.update_background()
 
       if self.mode == "start_page":
         self.start_page.handle_event(event, self)

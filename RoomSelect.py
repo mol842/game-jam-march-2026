@@ -15,6 +15,7 @@ class RoomSelect:
     ]
     self.current_enemy_index = 0
     
+
     self.room_buttons = []
     ### SQUARE OF BUTTTONSNSSS
     for i in range(4):
@@ -65,8 +66,6 @@ class RoomSelect:
       self.proceed_button.handle_event(event, game)
 
   def draw(self, game):
-    game.screen.fill((50, 50, 50))
-    
     # TITLE
     font = pygame.font.Font(None, 36)
     title = font.render("Select a Room", True, (255, 255, 255))
@@ -78,10 +77,10 @@ class RoomSelect:
       button.draw(game)
 
     # ENEMY NAMES JUST FOR DEBUGGING
-    small_font = pygame.font.Font(None, 20)
-    for i in range(4):
-      enemy_text = f"Enemies: {', '.join(self.room_enemies[i])}"
-      text = small_font.render(enemy_text, True, (200, 200, 200))
-      game.screen.blit(text, (200 + (i % 2) * 200, 210 + (i // 2) * 100))
+    # small_font = pygame.font.Font(None, 20)
+    # for i in range(4):
+    #   enemy_text = f"Enemies: {', '.join(self.room_enemies[i])}"
+    #   text = small_font.render(enemy_text, True, (200, 200, 200))
+    #   game.screen.blit(text, (200 + (i % 2) * 200, 210 + (i // 2) * 100))
     
     self.proceed_button.draw(game)
