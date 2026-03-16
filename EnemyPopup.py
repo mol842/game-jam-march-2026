@@ -139,19 +139,20 @@ class EnemyPopup(Popup):
     )
 
     fields = [
-      ("Type",         self.enemy.type),
-      ("Relationship", self.enemy.relationship),
-      ("Description",  self.enemy.description),
+      ("Type",         [self.enemy.type]),
+      ("Relationship", [self.enemy.relationship]),
+      ("Description",  [part.strip() for part in self.enemy.description.split("-")] if "-" in self.enemy.description else [self.enemy.description]),
     ]
 
     y = body_y
-    for label, value in fields:
+    for label, values in fields:
       label_surf = self.font_label.render(f"{label}:", True, TEXT_MUTED)
-      value_surf = self.font_body.render(value, True, self.text_white)
       label_w = label_surf.get_width() + int(8 * sx)
       card.blit(label_surf, (text_x, y))
-      card.blit(value_surf, (text_x + label_w, y))
-      y += line_h
+      for value in values:
+        value_surf = self.font_body.render(value, True, self.text_white)
+        card.blit(value_surf, (text_x + label_w, y))
+        y += line_h
 
     game.screen.blit(card, (self.bg_rect.x, self.bg_rect.y))
 
