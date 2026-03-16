@@ -127,13 +127,13 @@ class Battle2:
       ## HEALTH CUTSCENES
       if self.enemy.curr_health <= (0.5 * self.enemy.start_health) and not self.intermission_50_triggered and not self.game.dialogue_box.dialogue_list:
         self.intermission_50_triggered = True
-        self.stage = "intermisison-50%"
-        self.game.dialogue_box.init_dialogue(self.battle_script["intermisison-50%"], lambda: self.set_stage("battle"))
+        self.stage = "intermission-50%"
+        self.game.dialogue_box.init_dialogue(self.battle_script["intermission-50%"], lambda: self.set_stage("battle"))
       
-      elif self.enemy.curr_health <= (0.25 * self.enemy.start_health) and not self.intermission_25_triggered and not self.game.dialogue_box.dialogue_list:
-        self.intermission_25_triggered = True
-        self.stage = "intermisison-25%"
-        self.game.dialogue_box.init_dialogue(self.battle_script["intermisison-25%"], lambda: self.set_stage("battle"))
+      # elif self.enemy.curr_health <= (0.25 * self.enemy.start_health) and not self.intermission_25_triggered and not self.game.dialogue_box.dialogue_list:
+      #   self.intermission_25_triggered = True
+      #   self.stage = "intermission-25%"
+      #   self.game.dialogue_box.init_dialogue(self.battle_script["intermission-25%"], lambda: self.set_stage("battle"))
 
       ## WIN / LOSE!
       elif self.enemy.curr_health <= 0 and not self.game.dialogue_box.dialogue_list:
@@ -179,13 +179,13 @@ class Battle2:
       # scale = 2.0 if self.game.dialogue_box.visible else 1.0
       scale = 1.0
       show_health = True
-      if self.game.dialogue_box.visible and self.stage != "battle" and self.stage !="intermisison-50%":
+      if self.game.dialogue_box.visible and self.stage != "battle" and self.stage !="intermission-50%":
         show_health = False
         scale = 2.0
       self.enemy.draw(game, scale=scale, show_health=show_health)
 
 
-      if self.stage == "battle" or self.stage =="intermisison-50%":
+      if self.stage == "battle" or self.stage =="intermission-50%":
         self.player_health_bar.draw(game)
         if self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
           for btn in self.move_buttons.values():

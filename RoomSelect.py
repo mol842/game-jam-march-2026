@@ -2,13 +2,17 @@ import pygame
 from Button import *
 from Battle2 import *
 from PopupConfirm import Popup
-
+import math
 class RoomSelect:
   def __init__(self, game):
     self.game = game
+
+    # using for colours
+    self.font_mapping = json.load(open('fonts/font_mapping.json'))
+
     self.visited_rooms = [False, False, False, False]
     # photo names are also uhhhhhhhhh the same .png
-    self.room_names = ["lounge", "library", "verandah", "kitchen"]
+    self.room_names = ["lounge", "library", "patio", "kitchen"]
     self.current_room = None
     self.room_enemies = [
       ["Louis", "Linh"],
@@ -16,30 +20,89 @@ class RoomSelect:
       ["Caspian", "fred"] ,
       ["Thi Há", "fred"]
     ]
-    self.current_enemy_index = 0
-    
 
-    self.room_buttons = []
-    ### SQUARE OF BUTTTONSNSSS
-    for i in range(4):
-      button = Button(self.game, 200 + (i % 2) * 200, 150 + (i // 2) * 100, 150, 50, self.room_names[i], lambda idx=i: self.start_room(idx))
-      self.room_buttons.append(button)
+    self.current_room = None
+    self.visited_rooms = [False, False, False, False, False, False]
+    self.room_enemies = [
+      ["Louis"],
+      ["Linh"],
+      ["Lia"],
+      ["Caspian"] ,
+      ["Thi Há"],
+      ["Quân"],
+    ]
+    self.room_names = [
+      "Lounge",
+      "Library",
+      "Kitchen",
+      "Study" ,
+      "Dining Room",
+      "Patio",
+    ]
+
+    self.current_enemy_index = 0
+
+
+    # self.room_buttons = []
+    # ### SQUARE OF BUTTTONSNSSS
+    # for i in range(4):
+    #   button = Button(self.game, 200 + (i % 2) * 200, 150 + (i // 2) * 100, 150, 50, self.room_names[i], lambda idx=i: self.start_room(idx))
+    #   self.room_buttons.append(button)
     
-    # PROCEED BUTTON BUT HIDDEN (REVEALED WHEN YOUVE DONE ALL THE ROOMS)
-    self.proceed_button = Button(self.game, 300, 400, 200, 50, "Leave the party", self.handle_proceed_click, color=(48, 25, 52))
-    # self.proceed_button.hide()
+    # # PROCEED BUTTON BUT HIDDEN (REVEALED WHEN YOUVE DONE ALL THE ROOMS)
+    # self.proceed_button = Button(self.game, 300, 400, 200, 50, "Leave the party", self.handle_proceed_click, color=(48, 25, 52))
+    # # self.proceed_button.hide()
+    # self.popup = None
+
+    # semicircle of buttons
+    self.room_buttons = []
+    num_rooms = len(self.room_names)
+    btn_w, btn_h = 130, 45
+ 
+    start_angle = math.radians(200)
+    end_angle   = math.radians(340)
+    # oh god
+    cx, cy = 400, 410   # centre of the arc (raw 800x500 coords)
+    rx, ry = 300, 300   # horizontal and vertical radii
+ 
+    for i in range(num_rooms):
+      t = i / (num_rooms - 1)
+      angle = start_angle + t * (end_angle - start_angle)
+      bx = cx + rx * math.cos(angle) - btn_w / 2
+      by = cy + ry * math.sin(angle) - btn_h / 2
+
+      button_colour = (99,99,99)
+      if self.room_enemies[i][0] in self.font_mapping:
+        button_colour = eval(self.font_mapping[self.room_enemies[i][0]]["box-colour"])
+      button = Button(
+        self.game, bx, by, btn_w, btn_h,
+        self.room_names[i],
+        lambda idx=i: self.start_room(idx),
+        color=button_colour
+      )
+      self.room_buttons.append(button)
+ 
+    self.proceed_button = Button(
+      self.game, 400 - 100, 440, 200, 45,
+      "Leave the party", self.handle_proceed_click,
+      color=(48, 25, 52)
+    )
     self.popup = None
+ 
+
+
 
   def start_room(self, room_index):
     if not self.visited_rooms[room_index]:
       self.visited_rooms[room_index] = True
       self.room_buttons[room_index].disable()
+      self.room_buttons[room_index].color = (99,99,99)
       self.room_buttons[room_index].set_text(f"{self.room_names[room_index]}\n(VISITED)")
       self.current_room = room_index
       self.current_enemy_index = 0
       self.start_next_battle()
       
-      self.game.set_background_image(f"{self.room_names[self.current_room]}.png")
+      self.game.set_background_image(f"rooms/{self.room_names[self.current_room]}.png")
 
       # Check if all rooms visited
       if all(self.visited_rooms):
@@ -97,10 +160,19 @@ class RoomSelect:
 
   def draw(self, game):
     # TITLE
-    font = pygame.font.Font(None, int(36 * (game.height / 500.0)))
-    title = font.render("Select a Room", True, (255, 255, 255))
-    game.screen.blit(title, (int(350 * game.width / 800), int(50 * game.height / 500)))
+    # font = pygame.font.Font(None, int(36 * (game.height / 500.0)))
+    # title = font.render("Select a Room", True, (255, 255, 255))
+    # game.screen.blit(title, (int(350 * game.width / 800), int(50 * game.height / 500)))
     
+    sw, sh = game.width, game.height
+    sx, sy = sw / 800.0, sh / 500.0
+ 
+    # TITLE (centred)
+    font = pygame.font.Font(None, int(36 * sy))
+    title = font.render("Select a Room", True, (255, 255, 255))
+    game.screen.blit(title, (sw // 2 - title.get_width() // 2, int(30 * sy)))
+
+
     # TALLY
     tally_font = pygame.font.Font(None, int(28 * (game.height / 500.0)))
     small_font = pygame.font.Font(None, int(20 * (game.height / 500.0)))

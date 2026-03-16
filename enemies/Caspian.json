@@ -5,7 +5,7 @@
   "relationship": "Your adopted brother",
   "start_health": 10,
   "x": 500,
-  "y": 300,
+  "y": 100,
   "width": 200,
   "height": 300,
   "image": "Caspian.png",
@@ -748,8 +748,13 @@
             },
             {
               "speaker": "Caspian",
-              "text": "When you were sixteen our uncle died, our parents had just gotten a divorce, we found out mum had an affair, dad wasn’t your real dad and he had decided to ghost you entirely for something completely out of your control and our entire family was honestly just going to shit."
+              "text": "When you were sixteen our uncle died, our parents had just gotten a divorce, we found out mum had an affair..."
             },
+            {
+              "speaker": "Caspian",
+              "text": "...dad wasn’t your real dad and he had decided to ghost you entirely for something completely out of your control and our entire family was honestly just going to shit."
+            },
+
             {
               "speaker": "Caspian",
               "text": "Of course you got worse grades than me then."

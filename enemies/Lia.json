@@ -118,7 +118,7 @@
       ],
 
 
-      "intermisison-50%":       [
+      "intermission-50%":       [
         {
           "speaker": "You",
           "text": "you reached 50% health"
@@ -126,7 +126,7 @@
       ],
 
       
-      "intermisison-25%":       [
+      "intermission-25%":       [
         {
           "speaker": "You",
           "text": "you reached 25% health"

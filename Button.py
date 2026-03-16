@@ -30,9 +30,9 @@ class Button:
     font_size = 28 * (self.game.height / 500.0)
     self.font = pygame.font.Font(None, int(font_size)) if not self.font or self.font.get_height() != int(font_size) else self.font
 
-  def handle_event(self, event, game):
-    if event.type == pygame.MOUSEBUTTONUP and event.button == 1 and self.clickable:
-      if self.rect.collidepoint(event.pos):
+  def handle_event(self, event, game, force=False):
+    if force or event.type == pygame.MOUSEBUTTONUP and event.button == 1 and self.clickable:
+      if force or self.rect.collidepoint(event.pos):
         print('CLICKED A BUTTON: ', self.text)
         if (self.action):
           print("RUNNING ACTION", self.action.__name__)
