@@ -87,18 +87,6 @@ class Enemy2:
     if show_health:
         self.health_bar.draw(game)
 
-    # font = pygame.font.Font(None, int(28 * (game.height / 500.0)))
-    # for popup in self.damage_popups[:]:
-    #     alpha = min(255, popup['timer'] * 6)
-    #     progress = 1 - (popup['timer'] / 60)
-    #     draw_y = popup['y'] - progress * 40  # floats upward
-    #     text = font.render(popup['text'], True, (255, 80, 80))
-    #     text.set_alpha(alpha)
-    #     rect = text.get_rect(center=(popup['x'], draw_y))
-    #     game.screen.blit(text, rect)
-    #     popup['timer'] -= 1
-    #     if popup['timer'] <= 0:
-    #         self.damage_popups.remove(popup)
 
   def take_damage(self, damage):
     self.curr_health -= damage

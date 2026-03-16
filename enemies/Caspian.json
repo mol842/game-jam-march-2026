@@ -4,10 +4,10 @@
   "type": "",
   "relationship": "Your adopted brother",
   "start_health": 10,
-  "x": 500,
+  "x": 600,
   "y": 100,
-  "width": 200,
-  "height": 300,
+  "width": 140,
+  "height": 180,
   "image": "Caspian.png",
   "battles": [
     {

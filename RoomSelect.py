@@ -57,7 +57,7 @@ class RoomSelect:
     # semicircle of buttons
     self.room_buttons = []
     num_rooms = len(self.room_names)
-    btn_w, btn_h = 130, 45
+    btn_w, btn_h = 130, 100
  
     start_angle = math.radians(200)
     end_angle   = math.radians(340)
@@ -72,13 +72,16 @@ class RoomSelect:
       by = cy + ry * math.sin(angle) - btn_h / 2
 
       button_colour = (99,99,99)
+      font = None
       if self.room_enemies[i][0] in self.font_mapping:
         button_colour = eval(self.font_mapping[self.room_enemies[i][0]]["box-colour"])
+        font = self.font_mapping[self.room_enemies[i][0]]['font']
       button = Button(
         self.game, bx, by, btn_w, btn_h,
         self.room_names[i],
         lambda idx=i: self.start_room(idx),
-        color=button_colour
+        color=button_colour,
+        font=font
       )
       self.room_buttons.append(button)
  

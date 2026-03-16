@@ -1,7 +1,7 @@
 {
   "name": "Linh",
   "description": "inland Taipan snake",
-  "type": "",
+  "type": "Psychic",
   "relationship": "Your mother",
   "start_health": 10,
   "x": 600,
@@ -9,146 +9,1043 @@
   "width": 150,
   "height": 300,
   "image": "Linh.png",
-  "battles":
-  [
+  "battles": [
     {
-      "intro":
-      [
+      "intro": [
         {
           "speaker": "You",
-          "text": "whatevereer"
+          "text": "Hey mum. It’s been a while since we met up in person."
         },
         {
-          "speaker": "Fred",
-          "text": "whatever2.0"
+          "speaker": "You",
+          "text": "Seems like you’ve been doing well."
+        },
+        {
+          "speaker": "You",
+          "text": "As always."
+        },
+        {
+          "speaker": "Linh",
+          "text": "So the prodigal son returns…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "Seems like you’ve got something to say."
+        },
+        {
+          "speaker": "Linh",
+          "text": "a s always."
+        },
+        {
+          "speaker": "You",
+          "text": "You’re as delightful as you ever are, mother."
+        },
+        {
+          "speaker": "Linh",
+          "text": "How’s music school?"
+        },
+        {
+          "speaker": "You",
+          "text": "Uni is good. How’s, what’s his name? Noah?"
+        },
+        {
+          "speaker": "Linh",
+          "text": "Perfectly cordial and happy to meet you, if you wanted."
+        },
+        {
+          "speaker": "Linh",
+          "text": "He’s already met Caspian."
+        },
+        {
+          "speaker": "You",
+          "text": "I’d rather not, thanks."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "How long are you going to avoid this?"
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t know. How about forever?"
+        },
+        {
+          "speaker": "You",
+          "text": "Forever seems good to me."
+        },
+        {
+          "speaker": "Linh",
+          "text": "He may not have raised you or anything, but he’s still your father."
+        },
+        {
+          "speaker": "Linh",
+          "text": "In a sense."
+        },
+        {
+          "speaker": "Linh",
+          "text": "He’s wanted to meet you for years."
+        },
+        {
+          "speaker": "You",
+          "text": "I have a dad already, and don’t particularly need another one."
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t think he really has a say in what I do or who I talk to."
+        },
+        {
+          "speaker": "You",
+          "text": "And your opinion on this matter is not exactly something I want to hear either."
+        },
+        {
+          "speaker": "Linh",
+          "text": "For gods sake, you’re not a teenager anymore."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Can we get past the blame game for a second to actually talk about this like adults now?"
+        },
+        {
+          "speaker": "You",
+          "text": "‘Blame game’ implies there’s actually a chance this was my fault."
+        },
+        {
+          "speaker": "You",
+          "text": "It was all your fault. The whole thing."
+        },
+        {
+          "speaker": "You",
+          "text": "You had a fucking affair, mum, it’s not hard to comprehend."
+        },
+        {
+          "speaker": "Linh",
+          "text": "So we’re not going to act like adult."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "fine."
         }
-
       ],
-
-      "your-moves":
-      {
+      "your-moves": {
         "Facts & Logic": [
           {
-            "move": "snopes",
-            "description": "you pull up snopes and wave your phone at him",
+            "move": "move_1",
+            "description": "",
             "dialogue": [
               {
                 "speaker": "Narrator",
-                "text": "You used SNOPES \n It was not effective."
-
+                "text": "You used FACTS AND LOGIC"
               },
-
-
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
               {
                 "speaker": "You",
-                "text": "Bro look at this"
-
+                "text": "Let's lay out the facts, shall we?"
+              },
+              {
+                "speaker": "You",
+                "text": "You married my dad, with all the vows and commitment that entails."
+              },
+              {
+                "speaker": "You",
+                "text": "Then had an affair, which resulted in me."
+              },
+              {
+                "speaker": "You",
+                "text": "Then lied about that for fifteen fucking years."
+              },
+              {
+                "speaker": "You",
+                "text": "Then, when you get caught, it ruins our entire family and I get upset, you tell me I’m acting like a child?"
               }
-
             ],
-            "damage": 1,
-            "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
-
+            "damage": 0,
+            "response": ""
           },
-
           {
-            "move": "wikipedia",
-            "description": "you pull up wikipedia and wave your phone at him",
-            "damage": 1,
-            "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
-          }
-
-
-        ],
-
-        "Blatant Lie": [
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "Let's dig further, actually."
+              },
+              {
+                "speaker": "You",
+                "text": "You have an affair with this Noah guy, twenty years ago."
+              },
+              {
+                "speaker": "You",
+                "text": "Recklessly enough that you have an affair baby."
+              },
+              {
+                "speaker": "You",
+                "text": "He’s still around fifteen years later, even twenty years later, and you think I’m being unreasonable in not wanting anything to do with the guy?"
+              },
+              {
+                "speaker": "You",
+                "text": "Of course I fucking hate him, are you serious?"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
           {
-            "move": "lie1",
-            "description": "You tell a blatant lie",
-            "damage": 5,
-            "response": "WHAT? THAT'S NOT TRUE!"
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "I’m being unsympathetic, am I?"
+              },
+              {
+                "speaker": "You",
+                "text": "Sorry that your actions have consequences, particularly to your relationship with the people you actively screw over."
+              },
+              {
+                "speaker": "You",
+                "text": "How very unkind of me not to put aside everything all the issue that you caused me to focus on you."
+              },
+              {
+                "speaker": "You",
+                "text": "I dare I, the child, not compromise for you."
+              },
+              {
+                "speaker": "You",
+                "text": "Is that what you’re saying? Because it sure sounds like it."
+              }
+            ],
+            "damage": 0,
+            "response": ""
           }
         ],
-
         "Emotional Manipulation": [
           {
-            "move": "manip1",
-            "description": "You manipulate emotionally",
-            "damage": 10,
-            "response": "HOW COULD YOU!"
-          }
-        ],
-
-        "Unnecessary Escalation": [
-          {
-            "move": "esc1",
-            "description": "You escalate unnecessarily",
-            "damage": 10,
-            "response": "ARGGHIUUUGH!"
-          }
-        ]
-
-      },
-
-      "their-moves":
-      [
-        
-        {
-          "move": "4chan conspiracy",
-          "description": "LOOK AT THIS",
-          "damage": 1,
-          "response": "this is... unreadable. you take psychic damage",
-          "dialogue":
-          [
-            {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
                 "speaker": "Narrator",
-                "text": "Fred used 4chan conspiracy \n It was SUPER effective!"
-
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It wasn’t very effective"
               },
               {
                 "speaker": "You",
-                "text": "this is... unreadable. you take 1 psychic damage"
-
+                "text": "You’re always trying to put the blame on me for perfectly reasonable responses to the shit you do."
+              },
+              {
+                "speaker": "You",
+                "text": "Every time I get angry at you for literally tearing this family apart you tell me I’m being immature or self-centred."
+              },
+              {
+                "speaker": "You",
+                "text": "Am I really that much of a problem to you?"
               }
-        ]     
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It wasn’t very effective"
+              },
+              {
+                "speaker": "You",
+                "text": "Dad was never like this, you know."
+              },
+              {
+                "speaker": "You",
+                "text": "When he was still here, he didn’t make it seem like every time I felt something I was wasting his time and energy."
+              },
+              {
+                "speaker": "You",
+                "text": "I miss him."
+              },
+              {
+                "speaker": "You",
+                "text": "…"
+              },
+              {
+                "speaker": "You",
+                "text": "And he’s gone because of you."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It wasn’t very effective"
+              },
+              {
+                "speaker": "You",
+                "text": "I got so much shit from dad about how much more accomplished and easier to handle Caspian was…"
+              },
+              {
+                "speaker": "You",
+                "text": "I thought you were more fair than him, but I wonder…"
+              },
+              {
+                "speaker": "You",
+                "text": "… It you and dad swapped places… would you have left me too?"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+        "Unnecessary Escalation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "Dad was right about you, you know?"
+              },
+              {
+                "speaker": "You",
+                "text": "He used to say you were a cold person, and I used to defend you."
+              },
+              {
+                "speaker": "You",
+                "text": "But now? I’m not sure if he was wrong."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "I don’t know why the fuck you think I would ever want to talk to Noah."
+              },
+              {
+                "speaker": "You",
+                "text": "He sounds like a loser and a doormat."
+              },
+              {
+                "speaker": "You",
+                "text": "I suppose you love someone who just does whatever the fuck you tell them."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "Well why don’t you just leave too, if I’m such a bother."
+              },
+              {
+                "speaker": "You",
+                "text": "I don’t know why you invite me to these things anyway, if all I do is start fights and cause problems."
+              },
+              {
+                "speaker": "You",
+                "text": "Just leave."
+              },
+              {
+                "speaker": "You",
+                "text": "You’ve clearly had one foot out the door anyway."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ]
+      },
+      "their-moves": [
+        {
+          "move": "move_1",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "LINH used FORBIDDEN KNOWLEDGE"
+            },
+            {
+              "speaker": "Linh",
+              "text": "You used to cry when you went too long without me holding you."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Your father couldn’t soothe you, not even your brother could cheer you up."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "What happened to that little boy?"
+            },
+            {
+              "speaker": "You",
+              "text": "I guess he just grew up and learned not everything can be solved by a hug."
+            },
+            {
+              "speaker": "Linh",
+              "text": "I guess he did."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Parental authority"
+            },
+            {
+              "speaker": "Linh",
+              "text": "LINH used PARENTAL  AUTHORITY"
+            },
+            {
+              "speaker": "Linh",
+              "text": "It’s not very effective"
+            },
+            {
+              "speaker": "Linh",
+              "text": "Do not talk to your own mother like this."
+            },
+            {
+              "speaker": "You",
+              "text": "I’ll do what I want when I’m right."
+            },
+            {
+              "speaker": "You",
+              "text": "A little cursing is the least you deserve from me."
+            },
+            {
+              "speaker": "Linh",
+              "text": "I really was too lenient on you."
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        },
+        {
+          "move": "move_2",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Disappointment"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "LINH used DISAPPOINTMENT"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I really did expect better of you, you know?"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I thought you would become a kinder, more understanding and mature person."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "Maybe I expected too much."
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        },
+        {
+          "move": "move_3",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Comparison"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "LINH used COMPARISON"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "It’s super effective!"
+            },
+            {
+              "speaker": "Linh",
+              "text": "God, I never got this much of a headache talking to Caspian at your age."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Why can’t you just… be a little more like him."
+            },
+            {
+              "speaker": "Linh",
+              "text": "He’s always been so much easier to talk to."
+            },
+            {
+              "speaker": "Linh",
+              "text": "In the past five years at least."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Can’t you just learn a little from your brother."
+            },
+            {
+              "speaker": "You",
+              "text": "Wow, thanks mum. That really endeared me to your plight."
+            }
+          ],
+          "damage": 0,
+          "response": ""
         }
-
-
-
       ],
-
-
-      "intermission-50%":       [
+      "intermission-50%": [
+            {
+              "speaker": "Linh",
+              "text": "I’m sorry. Is that what you want me to say?"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I’m sorry my choices impacted you and it hurt your relationship with your dad."
+            },
+            {
+              "speaker": "You",
+              "text": "Hurt my relationship?"
+            },
+            {
+              "speaker": "You",
+              "text": "He hasn’t talked to me in five years."
+            },
+            {
+              "speaker": "You",
+              "text": "He found out I wasn’t his real son and walked out the very same day!"
+            },
+            {
+              "speaker": "You",
+              "text": "Because you cheated!"
+            },
+            {
+              "speaker": "You",
+              "text": "And you lied about it for fifteen years!"
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "You lied to me."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I didn’t know either…"
+            },
+            {
+              "speaker": "You",
+              "text": "You knew there was a possibility."
+            },
+            {
+              "speaker": "You",
+              "text": "And you had an affair for fifteen fucking years."
+            },
+            {
+              "speaker": "Linh",
+              "text": "It wasn’t like me and Noah were together all that time."
+            },
+            {
+              "speaker": "Linh",
+              "text": "It was a passing thing, back then, and we didn’t have any contact for years."
+            },
+            {
+              "speaker": "Linh",
+              "text": "We only started seeing each other seriously for about a year before your dad found out."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "Things with him were… different, than things with your father."
+            },
+            {
+              "speaker": "Linh",
+              "text": "It’s not an excuse, I know what I did back then was wrong."
+            },
+            {
+              "speaker": "Linh",
+              "text": "It was a messy time, back then."
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "How was it messy? I don’t understand, I… I thought you guys were happy."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Before you were born I had… a misscarriage. Two, technically."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Twins."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Turns out the survival rate of babies gets smaller the more there are."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I was… devastated… to say the least."
+            },
+            {
+              "speaker": "Linh",
+              "text": "And your father was… not particularly… empathetic, in the aftermath."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Perhaps it was just the difference between carrying the pregnancy and not,"
+            },
+            {
+              "speaker": "Linh",
+              "text": "To your father the twins were more of a concept than a pair of actual children. I was… more connected, not just in the physical sense."
+            },
+            {
+              "speaker": "You",
+              "text": "I… didn’t know that happened."
+            },
+            {
+              "speaker": "You",
+              "text": "It sounds… terrible."
+            },
+            {
+              "speaker": "Linh",
+              "text": "It was a long time ago. And not something I particularly like talking about."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I met Noah while I was still grieving."
+            },
+            {
+              "speaker": "Linh",
+              "text": "And he was kind, sympathetic. A very gentle man."
+            },
+            {
+              "speaker": "Linh",
+              "text": "The opposite of your father, in some ways."
+            },
+            {
+              "speaker": "Linh",
+              "text": "…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I was young when I married your father."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Even younger when he brought Caspian back and I became a mother."
+            },
+            {
+              "speaker": "Linh",
+              "text": "Part of me just wanted to explore, I think."
+            },
+            {
+              "speaker": "You",
+              "text": "Seems like you still like him now, though."
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "I guess things were more complicated than they seemed at first…"
+            },
+            {
+              "speaker": "You",
+              "text": "But…"
+            },
+            {
+              "speaker": "You",
+              "text": "You still cheated."
+            },
+            {
+              "speaker": "You",
+              "text": "And Noah knew that too."
+            },
+            {
+              "speaker": "You",
+              "text": "I… don’t know if I can look past that…"
+            },
+            {
+              "speaker": "Linh",
+              "text": "I suppose it’s too much to ask you to fully understand."
+            },
+            {
+              "speaker": "Linh",
+              "text": "You’re not married and you haven’t got any kids, let alone lost any."
+            },
+            {
+              "speaker": "Linh",
+              "text": "You’re twenty now, same age as I was when I met your father,"
+            },
+            {
+              "speaker": "Linh",
+              "text": "but in the end, you’re still a child."
+            }
+      ],
+      "intermission-25%": [],
+      "win": [
+        {
+          "speaker": "Linh",
+          "text": "He didn’t ask me about Caspian, you know."
+        },
+        {
+          "speaker": "Linh",
+          "text": "It’s not like we expected his real parents to die in that crash, but your father didn’t ask me before he brought Caspian back to stay with us."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Then suddenly I was twenty-two, trying to raise a surprise baby that wasn’t my own."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…not that I regret it."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Caspian is my son, no matter what, but…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "When your father proposed to me two years later…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "I barely even thought about it."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "Not because I knew I loved your father, but because… we had a child."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "My mother once said I was the only idiot stupid enough to get baby-trapped without even actually having a kid."
+        },
         {
           "speaker": "You",
-          "text": "you reached 50% health"
-        }
-      ],
-
-      
-      "intermission-25%":       [
+          "text": "…"
+        },
         {
           "speaker": "You",
-          "text": "you reached 25% health"
-        }
-      ],
-
-      "win":
-      [
+          "text": "Did you ever actually love dad?"
+        },
         {
           "speaker": "You",
-          "text": "you won"
-        }
-      ],
-      "lose":
-      [
+          "text": "Or did we just… keep you there."
+        },
+        {
+          "speaker": "Linh",
+          "text": "You didn’t do anything. Neither did Caspian."
+        },
+        {
+          "speaker": "Linh",
+          "text": "I’m an adult woman that made my own choices based on the things I valued most."
+        },
+        {
+          "speaker": "Linh",
+          "text": "And your father…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "I’m sure I loved him at some point."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Or at least something close enough to love."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "I was twenty and killing myself in med-school, trying to keep my scholarship and get ahead of my classes."
+        },
+        {
+          "speaker": "Linh",
+          "text": "I didn’t have the connection in the field my peers had, I was fluent in English but it felt like my accent was so noticeable. I felt out of place, still, even after seven years in the country."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Your father was… confident."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Self-assured and charismatic. He was a handsome, charming man and people were always trying to impress him, but he was hard to impress."
+        },
+        {
+          "speaker": "Linh",
+          "text": "It felt like I was… proving something, when he asked me out."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Like I was better than all those insecure thoughts."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "He made me feel confident in myself, I guess."
+        },
         {
           "speaker": "You",
-          "text": "you lost"
+          "text": "That’s a good thing, isn’t it?"
+        },
+        {
+          "speaker": "You",
+          "text": "Why do you sound so sad?"
+        },
+        {
+          "speaker": "Linh",
+          "text": "It was a false confidence, in the end. A borrowed confidence."
+        },
+        {
+          "speaker": "Linh",
+          "text": "I was so reliant on his opinion of me to tell me how to view myself."
+        },
+        {
+          "speaker": "Linh",
+          "text": "It took me a while to untangle it all. My time with Noah helped me figure myself out in a place that didn’t involve him."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "It’s something I think you might benefit from."
+        },
+        {
+          "speaker": "You",
+          "text": "What? Meeting Noah?"
+        },
+        {
+          "speaker": "Linh",
+          "text": "Distancing yourself from your father."
+        },
+        {
+          "speaker": "Linh",
+          "text": "And I know he hasn’t talked to you in years, but I mean distancing your sense of self."
+        },
+        {
+          "speaker": "You",
+          "text": "I know who I am without dad, thank you very much."
+        },
+        {
+          "speaker": "You",
+          "text": "I had to figure it out."
+        },
+        {
+          "speaker": "Linh",
+          "text": "I don’t know if you do…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "All your relationships with your family seem to revolve around him somehow anyway."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Even when he’s gone…"
+        },
+        {
+          "speaker": "You",
+          "text": "That’s not…"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "Meeting with Noah isn’t going to replace your father."
+        },
+        {
+          "speaker": "Linh",
+          "text": "You don’t have to build that kind of relationship with him."
+        },
+        {
+          "speaker": "Linh",
+          "text": "But I worry…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "…I worry that the reason you don’t want to meet him isn’t because you yourself don’t want to,"
+        },
+        {
+          "speaker": "Linh",
+          "text": "But because you think its somehow betraying your father."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "…but he left you."
+        },
+        {
+          "speaker": "Linh",
+          "text": "You can’t betray someone who’s not even part of your life anymore."
+        },
+        {
+          "speaker": "You",
+          "text": "I’ll… I’ll think about it."
+        },
+        {
+          "speaker": "You",
+          "text": "No promise, but… I’ll actually think about it."
         }
-
+      ],
+      "lose": [
+        {
+          "speaker": "Linh",
+          "text": "You are so… childish."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Immature, ungrateful and overall just…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "Disappointing."
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "You’re sheltered, maybe."
+        },
+        {
+          "speaker": "Linh",
+          "text": "Ignorant and self-centred."
+        },
+        {
+          "speaker": "You",
+          "text": "Self-centred? Ungrateful? From the woman who had an affair, destroyed our whole family and ruined my life."
+        },
+        {
+          "speaker": "You",
+          "text": "Mother of the year over here!"
+        },
+        {
+          "speaker": "You",
+          "text": "The pinnacle of good parenting!"
+        },
+        {
+          "speaker": "Linh",
+          "text": "You are just…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "…"
+        },
+        {
+          "speaker": "Linh",
+          "text": "You’re just like your father."
+        }
       ]
     }
-
   ]
 }

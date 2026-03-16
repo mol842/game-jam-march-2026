@@ -13,7 +13,7 @@ class Button:
     self.color = color
     self.text_color = text_color if text_color else (0,0,0)
     self.text = text
-    self.font = pygame.font.Font(None, 28) if not font else font
+    self.font_path = "fonts/" + font if font else None
 
     self.clickable = True
     self.visible = True
@@ -28,7 +28,12 @@ class Button:
     self.height = self.original_height * (self.game.height / 500.0)
     self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
     font_size = 28 * (self.game.height / 500.0)
-    self.font = pygame.font.Font(None, int(font_size)) if not self.font or self.font.get_height() != int(font_size) else self.font
+    if self.font_path:
+      if not hasattr(self, 'font') or not self.font or self.font.get_height() != int(font_size):
+        self.font = pygame.font.Font(self.font_path, int(font_size))
+    else:
+      if not hasattr(self, 'font') or not self.font or self.font.get_height() != int(font_size):
+        self.font = pygame.font.Font(None, int(font_size))
 
   def handle_event(self, event, game, force=False):
     if force or event.type == pygame.MOUSEBUTTONUP and event.button == 1 and self.clickable:
