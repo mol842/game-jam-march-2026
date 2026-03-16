@@ -5,6 +5,7 @@ from Enemy2 import Enemy2
 from Button import Button
 from HealthBar import HealthBar
 from PopupConfirm import Popup
+from EnemyPopup import EnemyPopup
 
 class Battle2:
   def __init__(self, enemy_name, game, end_callback=None):
@@ -21,6 +22,7 @@ class Battle2:
     self.player_health_bar = HealthBar(self.game, 100, 100, 300, 40, "Your Health", self.player_start_health, self.player_health)
 
     self.result_popup = None
+    self.enemy_popup = None
     self.won = None
     self.turn = 'player'
     self.enemy_moveion_time = 0
@@ -48,6 +50,7 @@ class Battle2:
     self.intermission_50_triggered = False
     self.intermission_25_triggered = False
     self.pending_response = None
+    self.popup_triggered = False
 
 
   def start_intro(self):
@@ -102,6 +105,9 @@ class Battle2:
   def set_stage(self, stage):
     print("SETTING THE STAGE FOOORRRR", stage)
     self.stage = stage
+    if stage == "battle" and not self.popup_triggered:
+      self.enemy_popup = EnemyPopup(self.game, self.enemy)
+      self.popup_triggered = True
 
   def switch_turn(self):
     print("SWITCHING TURN")
@@ -123,6 +129,8 @@ class Battle2:
         print("FINISHED THE INTRO")
 
     elif self.stage == "battle":
+      if self.enemy_popup and self.enemy_popup.visible:
+        return
 
       ## HEALTH CUTSCENES
       if self.enemy.curr_health <= (0.5 * self.enemy.start_health) and not self.intermission_50_triggered and not self.game.dialogue_box.dialogue_list:
@@ -168,6 +176,8 @@ class Battle2:
   def handle_event(self, event):
     if self.result_popup:
       self.result_popup.handle_event(event, self.game)
+    if self.enemy_popup:
+      self.enemy_popup.handle_event(event, self.game)
     if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
       for btn in self.move_buttons.values():
         if btn.clickable:
@@ -194,3 +204,5 @@ class Battle2:
 
     if self.result_popup:
       self.result_popup.draw(self.game)
+    if self.enemy_popup:
+      self.enemy_popup.draw(self.game)

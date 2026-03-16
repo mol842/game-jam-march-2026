@@ -95,7 +95,7 @@ class EndScreen:
         rendered = msg_font.render(line, True, PURPLE)
         game.screen.blit(rendered, rendered.get_rect(center=(game.width // 2, int(390 * scale) + i * int(30 * scale) - 40)))
 
-      thank_you_text = "Thank you for playing GAME!\nPost your animal in the comments below!"
+      thank_you_text = "Thank you for playing GAME.\nPost your animal in the comments below!\n- Eleanor and Molly"
       thank_you_lines = thank_you_text.split('\n')
       for i, line in enumerate(thank_you_lines):
         thank_rendered = msg_font.render(line, True, RED)
