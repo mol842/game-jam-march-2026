@@ -6,6 +6,7 @@ from DialogueBox import *
 from StartPage import *
 from RoomSelect import *
 from EndScreen import *
+from utils import *
 
 WIDTH = 1400
 HEIGHT = 800
@@ -49,7 +50,7 @@ class Game:
   def set_background_image(self, filename):
     try:
       print("SETTING BACKGROUND IMAGE TO", filename)
-      self.background = pygame.image.load(f"images/{filename}")
+      self.background = pygame.image.load(resource_path(f"images/{filename}"))
 
     except:
       print("didnt load background oops") 
@@ -64,7 +65,7 @@ class Game:
 
   def change_music(self, filename):
     try:
-      pygame.mixer.music.load(f"sound_effects/{filename}")
+      pygame.mixer.music.load(resource_path(f"sound_effects/{filename}"))
       pygame.mixer.music.play(-1)
       print(f"LOADED MUSIC {filename}")
     except:
@@ -75,7 +76,7 @@ class Game:
     self.mode = "dialogue"
 
   def battle_mode(self):
-    self.change_music("743699__michaelydian__video-game-battle-music.wav")
+    self.change_music("743699__michaelydian__video-game-battle-music.mp3")
     self.mode = "battle"
 
   def start_room_select(self):
@@ -85,7 +86,7 @@ class Game:
     self.mode = "room_select"
 
   def start_intro_dialogue(self):
-    with open('dialogue/intro.json', 'r') as f:
+    with open(resource_path('dialogue/intro.json'), 'r') as f:
       dialogue = json.load(f)
     intro_dialogue = dialogue.get("intro", [])
     self.dialogue_box.init_dialogue(intro_dialogue, callback=self.start_room_select)

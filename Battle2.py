@@ -6,12 +6,13 @@ from Button import Button
 from HealthBar import HealthBar
 from PopupConfirm import Popup
 from EnemyPopup import EnemyPopup
+from utils import *
 
 class Battle2:
   def __init__(self, enemy_name, game, end_callback=None):
     self.game = game
     self.end_callback = end_callback
-    with open(f"enemies/{enemy_name}.json", 'r') as f:
+    with open(resource_path(f"enemies/{enemy_name}.json"), 'r') as f:
       self.data = json.load(f)
     self.enemy = Enemy2(self.data, self.game)
     self.battle_script = self.data['battles'][0]
@@ -20,6 +21,18 @@ class Battle2:
     self.player_start_health = 10
     self.player_health = self.player_start_health
     self.player_health_bar = HealthBar(self.game, 100, 100, 300, 40, "Your Health", self.player_start_health, self.player_health)
+
+
+    try:
+      self.win_sound = pygame.mixer.Sound(resource_path("sound_effects/win.mp3"))
+    except:
+      print("FAILED TO LOAD WIN SOUND")
+      self.win_sound = None
+    try:
+      self.lose_sound = pygame.mixer.Sound(resource_path("sound_effects/make_more_sound-8-bit-video-game-lose-sound-version-1-145828.mp3"))
+    except:
+      print("FAILED TO LOAD LOSE SOUND")
+      self.lose_sound = None
 
     self.result_popup = None
     self.enemy_popup = None
@@ -106,7 +119,7 @@ class Battle2:
     print("SETTING THE STAGE FOOORRRR", stage)
     self.stage = stage
     if stage == "battle" and not self.popup_triggered:
-      self.game.change_music("743699__michaelydian__video-game-battle-music.wav")
+      self.game.change_music("743699__michaelydian__video-game-battle-music.mp3")
       self.enemy_popup = EnemyPopup(self.game, self.enemy)
       self.popup_triggered = True
 
@@ -148,14 +161,17 @@ class Battle2:
       elif self.enemy.curr_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.won = True
-        pygame.mixer.Sound("sound_effects/win.wav").play()
+
+        if (self.win_sound):
+          self.win_sound.play()
         self.game.dialogue_box.init_dialogue(self.battle_script["win"])
 
         self.game.update_score(True, self.enemy.name)
       elif self.player_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.won = False
-        pygame.mixer.Sound("sound_effects/make_more_sound-8-bit-video-game-lose-sound-version-1-145828.mp3").play()
+        if (self.lose_sound):
+          self.lose_sound.play()
         self.game.dialogue_box.init_dialogue(self.battle_script["lose"])
         self.game.update_score(False, self.enemy.name)
 

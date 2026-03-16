@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import Color
 import random
+from utils import *
 
 class HealthBar:
   def __init__(self, game, x, y, width, height, text, max_health, curr_health):
@@ -9,7 +10,12 @@ class HealthBar:
     font = pygame.font.Font(None, int(22 * (game.height / 500.0)))
     self.label = font.render(self.text, True, (220, 220, 220))
 
-    
+    try:
+      self.hit_sound = pygame.mixer.Sound(resource_path("sound_effects/r0t0r-8-bit-laser-151672.mp3"))
+    except:
+      self.hit_sound = None
+
+
     self.original_x = x
     self.original_y = y
     self.original_width = width
@@ -34,7 +40,10 @@ class HealthBar:
   def update_health(self, new_health):
     if (new_health < self.curr_health):
       print("SHAKING")
-      pygame.mixer.Sound("sound_effects/r0t0r-8-bit-laser-151672.mp3").play()
+      if self.hit_sound:
+        self.hit_sound.play()
+
+      
       self.shake_frames = 60
       self.shake_intensity = 12
 

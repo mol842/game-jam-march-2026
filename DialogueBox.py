@@ -2,6 +2,7 @@ import pygame
 from Button import *
 import json
 from pygame.locals import Color
+from utils import *
 
 class DialogueBox(Button):
   def __init__(self, game):
@@ -10,7 +11,7 @@ class DialogueBox(Button):
     self.loaded_fonts = {}
     for speaker, data in self.font_mapping.items():
       font_name = data["font"]
-      font_path = f"fonts/{font_name}"
+      font_path = resource_path(f"fonts/{font_name}")
       self.loaded_fonts[speaker] = font_path
     self.current_speaker = "You"
 

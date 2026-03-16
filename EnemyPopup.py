@@ -3,6 +3,7 @@ import os
 import pygame
 from PopupConfirm import Popup
 from Button import Button
+from utils import *
 
 
 DEFAULT_TEXT_TITLE = (255, 210, 100)
@@ -49,7 +50,7 @@ class EnemyPopup(Popup):
       self.font_label = pygame.font.Font(None, int(18 * sy))
       self.font_body = pygame.font.Font(None, int(16 * sy))
       if font_path:
-        full_path = os.path.join("fonts", font_path)
+        full_path = os.path.join(resource_path("fonts"), font_path)
         self.font_title = pygame.font.Font(full_path, int(22 * sy))
         self.font_label = pygame.font.Font(full_path, int(18 * sy))
         self.font_body = pygame.font.Font(full_path, int(16 * sy))

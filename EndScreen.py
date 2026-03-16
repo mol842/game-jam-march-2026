@@ -10,6 +10,7 @@ CREAM = (240, 220, 180)
 PURPLE = (180, 160, 220)
 RED = (255, 0, 0)
 BOX_COLOR = (0, 0, 0, 128)  
+from utils import *
 
 class EndScreen:
   def __init__(self, game):
@@ -50,7 +51,7 @@ class EndScreen:
     # MAKE THIS DEPENDENT ON THE SCORE
     self.showing_image = True
     self.next_button.hide()
-    self.final_image = pygame.image.load(f"images/animals/{self.your_animal_image}")
+    self.final_image = pygame.image.load(resource_path(f"images/animals/{self.your_animal_image}"))
     self.game.set_background_image(f"animals/{self.your_animal_image}")
 
   def handle_event(self, event, game):

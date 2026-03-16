@@ -3,6 +3,7 @@ import json
 import os
 from HealthBar import HealthBar
 import random
+from utils import *
 
 class Enemy2:
   def __init__(self, data, game):
@@ -27,7 +28,7 @@ class Enemy2:
     # NO IMAGE OH GOD MAGENTA CUBE TIME
     self.original_image = None
     if self.image_path:
-      full_path = os.path.join('images', self.image_path)
+      full_path = os.path.join(resource_path('images'), self.image_path)
       if os.path.exists(full_path):
         self.original_image = pygame.image.load(full_path)
 

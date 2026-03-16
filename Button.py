@@ -1,6 +1,7 @@
 import pygame
 import os
 from pygame.locals import Color
+from utils import *
 
 class Button:
   def __init__(self, game, x, y, width, height, text, action, color=(90, 93, 93), font=None, text_color=None):
@@ -13,7 +14,7 @@ class Button:
     self.color = color
     self.text_color = text_color if text_color else (0,0,0)
     self.text = text
-    self.font_path = "fonts/" + font if font else None
+    self.font_path = resource_path("fonts/") + font if font else None
 
     self.clickable = True
     self.visible = True
