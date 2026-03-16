@@ -3,8 +3,7 @@
   "description": "Old World Bearded Vulture - Gypaetus barbatus",
   "type": "Pessimist",
   "relationship": "Your uncle",
-  "animal-fact": "",
-
+  "animal-fact": "The Old World Bearded Vulture is the only known vertebrate who can survive off a diet of 90% bone. It is well used to digging for scraps.",
   "start_health": 10,
   "x": 500,
   "y": 50,

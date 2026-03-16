@@ -2,11 +2,15 @@
 "intro": [
       {
         "speaker": "Narrator",
-        "text": "youre off to dinner with the fam"
+        "text": "You are heading to a family dinner with your mother's side of the family."
       },
       {
-        "speaker": "You",
-        "text": "yay."
+        "speaker": "Narrator",
+        "text": "Its been five years since you last saw them."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Brace yourself for what you're walking into..."
       }
     ]
 }

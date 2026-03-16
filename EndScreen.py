@@ -1,5 +1,6 @@
 import pygame
 from Button import *
+import json 
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -29,6 +30,17 @@ class EndScreen:
       {"speaker": "Narrator", "text": "you finished. it."},
       {"speaker": "Narrator", "text": "yay."}
     ]
+
+    with open(resource_path('dialogue/outro-good.json'), 'r') as f:
+      dialogue = json.load(f)
+
+    self.good_end = dialogue.get("outro", [])
+
+    with open(resource_path('dialogue/outro-bad.json'), 'r') as f:
+      dialogue2 = json.load(f)
+      
+    self.bad_end = dialogue2.get("outro", [])
+
     self.dialogue_index = 0
     
     self.next_button = Button(self.game, 350, 400, 100, 50, "Next", self.next_dialogue)
@@ -36,7 +48,11 @@ class EndScreen:
   def start(self):
     print("STARTING ENDING")
     self.game.set_background_image("black.png")
+    if len(self.game.wins) >= 3:
+      self.dialogue = self.good_end
     # self.game.set_background_image(None)
+    else:
+      self.dialogue = self.bad_end
 
     self.dialogue_index = 0
     self.showing_image = False
@@ -184,22 +200,21 @@ class EndScreen:
       self.your_animal = "Clam"
       self.your_animal_image = "Clam.png"
       self.your_animal_message = (
+        "The clam is a solitary creature. It lives inside it's own head. It has no brain, and it has no friends. "
         "Did you even come to the party? You didn't even try.  "
-        "Were you hiding in the bathroom the whole time? "
-        "Fun fact: clams have no brain. They live a solitary life, no brain, no friends. "
-        "This could mean nothing."
       )
 
+
+        # "Wow. Your own family destroyed you. "
+        # "Nobody at this party will ever forgive you. Was it really worth it? "
 
     elif win_rate < 0.35:
       self.your_animal = "Mantis Shrimp"
       self.your_animal_image = "Shrimp.png"
       self.your_animal_message = (
-        "Wow. Your own family destroyed you. "
-        "Nobody at this party will ever forgive you. Was it really worth it? "
         "Fun fact: The mantis shrimp can snap its claw at the speed of a .22 caliber bullet (so fast it produces light). "
         "It hunts by spearing, stunning, or dismembering its prey. "
-        "You caused a similar level of damage today. Congrats, you're not invited next year."
+        "You caused a similar level of damage today. Second fun fact: mantis shrimp don't have friends."
       )
 
     elif win_rate < 0.5:
@@ -209,27 +224,27 @@ class EndScreen:
         "You lost more than you won. That's... I mean.... you tried? "
         "It could be worse, at least they don't ALL hate you. "
         "Fun fact: The New Guinea Amau frog is the world's smallest vertebrate animal, weighing approximately 10mg. "
-        "Easy to miss. You didn't ruin the evening but you definitely tried. "
+        "They also don't have a tadpole stage, hatching directly into even smaller 'hoppers'. "
+        "One could say that, much like you, they had no real childhood. "
       )
 
     elif win_rate < 0.65:
       self.your_animal = "Long-Nosed Echidna"
       self.your_animal_image = "Echidna.png"
       self.your_animal_message = (
-        "You are exceptionally mediocre. You won some... you lost some... everyone remains mildly annoyed at you. "
-        "Fun fact: The long-nosed echidna mating ritual involves sad little 'trains' of males following females amd hoping for the best. "
-        "(that's you!) "
-        "I mean... could be worse. At least some people like you. "
+        "You are exceptionally mediocre. "
+        "Fun fact: The long-nosed echidna mating ritual involves up to 10 male echidnas following a female in a 'train' hoping to get a scrap of her attention. "
+        "Like you, they make their most important connections in life by being pathetic. "
+        "I mean... it could be worse. At least some people like you. "
       )
 
     elif win_rate < 1.0 or (total < 6):
       self.your_animal = "Helmeted Honeyeater"
       self.your_animal_image = "Bird.png"
       self.your_animal_message = (
-        # "This could be worse! You resolved more problems than you caused. "
-        "You resolved more problems than you caused! "
+        "You actually resolved more problems than you caused! "
         "Most people actually like you! I mean. You're not solving any deeper issues here, but good job! "
-        "Fun fact: helmeted honeyeaters are a cooperative species. The whole community works together to raise their chicks and defend their nests. "
+        "Fun fact: helmeted honeyeaters are a cooperative species. The community works together to raise their chicks and defend their nests. "
         "That's already better than what your dad could manage! "
       )
 
@@ -237,53 +252,8 @@ class EndScreen:
       self.your_animal = "SugarBag Bee"
       self.your_animal_image = "Bees.png"
       self.your_animal_message = (
-        "Wow. A perfect score. You resolved every single argument. "
-        "Everyone came in ready to fight and somehow left feeling... okay? Impressive! "
-        "Fun fact: unlike most bees, sugarbag bees are stingless. They don't need agression to protect their hive. "
+        "Wow. A perfect score. "
+        "Congratulations, you were all gearing for some self destructive combat and yet you all ended the night at peace together. "
+        "Fun fact: unlike most bees, sugarbag bees are stingless. "
         "Congrats on breaking the cycle and all that. "
       )
-
-
-
-    # if total < 3:
-    #   self.your_animal = "Clam"
-    #   self.your_animal_message = "Man. You didn't even try." \
-    #   "Did you even come to this party? Were you hiding in the bathroom the whole time?"
-
-    #   self.your_animal_image = "Clam.png"
-
-    # elif win_rate < 0.35:
-    #   self.your_animal = "New Guinea Amau frog"
-    #   self.your_animal_image = "Frog.png"
-    #   self.your_animal_message = "Wow. Your own family destroyed you. " \
-    #   "Half of these people still forward chain emails and you couldn't even beat them in an argument. Genuinely impressive. " \
-    #   "Congrats on the failure."
-
-    # elif win_rate < 0.5:
-    #   self.your_animal = "Tortoise"
-    #   self.your_animal_image = "Tortoise.png"
-    #   self.your_animal_message = "You lost more than you won. That's... I mean.... you tried? " \
-    #   "It could be worse, maybe they don't ALL hate you."
-
-    # elif win_rate < 0.65:
-    #   self.your_animal = "Log-Nosed Echidna"
-    #   self.your_animal_image = "Echidna.png"
-    #   self.your_animal_message = "Exceptionally mediocre. You won some. You lost some. Everyone is mildly annoyed at you." \
-    #   "You didn't ruin their evening but you absolutely tried."
-
-    # elif win_rate < 1.0:
-    #   self.your_animal = "Honey Badger"
-    #   self.your_animal_image = "Badger.png"
-    #   self.your_animal_message = "Okay... wooowww. " \
-    #   "You demolished most of your relationships and only ONE person managed to shut you up. " \
-    #   "Congrats, you're not invited to next year's thing."
-
-
-    # else:
-    #   self.your_animal = "Mantis Shrimp"
-    #   self.your_animal_image = "Shrimp.png"
-    #   self.your_animal_message = "Wow. A perfect score. You won every argument. " \
-    #   "Nobody at this party will ever forgive you. Was it really worth it?" \
-    #   "This shrimp is capable of snapping it's creepy little claw at speeds which are comparable to that of a 22 caliber bullet, generating 15 hundred newtons of force (so fast it produces light)." \
-    #   "It can hunt by either spearing, stunning or dismembering its prey. That's... kind of terrifying." \
-    #   ""

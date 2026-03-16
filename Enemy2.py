@@ -12,6 +12,7 @@ class Enemy2:
     self.description = data.get('description', 'WHO KNOWS')
     self.type = data.get('type', '???')
     self.relationship = data.get('relationship', '???')
+    self.animal_fact = data.get('animal-fact', '')
     self.start_health = data.get('start_health', 100)
     self.curr_health = data.get('curr_health', self.start_health)
     self.original_x = data.get('x', 0)

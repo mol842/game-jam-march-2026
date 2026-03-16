@@ -4,6 +4,7 @@ import pygame
 from PopupConfirm import Popup
 from Button import Button
 from utils import *
+import textwrap
 
 
 DEFAULT_TEXT_TITLE = (255, 210, 100)
@@ -23,7 +24,7 @@ class EnemyPopup(Popup):
     sy = game.height / 500.0
 
     popup_w = int(560 * sx)
-    popup_h = int(340 * sy)
+    popup_h = int(400 * sy)
     popup_x = (game.width - popup_w) // 2
     popup_y = (game.height - popup_h) // 2
 
@@ -143,12 +144,17 @@ class EnemyPopup(Popup):
       ("Relationship", [self.enemy.relationship]),
       ("Description",  [part.strip() for part in self.enemy.description.split("-")] if "-" in self.enemy.description else [self.enemy.description]),
     ]
+    if self.enemy.animal_fact:
+      fields.append(("Animal Fact", textwrap.wrap(self.enemy.animal_fact, width=50)))
 
     y = body_y
     for label, values in fields:
-      label_surf = self.font_label.render(f"{label}:", True, TEXT_MUTED)
-      label_w = label_surf.get_width() + int(8 * sx)
-      card.blit(label_surf, (text_x, y))
+      if label != "Animal Fact":
+        label_surf = self.font_label.render(f"{label}:", True, TEXT_MUTED)
+        label_w = label_surf.get_width() + int(8 * sx)
+        card.blit(label_surf, (text_x, y))
+      else:
+        label_w = 0
       for value in values:
         value_surf = self.font_body.render(value, True, self.text_white)
         card.blit(value_surf, (text_x + label_w, y))

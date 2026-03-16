@@ -84,7 +84,7 @@ class Game:
 
   def start_room_select(self):
     print("STARTING ROOM SELECTIONs")
-    self.set_background_image("house.png")
+    self.set_background_image("house-tall.png")
     self.change_music("soft-background-music-409193.mp3")
     self.mode = "room_select"
 

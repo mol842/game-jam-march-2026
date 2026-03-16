@@ -3,12 +3,12 @@
   "description": "Vampire Moth - Calyptra minuticornis",
   "type": "",
   "relationship": "Your cousin",
-  "animal-fact": "",
+  "animal-fact": "The Vampire Moth is one of the few moth species that retains it's mouth after metamorphosis. Though a cute and fluffy creature that can subsist off fruit juice, this moth is known to have a painful bite and a taste for blood.",
 
   "start_health": 10,
   "x": 600,
   "y": 200,
-  "width": 150,
+  "width": 300,
   "height": 300,
   "image": "Lia.png",
   "battles":
