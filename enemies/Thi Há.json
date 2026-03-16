@@ -1,6 +1,6 @@
 {
   "name": "Thi Há",
-  "description": "Costasiella Sea Slug",
+  "description": "Costasiella Sea Slug - Costasiella kuroshimae",
   "type": "Magic?",
   "relationship": "Your aunt",
   "start_health": 10,
@@ -9,146 +9,1012 @@
   "width": 150,
   "height": 250,
   "image": "Thi Há.png",
-  "battles":
-  [
+  "battles": [
     {
-      "intro":
-      [
+      "intro": [
         {
           "speaker": "You",
-          "text": "whatevereer"
+          "text": "Hey Thi Há."
+        },
+        {
+          "speaker": "You",
+          "text": "How’s it going? I like your hair, very… bold."
         },
         {
           "speaker": "Thi Há",
-          "text": "whatever2.0"
+          "text": "Hey sweetheart, it’s been ages!"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Look at you, you’re all grown up now!"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "It’s been so long, in my mind you’re still that little kid running around my garden with Louis during the holidays."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Have you said hi to Louis yet?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I think he missed you these last couple years."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "How have you been?"
+        },
+        {
+          "speaker": "You",
+          "text": "Yeah, me and Louis have talked."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "I’ve been good. Studying musical composition in Uni… it’s been fun."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "That’s so exciting."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I was quite the musician myself when I was younger, mostly piano, though I quite liked the saxophone too."
+        },
+        {
+          "speaker": "You",
+          "text": "I remember. You used to teach me a bit of piano when I was younger."
+        },
+        {
+          "speaker": "You",
+          "text": "Don’t remember much of the saxophone though,"
+        },
+        {
+          "speaker": "You",
+          "text": "Do you still play it?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Oh no."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I used to love it, but I gave it up after my husband died."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I’ve gotten very into Buddhist ideologies, and part of it is the idea of letting go of worldly possessions."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "To attach your sense of self and happiness to nothing external."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "And when you find yourself sad or overwhelmed you just draw a deep breath and meditate until you find peace again."
+        },
+        {
+          "speaker": "You",
+          "text": "Right… sounds… legitimate…"
+        },
+        {
+          "speaker": "You",
+          "text": "What’s Louis think about this?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Oh, he doesn’t quite get it, but he’s young."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Hides away in his room instead of sitting down to meditate with me."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "But everyone's journey to enlightenment is their own, I can’t rush him."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m kind of a hypocrite is asking this, but are you saying you didn’t talk to Louis about his dad, y’know, dying? At all?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Oh honey, I was in a very dark place when it happened."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "But I found peace through realising the world simply is as it is, and moving with it rather than against it."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Louis wasn’t particularly open to my guidance, so I’m waiting for him to find his own way."
+        },
+        {
+          "speaker": "You",
+          "text": "Wow, really giving it your all, aren’t you?"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m sure he feels very supported."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "… I don’t appreciate your tone, dear."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "And I don’t appreciate your lying, either."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I don’t think you’ll be doing that to me again at all."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "… did you just curse me?"
         }
-
       ],
-
-      "your-moves":
-      {
+      "your-moves": {
         "Facts & Logic": [
           {
-            "move": "snopes",
-            "description": "you pull up snopes and wave your phone at him",
+            "move": "move_1",
+            "description": "",
             "dialogue": [
               {
                 "speaker": "Narrator",
-                "text": "You used SNOPES \n It was not effective."
-
+                "text": "You used FACTS AND LOGIC"
               },
-
-
               {
                 "speaker": "You",
-                "text": "Bro look at this"
-
+                "text": "You’re talking about letting go of worldly attachments, but you’re still wearing all those gold bracelets?"
+              },
+              {
+                "speaker": "You",
+                "text": "Why does this seem more like an aesthetic choice than an actual commitment to inner-peace?"
               }
-
             ],
-            "damage": 1,
-            "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
-
+            "damage": 0,
+            "response": ""
           },
-
           {
-            "move": "wikipedia",
-            "description": "you pull up wikipedia and wave your phone at him",
-            "damage": 1,
-            "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
-          }
-
-
-        ],
-
-        "Blatant Lie": [
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "You",
+                "text": "What’s with all the crystal healing stuff?"
+              },
+              {
+                "speaker": "You",
+                "text": "That’s not even Buddhist, it’s like, Ancient Egyptian and Mesopatamian or something isn’t it?"
+              },
+              {
+                "speaker": "You",
+                "text": "Looks to me like you’re just mixing and matching random ‘mystic’ bullshit!"
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
           {
-            "move": "lie1",
-            "description": "You tell a blatant lie",
-            "damage": 5,
-            "response": "WHAT? THAT'S NOT TRUE!"
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "You",
+                "text": "Why the fuck do you know voodoo and witchcraft anyway?"
+              },
+              {
+                "speaker": "You",
+                "text": "Like, I know you’ve got an aesthetic going on, but that’s a bizarre choice."
+              },
+              {
+                "speaker": "You",
+                "text": "Why did you learn how to curse people?"
+              }
+            ],
+            "damage": 0,
+            "response": ""
           }
         ],
-
         "Emotional Manipulation": [
           {
-            "move": "manip1",
-            "description": "You manipulate emotionally",
-            "damage": 10,
-            "response": "HOW COULD YOU!"
-          }
-        ],
-
-        "Unnecessary Escalation": [
-          {
-            "move": "esc1",
-            "description": "You escalate unnecessarily",
-            "damage": 10,
-            "response": "ARGGHIUUUGH!"
-          }
-        ]
-
-      },
-
-      "their-moves":
-      [
-        
-        {
-          "move": "4chan conspiracy",
-          "description": "LOOK AT THIS",
-          "damage": 1,
-          "response": "this is... unreadable. you take psychic damage",
-          "dialogue":
-          [
-            {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
                 "speaker": "Narrator",
-                "text": "Thi Há used 4chan conspiracy \n It was SUPER effective!"
-
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
               },
               {
                 "speaker": "You",
-                "text": "this is... unreadable. you take 1 psychic damage"
-
+                "text": "You left your own son in the lurch after his dad died."
+              },
+              {
+                "speaker": "You",
+                "text": "Don’t you feel some shame? Or responsibility?"
+              },
+              {
+                "speaker": "You",
+                "text": "Louis’s literally caving his face in doing bone-smashing because you’ve been so on your enlightenment bullshit that you aren’t paying attention to him at all."
               }
-        ]     
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "I feel bad for Louis, y’know."
+              },
+              {
+                "speaker": "You",
+                "text": "It’s hard enough losing one parent, let alone both at the same time."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It’s super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "I wonder what your husband would think of all this if he were still alive."
+              },
+              {
+                "speaker": "You",
+                "text": "He was a gentle, understanding and empathetic guy from what I remember… then again, so were you."
+              },
+              {
+                "speaker": "You",
+                "text": "I think he would be disappointed in how you’ve handled this."
+              },
+              {
+                "speaker": "You",
+                "text": "I think he might not even recognise who you are anymore."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+        "Unnecessary Escalation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It wasn’t very effective"
+              },
+              {
+                "speaker": "You",
+                "text": "This whole look you’ve got going for you right now? Not good, I have to say."
+              },
+              {
+                "speaker": "You",
+                "text": "You’re dressed in vomit green and royal purple – those colours neither match, nor suit you."
+              },
+              {
+                "speaker": "You",
+                "text": "And your hair looks like it had a run in with a rogue hedge trimmer, it’s uneven as hell."
+              },
+              {
+                "speaker": "You",
+                "text": "This is just embarrassing."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "This mysticism, hippy shit is, frankly, difficult to look at."
+              },
+              {
+                "speaker": "You",
+                "text": "No wonder Louis doesn’t go outside, I’d avoid people too if I was associated with you."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used UNNECESSARY ESCALATION"
+              },
+              {
+                "speaker": "You",
+                "text": "What’s your zodiac again? I bet you’re really into all that…"
+              },
+              {
+                "speaker": "You",
+                "text": "Let me guess… Libra! No… Cancer!"
+              },
+              {
+                "speaker": "You",
+                "text": "I mean that derogatorily, by the way."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ]
+      },
+      "their-moves": [
+        {
+          "move": "move_1",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Thi Há",
+              "text": "You’re still hung up on it, aren’t you?"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "On the fact that your father left you the second he realised he could."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Do you still wonder if he loved you?"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "I don’t think he really could have, if he left like that."
+            },
+            {
+              "speaker": "You",
+              "text": "Jesus Christ, you didn’t even hesitate."
+            },
+            {
+              "speaker": "You",
+              "text": "Actual real magic"
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        },
+        {
+          "move": "move_2",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "It’s super effective!"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Qiouwrsdaskhaorhkgsdjweydgabbca!"
+            },
+            {
+              "speaker": "You",
+              "text": "Ow, my head!"
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "Did you just cast a spell at me?"
+            },
+            {
+              "speaker": "You",
+              "text": "… what the fuck?"
+            },
+            {
+              "speaker": "You",
+              "text": "Enlightenment"
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        },
+        {
+          "move": "move_3",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "It’s not very effective"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Your words are meaningless without me giving them weight."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "You are but an external trigger for my internal struggles."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "But I can control my own inner world."
+            },
+            {
+              "speaker": "You",
+              "text": "Is that Buddhism or Descartes?"
+            },
+            {
+              "speaker": "You",
+              "text": "Because that’s some ‘I think therefore I am’ bullshit."
+            },
+            {
+              "speaker": "You",
+              "text": "Dismissal"
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        },
+        {
+          "move": "move_4",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Thi Há",
+              "text": "That’s very interesting of you to say."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Though it’s clear your inner turmoil is talking for you."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "I shall listen to the meaning beyond your words."
+            },
+            {
+              "speaker": "You",
+              "text": "You’re just ignoring me and making up what you want me to say, aren’t you?"
+            }
+          ],
+          "damage": 0,
+          "response": ""
         }
-
-
+      ],
+      "intermission-50%": [
+            {
+              "speaker": "Thi Há",
+              "text": "You seem very agree, sweetheart."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "And a little bit confused."
+            },
+            {
+              "speaker": "You",
+              "text": "Yeah I’m upset."
+            },
+            {
+              "speaker": "You",
+              "text": "Your son’s literally getting radicalised and you're over here ignoring the problem… and learning magic?"
+            },
+            {
+              "speaker": "You",
+              "text": "I thought you were busy helping Louis and that’s why you never…"
+            },
+            {
+              "speaker": "You",
+              "text": "Never came around to visit after my dad left."
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "It’s hypocritical since I didn’t exactly visit you guys either, but… the reason mum didn’t take us up to see you guys was because she was so busy dealing the the fallout of dad."
+            },
+            {
+              "speaker": "You",
+              "text": "She was focussing on me and Caspian."
+            },
+            {
+              "speaker": "You",
+              "text": "I… I thought you were focusing on Louis…"
+            },
+            {
+              "speaker": "You",
+              "text": "It’s why I didn’t think about him that much… but if you weren’t."
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "What were you doing?"
+            },
+            {
+              "speaker": "You",
+              "text": "I know Uncle Quan and Lia made the rounds to both of us when everything happened, even though they suck at comforting people…"
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "I… feel like the old you wouldn’t have done that…"
+            },
+            {
+              "speaker": "You",
+              "text": "I barely even recognise you, Thi Há. and it’s not because of the hair."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "…"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "You know, there’s this thing in Buddhism called the Three Marks of Existence."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Anicca, impermanence, means that the world and everything in it is always changing. Both the physical and the mental world is ephemeral."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Dukkah, suffering, means that the world is inherently unsatisfactory, and there will always be suffering as the only constant in life."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "And Anatta, non-self, meaning that the soul or self or ego really exists unchanged or is worth holding onto."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "…"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Perhaps I am different… and Louis’s changed too…"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "But it’s our attachments to those old selves that’s causing us harm."
+            },
+            {
+              "speaker": "You",
+              "text": "That’s real lovely, except for the part where it means you don’t care that Louis is miserable and needs you to maintain at least your worldly attachment to him."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "I think you’re projecting a little bit there, dear."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "It’s not your father leaving or your mother lying that’s hurt you…"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "It’s your attachment to your father and your previous relationship,"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "It’s your attachment to the image of your mother you used to believe in,"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "And it’s your attachment to the image of yourself that you lost through the fallout that hurt you."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "And it’s these ghosts of the past that are hurting your current relationships."
+            },
+            {
+              "speaker": "You",
+              "text": "…"
+            },
+            {
+              "speaker": "You",
+              "text": "I don’t want to listen to your advice on relationships when your current approach seems to be to not care about them at all."
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "And what will you do instead?"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Hang onto all your gripes like clutching at broken glass?"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Pick fights with every single person you talk to because you don’t know how to let go of anything?"
+            },
+            {
+              "speaker": "You",
+              "text": "Can you not psycho analyse me?"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "Honey, I’m not trying"
+            },
+            {
+              "speaker": "Thi Há",
+              "text": "It’s just very obvious."
+            }
 
       ],
-
-
-      "intermission-50%":       [
+      "intermission-25%": [],
+      "win": [
+        {
+          "speaker": "Thi Há",
+          "text": "Why are you actually upset?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "You’ve been absent from the greater family get togethers for five years."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "You’re angry about Louis, like you didn’t ghost him since everything with your father happened."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I’m just trying to find a little peace… is that so much to ask?"
+        },
         {
           "speaker": "You",
-          "text": "you reached 50% health"
+          "text": "A little?"
+        },
+        {
+          "speaker": "You",
+          "text": "This sort of Buddhist detachment, divorce yourself from your worldly desires stuff is all fun and great if you’re a monk in a monastery,"
+        },
+        {
+          "speaker": "You",
+          "text": "But you’ve got people that are relying on you."
+        },
+        {
+          "speaker": "You",
+          "text": "Louis’s seventeen, for god's sake, and you’re regarding him with the same ‘worldly attachment’ as the saxophone you got rid of!"
+        },
+        {
+          "speaker": "You",
+          "text": "It’s fucked up!"
+        },
+        {
+          "speaker": "You",
+          "text": "You can’t just… just leave people like that!"
+        },
+        {
+          "speaker": "You",
+          "text": "Even if you’re still actually present, you can’t just…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Oh sweetie, this isn’t like with your father."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I’m not leaving Louis’s life… or yours."
+        },
+        {
+          "speaker": "You",
+          "text": "Aren’t you?"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m not exactly religious… and you’re not wrong when you say that most of my problems are because I can’t ever let anything go, but…"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "If you just let every problem go… doesn’t that just mean you’re not actually caring about the relationships?"
+        },
+        {
+          "speaker": "You",
+          "text": "You’re right… the reason I get so fucked up over my dad is because I… love him, i guess… even still…"
+        },
+        {
+          "speaker": "You",
+          "text": "But then, doesn’t that just mean the reason you’re not messed up at all about Louis… or your husband is because you… don’t… love them…?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Don’t put that idea out into the world."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I loved, love and will continue to love my family until I die."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "… is that really what it looks like though?"
+        },
+        {
+          "speaker": "You",
+          "text": "… a bit…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "… When my husband died… I… didn’t deal with it well."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "You weren’t around at the time, but… grief… it changes people."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "It’s a crushing, inescapable feeling that pervades every part of your life."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I was very depressed, after I got over the shock."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "We knew it was coming, but… part of me didn’t think he’d really die."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "He was in and out of hospitals so much… why would this time be any different?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I missed the shock, when it was over."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "The shock softens everything with this air of unreality… detached from the situation."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I… had a job to do."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Money to make, bills to pay, a son to raise…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I didn’t have time to be depressed, so I… detached."
+        },
+        {
+          "speaker": "You",
+          "text": "… isn’t that just… dissociation?"
+        },
+        {
+          "speaker": "You",
+          "text": "That’s… bad, isn’t it?"
+        },
+        {
+          "speaker": "You",
+          "text": "That’s not what… enlightenment or whatever really is."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "… maybe."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…it’s close enough, though, right?"
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t know if it is…"
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "If… if I try to figure out how to… let things go…"
+        },
+        {
+          "speaker": "You",
+          "text": "Will you talk to Louis more?"
+        },
+        {
+          "speaker": "You",
+          "text": "… I’m worried about him…"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m kind of worried about you too."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "… sure, sweetheart."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Sure."
         }
       ],
-
-      
-      "intermission-25%":       [
+      "lose": [
+        {
+          "speaker": "Thi Há",
+          "text": "You are tethered to your worldly desires."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Angry and spiteful and clinging onto things long gone…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "This is why you’ve never found yourself at peace."
+        },
         {
           "speaker": "You",
-          "text": "you reached 25% health"
-        }
-      ],
-
-      "win":
-      [
+          "text": "I am having normal human emotions instead of sedating myself with hippy nonsense and very surface level readings of Buddhism!"
+        },
         {
           "speaker": "You",
-          "text": "you won"
-        }
-      ],
-      "lose":
-      [
+          "text": "Get your fucking crystal spiritual healing out of my face!"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Overreliant on the opinions of others, insecure and lashing out."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "You have a vacuous chasm where your self-esteem should be and you’re angry with me because I’m above your need for assurance."
+        },
         {
           "speaker": "You",
-          "text": "you lost"
+          "text": "I don’t even know what you’re saying anymore."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "You need too much, is what I’m saying."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Most people need too much."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Material possessions, affirmations, human bonds – it’s all ephemeral!"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "The prince Siddhartha Gautama abandoned his royal heritage to a wandering lifestyle after he witnessed human suffering, seeking to end all pain and misery is life."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "After years of failure, he meditated for 49 days straight, unmoving vigil, and freed himself from the distraction of the mind, becoming Buddha."
+        },
+        {
+          "speaker": "You",
+          "text": "… 49 days?"
+        },
+        {
+          "speaker": "You",
+          "text": "No, wait, what’s with the history lesson."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "It’s the mind and the emotions and the internal temptations that cause you to stray away from the path to enlightenment."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "Our worldly attachments…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "…"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "You’ll never have peace unless you let it all go."
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "All that’s left is suffering."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "You’re never going to really talk to Louis, are you?"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "I can guide him"
+        },
+        {
+          "speaker": "Thi Há",
+          "text": "But only he can help himself from the temptations of the mind."
+        },
+        {
+          "speaker": "You",
+          "text": "I… don’t know why I expected better."
         }
-
       ]
     }
-
   ]
 }
