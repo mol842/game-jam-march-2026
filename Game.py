@@ -72,6 +72,13 @@ class Game:
     self.set_background_image("house.png")
     self.mode = "room_select"
 
+  def start_intro_dialogue(self):
+    with open('dialogue/intro.json', 'r') as f:
+      dialogue = json.load(f)
+    intro_dialogue = dialogue.get("intro", [])
+    self.dialogue_box.init_dialogue(intro_dialogue, callback=self.start_room_select)
+    self.mode = "intro"
+
   def start_end_screen(self):
     self.end_screen.start()
     self.mode = "end_screen"
@@ -94,6 +101,14 @@ class Game:
       self.room_select.draw(self)
     elif self.mode == "end_screen":
       self.end_screen.draw(self)
+
+    elif self.mode == "intro":
+      self.screen.fill((0, 0, 0))
+      self.dialogue_box.draw(self)
+      
+      for button in self.buttons:
+        button.draw(self)
+
     else:
 
       for button in self.buttons:

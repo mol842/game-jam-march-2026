@@ -9,7 +9,9 @@ class StartPage:
     self.start_button = Button(self.game, 0, 0, 800, 500, "", lambda: self.start_game())
 
   def start_game(self):
-    self.game.start_room_select()
+    self.game.start_intro_dialogue()
+
+    # self.game.start_room_select()
 
   def handle_event(self, event, game):
     self.start_button.handle_event(event, game)

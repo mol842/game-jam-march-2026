@@ -26,7 +26,7 @@ class RoomSelect:
       self.room_buttons.append(button)
     
     # PROCEED BUTTON BUT HIDDEN (REVEALED WHEN YOUVE DONE ALL THE ROOMS)
-    self.proceed_button = Button(self.game, 350, 400, 200, 50, "Leave the party", self.handle_proceed_click, color=(48, 25, 52))
+    self.proceed_button = Button(self.game, 300, 400, 200, 50, "Leave the party", self.handle_proceed_click, color=(48, 25, 52))
     # self.proceed_button.hide()
     self.popup = None
 
