@@ -186,7 +186,7 @@ class EndScreen:
       self.your_animal_message = (
         "Did you even come to the party? You didn't even try.  "
         "Were you hiding in the bathroom the whole time? "
-        "Fun fact: clams have no brain. "
+        "Fun fact: clams have no brain. They live a solitary life, no brain, no friends. "
         "This could mean nothing."
       )
 

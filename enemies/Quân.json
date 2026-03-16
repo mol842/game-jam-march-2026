@@ -16,11 +16,11 @@
       "intro": [
         {
           "speaker": "You",
-          "text": "Hey… Uncle Quân…"
+          "text": "Hey... Uncle Quân..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
@@ -52,7 +52,7 @@
         },
         {
           "speaker": "You",
-          "text": "…yes."
+          "text": "...yes."
         },
         {
           "speaker": "You",
@@ -60,7 +60,7 @@
         },
         {
           "speaker": "You",
-          "text": "… who raised me for fifteen years."
+          "text": "... who raised me for fifteen years."
         },
         {
           "speaker": "Quân",
@@ -96,7 +96,7 @@
         },
         {
           "speaker": "You",
-          "text": "That’s true, but… I mean, mum is the one who cheated."
+          "text": "That’s true, but... I mean, mum is the one who cheated."
         },
         {
           "speaker": "Quân",
@@ -104,7 +104,7 @@
         },
         {
           "speaker": "You",
-          "text": "I mean, morally…"
+          "text": "I mean, morally..."
         },
         {
           "speaker": "Quân",
@@ -307,11 +307,11 @@
               },
               {
                 "speaker": "You",
-                "text": "But even before it all happened I barely saw you…"
+                "text": "But even before it all happened I barely saw you..."
               },
               {
                 "speaker": "You",
-                "text": "I barely saw Lia either…"
+                "text": "I barely saw Lia either..."
               },
               {
                 "speaker": "You",
@@ -335,7 +335,7 @@
               },
               {
                 "speaker": "You",
-                "text": "You say ‘family is family’, and you’re quick to criticise anyone you think is doing it wrong, but I’ll be honest, Quân…"
+                "text": "You say ‘family is family’, and you’re quick to criticise anyone you think is doing it wrong, but I’ll be honest, Quân..."
               },
               {
                 "speaker": "You",
@@ -343,13 +343,32 @@
               },
               {
                 "speaker": "You",
-                "text": "… especially not now."
+                "text": "... especially not now."
               }
             ],
             "damage": 3,
             "response": ""
           }
-        ]
+        ],
+        "Unnecessary Escalation": [
+          {
+          "move": "move_1",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "You tried to use UNNECESSARY ESCALATION"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "You are too intimidated to use UNNECESSARY ESCALATION."
+            }
+          ],
+          "damage": 0,
+          "response": ""
+        }
+      ]
+
       },
       "their-moves": [
         {
@@ -374,7 +393,7 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Quân",
@@ -410,7 +429,7 @@
             },
             {
               "speaker": "Quân",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Quân",
@@ -478,7 +497,7 @@
             },
             {
               "speaker": "Quân",
-              "text": "I never knew my expectations for someone could fall so… low."
+              "text": "I never knew my expectations for someone could fall so... low."
             }
           ],
           "damage": 1,
@@ -512,7 +531,7 @@
         },
         {
           "speaker": "You",
-          "text": "I think you’re being a little harsh…"
+          "text": "I think you’re being a little harsh..."
         },
         {
           "speaker": "You",
@@ -524,7 +543,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Quân",
@@ -544,7 +563,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Quân",
@@ -552,7 +571,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "This is when Caspian was seven or so…"
+          "text": "This is when Caspian was seven or so..."
         },
         {
           "speaker": "Quân",
@@ -560,7 +579,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "… he was always fucking weird about that kid…"
+          "text": "... he was always fucking weird about that kid..."
         },
         {
           "speaker": "Quân",
@@ -568,7 +587,7 @@
         },
         {
           "speaker": "You",
-          "text": "I… didn’t know about that."
+          "text": "I... didn’t know about that."
         },
         {
           "speaker": "Quân",
@@ -576,15 +595,15 @@
         },
         {
           "speaker": "Quân",
-          "text": "…heard from Caspian the bastard brought it up a few times when he was older too."
+          "text": "...heard from Caspian the bastard brought it up a few times when he was older too."
         },
         {
           "speaker": "You",
-          "text": "I… thought they got along better than that."
+          "text": "I... thought they got along better than that."
         },
         {
           "speaker": "You",
-          "text": "Dad always seemed to like Caspian way more than me…"
+          "text": "Dad always seemed to like Caspian way more than me..."
         },
         {
           "speaker": "Quân",
@@ -608,15 +627,15 @@
         },
         {
           "speaker": "You",
-          "text": "I didn’t realise it was a big enough problem to get… pointed out."
+          "text": "I didn’t realise it was a big enough problem to get... pointed out."
         },
         {
           "speaker": "You",
-          "text": "I… thought it was in my head…"
+          "text": "I... thought it was in my head..."
         },
         {
           "speaker": "You",
-          "text": "I mean… he was just… he wanted me to be better at things, I suppose."
+          "text": "I mean... he was just... he wanted me to be better at things, I suppose."
         },
         {
           "speaker": "Quân",
@@ -632,7 +651,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "… Did you ever wonder why you spent so much more time with Thi Ha and Louis than you did with me and Lia?"
+          "text": "... Did you ever wonder why you spent so much more time with Thi Ha and Louis than you did with me and Lia?"
         },
         {
           "speaker": "You",
@@ -652,19 +671,19 @@
         },
         {
           "speaker": "Quân",
-          "text": "… or he was scared of me, or something."
+          "text": "... or he was scared of me, or something."
         },
         {
           "speaker": "Quân",
-          "text": "I may have punched him once or twice… he deserved it, though."
+          "text": "I may have punched him once or twice... he deserved it, though."
         },
         {
           "speaker": "You",
-          "text": "That… checks out…"
+          "text": "That... checks out..."
         },
         {
           "speaker": "You",
-          "text": "You are kind of… intimidating…"
+          "text": "You are kind of... intimidating..."
         },
         {
           "speaker": "You",
@@ -688,7 +707,7 @@
         },
         {
           "speaker": "You",
-          "text": "That’s… bleak."
+          "text": "That’s... bleak."
         },
         {
           "speaker": "You",
@@ -723,11 +742,11 @@
         },
         {
           "speaker": "Quân",
-          "text": "I mean, you’re stumbling through these conversations like a drunken baby giraffe that’s never had a real thought in its life, but…"
+          "text": "I mean, you’re stumbling through these conversations like a drunken baby giraffe that’s never had a real thought in its life, but..."
         },
         {
           "speaker": "Quân",
-          "text": "Five years away from the family… it’d be easier to just drift off and run away from it all."
+          "text": "Five years away from the family... it’d be easier to just drift off and run away from it all."
         },
         {
           "speaker": "Quân",
@@ -747,7 +766,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "And not even because you’re trying to contact him…"
+          "text": "And not even because you’re trying to contact him..."
         },
         {
           "speaker": "Quân",
@@ -755,7 +774,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "If you really wanted answers, kid… he’s not that hard to find."
+          "text": "If you really wanted answers, kid... he’s not that hard to find."
         },
         {
           "speaker": "You",
@@ -763,7 +782,7 @@
         },
         {
           "speaker": "You",
-          "text": "He just… doesn’t answer…"
+          "text": "He just... doesn’t answer..."
         },
         {
           "speaker": "You",
@@ -771,7 +790,7 @@
         },
         {
           "speaker": "You",
-          "text": "I don’t know…"
+          "text": "I don’t know..."
         },
         {
           "speaker": "Quân",
@@ -835,11 +854,11 @@
         },
         {
           "speaker": "Quân",
-          "text": "…Well, you’re not wrong."
+          "text": "...Well, you’re not wrong."
         },
         {
           "speaker": "Quân",
-          "text": "Hell, I hate losing too…"
+          "text": "Hell, I hate losing too..."
         },
         {
           "speaker": "Quân",
@@ -847,7 +866,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "If you don’t try you’ve already lost… and once you start losing, it’s hard to stop."
+          "text": "If you don’t try you’ve already lost... and once you start losing, it’s hard to stop."
         },
         {
           "speaker": "Quân",
@@ -867,7 +886,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "Coming down the coast of Malaysia, needing to restock, but the Malaysian government's policy on boat people was to turn them away…"
+          "text": "Coming down the coast of Malaysia, needing to restock, but the Malaysian government's policy on boat people was to turn them away..."
         },
         {
           "speaker": "Quân",
@@ -875,7 +894,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "Literally begging for scraps…"
+          "text": "Literally begging for scraps..."
         },
         {
           "speaker": "You",
@@ -911,11 +930,11 @@
         },
         {
           "speaker": "Quân",
-          "text": "It's not…"
+          "text": "It's not..."
         },
         {
           "speaker": "Quân",
-          "text": "Just that I’ve had an awareness, I suppose, of how much everyone has in them the capacity to take… and how to go for the weakest link."
+          "text": "Just that I’ve had an awareness, I suppose, of how much everyone has in them the capacity to take... and how to go for the weakest link."
         },
         {
           "speaker": "You",
@@ -927,7 +946,7 @@
         },
         {
           "speaker": "You",
-          "text": "So… what does that have to do with me?"
+          "text": "So... what does that have to do with me?"
         },
         {
           "speaker": "You",
@@ -939,11 +958,11 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "… noted."
+          "text": "... noted."
         }
       ],
       "lose": [
@@ -957,7 +976,7 @@
         },
         {
           "speaker": "Quân",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Quân",
@@ -981,7 +1000,7 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Quân",

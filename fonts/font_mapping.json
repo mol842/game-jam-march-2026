@@ -17,7 +17,7 @@
 
   "Louis": {
     "font": "Boogaloo/Boogaloo-Regular.ttf",
-    "box-colour": "(34, 139, 34)",
+    "box-colour": "(59, 88, 146)",
     "text-colour": "(0,0,0)"
   },
   "Caspian": {
@@ -34,7 +34,9 @@
 
   "Linh": {
     "font": "Lobster_Two/LobsterTwo-Regular.ttf",
-    "box-colour": "(0, 128, 0)",
+    "box-colour-old": "(240, 206, 107)",
+    "box-colour": "(215, 157, 83)",
+
     "text-colour": "(0,0,0)"
   },
 

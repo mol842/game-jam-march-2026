@@ -93,7 +93,7 @@ class RoomSelect:
     end_angle   = math.radians(340)
     # oh god
     cx, cy = 400, 410   # centre of the arc (raw 800x500 coords)
-    rx, ry = 300, 300   # horizontal and vertical radii
+    rx, ry = 325, 300   # horizontal and vertical radii
  
     for i in range(num_rooms):
       t = i / (num_rooms - 1)
@@ -111,12 +111,15 @@ class RoomSelect:
         self.room_names[i],
         lambda idx=i: self.start_room(idx),
         color=button_colour,
-        font=font
+        font=font,
+        font_size=22
       )
       enemy = self.room_enemies[i][0]
       if enemy in self.prerequisites:
         button.disable()
-        button.color = (50, 50, 50)  # locked color
+        gray = sum(button_colour) / 3
+        desaturated_color = tuple(int(c * 0.1 + gray * 0.9) for c in button_colour)
+        button.color = desaturated_color  # locked color
         button.set_text(f"{self.room_names[i]}\n(LOCKED)")
       self.room_buttons.append(button)
  
@@ -142,8 +145,17 @@ class RoomSelect:
     if not self.visited_rooms[room_index]:
       self.visited_rooms[room_index] = True
       self.room_buttons[room_index].disable()
+
       self.room_buttons[room_index].color = (99,99,99)
+
+      button_colour = (99,99,99)
+      gray = sum(button_colour) / 3
+      desaturated_color = tuple(int(c * 0.1 + gray * 0.9) for c in button_colour)
+      self.room_buttons[room_index].color = desaturated_color  # locked color
+
       self.room_buttons[room_index].set_text(f"{self.room_names[room_index]}\n(VISITED)")
+
+      
       self.current_room = room_index
       self.current_enemy_index = 0
       self.start_next_battle()

@@ -61,7 +61,7 @@ class Enemy2:
     # HEALTH BAR
     self.health_bar.original_x = self.x
     self.health_bar.original_y = self.y - 30 * (self.game.height / 500.0) + 60
-    self.health_bar.original_y =  (self.game.height / 2) - (self.original_height / 3)
+    self.health_bar.original_y =  (self.game.height / 2) - (self.original_height / 3) - 80
 
     self.health_bar.original_width = self.width
     self.health_bar.original_height = 10 * (self.game.height / 500.0)
@@ -92,7 +92,7 @@ class Enemy2:
         # game.screen.blit(self.image, (self.x, self.y))
         # scaled_x = self.game.height / 2
 
-        game.screen.blit(self.image, (self.x + offset_x, (self.game.height / 2) - (self.original_height / 3) + offset_y  ))
+        game.screen.blit(self.image, (self.x + offset_x, (self.game.height / 2) - (self.original_height / 2) + offset_y - 80 ))
 
     if show_health:
         self.health_bar.draw(game)

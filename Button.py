@@ -4,7 +4,7 @@ from pygame.locals import Color
 from utils import *
 
 class Button:
-  def __init__(self, game, x, y, width, height, text, action, color=(90, 93, 93), font=None, text_color=None):
+  def __init__(self, game, x, y, width, height, text, action, color=(90, 93, 93), font=None, text_color=None, font_size=28):
     self.game = game
     self.original_x = x
     self.original_y = y
@@ -18,6 +18,7 @@ class Button:
 
     self.clickable = True
     self.visible = True
+    self.font_size = font_size
 
     self.action = action
     self.update_size()
@@ -28,7 +29,7 @@ class Button:
     self.width = self.original_width * (self.game.width / 800.0)
     self.height = self.original_height * (self.game.height / 500.0)
     self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
-    font_size = 28 * (self.game.height / 500.0)
+    font_size = self.font_size * (self.game.height / 500.0)
     if self.font_path:
       if not hasattr(self, 'font') or not self.font or self.font.get_height() != int(font_size):
         self.font = pygame.font.Font(self.font_path, int(font_size))
