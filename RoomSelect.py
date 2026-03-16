@@ -224,14 +224,14 @@ class RoomSelect:
     sx, sy = sw / 800.0, sh / 500.0
  
     # TITLE (centred)
-    font = pygame.font.Font(None, int(36 * sy))
+    font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Bold.ttf"), int(36 * sy))
     title = font.render("Select a Room", True, (255, 255, 255))
-    game.screen.blit(title, (sw // 2 - title.get_width() // 2, int(30 * sy)))
+    game.screen.blit(title, (sw // 2 - title.get_width() // 2, int(30 * sy) -30))
 
 
     # TALLY
-    tally_font = pygame.font.Font(None, int(28 * (game.height / 500.0)))
-    small_font = pygame.font.Font(None, int(20 * (game.height / 500.0)))
+    tally_font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Bold.ttf"), int(28 * (game.height / 500.0)))
+    small_font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Bold.ttf"), int(20 * (game.height / 500.0)))
     wins = len(game.wins)
     losses = len(game.losses)
     tally_x = int(620 * (game.width / 800.0))

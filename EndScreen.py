@@ -8,7 +8,7 @@ LIGHT_GRAY = (235, 235, 235)
 DARK_GRAY = (169, 169, 169)
 CREAM = (240, 220, 180)
 PURPLE = (180, 160, 220)
-RED = (255, 0, 0)
+RED = (128, 0, 32)
 BOX_COLOR = (0, 0, 0, 128)  
 from utils import *
 
@@ -35,7 +35,8 @@ class EndScreen:
 
   def start(self):
     print("STARTING ENDING")
-    self.game.set_background_image("end_background.png")
+    self.game.set_background_image("black.png")
+    # self.game.set_background_image(None)
 
     self.dialogue_index = 0
     self.showing_image = False
@@ -62,14 +63,14 @@ class EndScreen:
     scale = game.height / 500.0
     
     if self.showing_image: # FINAL ANIMAL
-      title_font = pygame.font.Font(None, int(48 * scale))
+      title_font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Bold.ttf"), int(48 * scale))
       animal_label = title_font.render(f"You are a {self.your_animal}!", True, WHITE)
       game.screen.blit(animal_label, animal_label.get_rect(center=(game.width // 2 - 4, int(340 * scale) - 38)))
       animal_label = title_font.render(f"You are a {self.your_animal}!", True, BLACK)
       game.screen.blit(animal_label, animal_label.get_rect(center=(game.width // 2, int(340 * scale) - 40)))
 
 
-      msg_font = pygame.font.Font(None, int(26 * scale))
+      msg_font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Regular.ttf"), int(26 * scale))
       words = self.your_animal_message.split()
       # WRAPPING THE STUPID TEXT
       lines, current = [], ""
@@ -96,7 +97,7 @@ class EndScreen:
         rendered = msg_font.render(line, True, PURPLE)
         game.screen.blit(rendered, rendered.get_rect(center=(game.width // 2, int(390 * scale) + i * int(30 * scale) - 40)))
 
-      thank_you_text = "Thank you for playing GAME.\nPost your animal in the comments below!\n- Eleanor and Molly"
+      thank_you_text = "Thank you for playing Kin Selection.\nPost your animal in the comments below!\n- Eleanor and Molly"
       thank_you_lines = thank_you_text.split('\n')
       for i, line in enumerate(thank_you_lines):
         thank_rendered = msg_font.render(line, True, RED)
@@ -107,11 +108,11 @@ class EndScreen:
         speaker = self.dialogue[self.dialogue_index]["speaker"]
         text = self.dialogue[self.dialogue_index]["text"]
 
-        speaker_font = pygame.font.Font(None, int(22 * scale))
+        speaker_font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Regular.ttf"), int(22 * scale))
         speaker_rendered = speaker_font.render(speaker.upper(), True, PURPLE)
         game.screen.blit(speaker_rendered, speaker_rendered.get_rect(centerx=game.width // 2, y=int(170 * scale)))
 
-        text_font = pygame.font.Font(None, int(30 * scale))
+        text_font = pygame.font.Font(resource_path(f"fonts/Crimson_Text/CrimsonText-Regular.ttf"), int(30 * scale))
         words = text.split()
         lines, current = [], ""
         for word in words:

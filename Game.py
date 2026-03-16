@@ -10,7 +10,7 @@ from utils import *
 
 WIDTH = 1400
 HEIGHT = 800
-GAME_TITLE = "hmmm"
+GAME_TITLE = "Kin Selection"
 class Game:
   def __init__(self):
     pygame.init()
@@ -48,6 +48,9 @@ class Game:
     self.change_music("soft-background-music-409193.mp3")
 
   def set_background_image(self, filename):
+
+    if not filename:
+      self.background = None
     try:
       print("SETTING BACKGROUND IMAGE TO", filename)
       self.background = pygame.image.load(resource_path(f"images/{filename}"))
@@ -59,7 +62,7 @@ class Game:
 
   def update_background(self):
     if self.background:
-      self.background = pygame.transform.scale(self.background, (self.width, self.height))
+      self.background = pygame.transform.smoothscale(self.background, (self.width, self.height))
     else:
       self.background = None
 

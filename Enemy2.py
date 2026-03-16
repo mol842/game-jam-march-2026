@@ -53,7 +53,7 @@ class Enemy2:
     self.height = self.original_height * (self.game.height / 500.0)
 
     if self.original_image:
-      self.image = pygame.transform.scale(self.original_image, (int(self.width), int(self.height)))
+      self.image = pygame.transform.smoothscale(self.original_image, (int(self.width), int(self.height)))
     else:
       self.image = pygame.Surface((int(self.width), int(self.height)))
       self.image.fill((255, 0, 255))
@@ -80,7 +80,7 @@ class Enemy2:
     if scale != 1.0:
         scaled_width = int(self.width * scale)
         scaled_height = int(self.height * scale)
-        scaled_image = pygame.transform.scale(self.image, (scaled_width, scaled_height))
+        scaled_image = pygame.transform.smoothscale(self.image, (scaled_width, scaled_height))
         scaled_x = self.x - (self.width * (scale - 1) / 2)
         scaled_y = self.y - (self.height * (scale - 1) / 2)
         # game.screen.blit(scaled_image, (scaled_x, scaled_y))
