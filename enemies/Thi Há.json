@@ -425,6 +425,12 @@
           "move": "move_1",
           "description": "",
           "dialogue": [
+
+            {
+              "speaker": "Narrator",
+              "text": "Thi Há used BRUTAL HONESTY!"
+            },
+
             {
               "speaker": "Thi Há",
               "text": "You’re still hung up on it, aren’t you?"

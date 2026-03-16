@@ -12,14 +12,14 @@ class RoomSelect:
 
     self.visited_rooms = [False, False, False, False]
     # photo names are also uhhhhhhhhh the same .png
-    self.room_names = ["lounge", "library", "patio", "kitchen"]
-    self.current_room = None
-    self.room_enemies = [
-      ["Louis", "Linh"],
-      ["Quân", "Lia"],
-      ["Caspian", "fred"] ,
-      ["Thi Há", "fred"]
-    ]
+    # self.room_names = ["lounge", "library", "patio", "kitchen"]
+    # self.current_room = None
+    # self.room_enemies = [
+    #   ["Louis", "Linh"],
+    #   ["Quân", "Lia"],
+    #   ["Caspian", "fred"] ,
+    #   ["Thi Há", "fred"]
+    # ]
 
     self.current_room = None
     self.visited_rooms = [False, False, False, False, False, False]
@@ -40,7 +40,37 @@ class RoomSelect:
       "Patio",
     ]
 
+    self.room_enemies = [
+      ["Caspian"] ,
+      ["Linh"],
+
+      ["Quân"],
+      ["Lia"],
+
+      ["Louis"],
+      ["Thi Há"],
+    ]
+    self.room_names = [
+      "Study" ,
+      "Library",
+
+      "Patio",
+      "Kitchen",
+
+      "Lounge",
+      "Dining Room",
+    ]
+
+
     self.current_enemy_index = 0
+
+    # MUST VISIT IN ORDERRRR
+    self.prerequisites = {
+        "Linh": "Caspian",
+        "Lia": "Quân",
+        "Thi Há": "Louis"
+    }
+    self.enemy_to_room = {self.room_enemies[i][0]: i for i in range(len(self.room_enemies))}
 
 
     # self.room_buttons = []
@@ -83,6 +113,11 @@ class RoomSelect:
         color=button_colour,
         font=font
       )
+      enemy = self.room_enemies[i][0]
+      if enemy in self.prerequisites:
+        button.disable()
+        button.color = (50, 50, 50)  # locked color
+        button.set_text(f"{self.room_names[i]}\n(LOCKED)")
       self.room_buttons.append(button)
  
     self.proceed_button = Button(
@@ -96,6 +131,14 @@ class RoomSelect:
 
 
   def start_room(self, room_index):
+    enemy_name = self.room_enemies[room_index][0]
+    if enemy_name in self.prerequisites:
+      prereq = self.prerequisites[enemy_name]
+      prereq_room = self.enemy_to_room[prereq]
+      if not self.visited_rooms[prereq_room]:
+        message = f"This room is locked until you visit {prereq} in the {self.room_names[prereq_room]}."
+        self.popup = Popup.confirm(self.game, message, "OK", "OK", self.close_popup, self.close_popup)
+        return
     if not self.visited_rooms[room_index]:
       self.visited_rooms[room_index] = True
       self.room_buttons[room_index].disable()
@@ -110,6 +153,16 @@ class RoomSelect:
       # Check if all rooms visited
       if all(self.visited_rooms):
         self.proceed_button.show()
+
+
+      # UNLOCK ROOMS 
+      for locked_enemy, prereq in self.prerequisites.items():
+        prereq_room = self.enemy_to_room[prereq]
+        locked_room = self.enemy_to_room[locked_enemy]
+        if self.visited_rooms[prereq_room] and not self.visited_rooms[locked_room]:
+          self.room_buttons[locked_room].clickable = True
+          self.room_buttons[locked_room].color = eval(self.font_mapping[locked_enemy]["box-colour"])
+          self.room_buttons[locked_room].set_text(self.room_names[locked_room])
 
   def start_next_battle(self):
     if self.current_room is not None and self.current_enemy_index < len(self.room_enemies[self.current_room]):

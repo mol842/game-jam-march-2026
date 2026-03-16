@@ -478,11 +478,11 @@
           "description": "",
           "dialogue": [
             {
-              "speaker": "Linh",
-              "text": "LINH used PARENTAL  AUTHORITY"
+              "speaker": "Narrator",
+              "text": "LINH used PARENTAL AUTHORITY"
             },
             {
-              "speaker": "Linh",
+              "speaker": "Narrator",
               "text": "It’s not very effective"
             },
             {
@@ -511,10 +511,6 @@
           "dialogue": [
             {
               "speaker": "Narrator",
-              "text": "Disappointment"
-            },
-            {
-              "speaker": "Narrator",
               "text": "LINH used DISAPPOINTMENT"
             },
             {
@@ -541,10 +537,6 @@
           "move": "move_3",
           "description": "",
           "dialogue": [
-            {
-              "speaker": "Narrator",
-              "text": "Comparison"
-            },
             {
               "speaker": "Narrator",
               "text": "LINH used COMPARISON"
