@@ -8,7 +8,7 @@
   "y": 90,
   "width": 130,
   "height": 200,
-  "image": "Thi Há.png",
+  "image": "Thi_Há.png",
   "battles": [
     {
       "intro": [
@@ -322,6 +322,25 @@
             "response": ""
           }
         ],
+        "Blatant Lie": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You tried to use BLATANT LIE"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "You have been cursed and are currently unable to lie."
+              }
+            ],
+            "damage": 0,
+            "response": ""
+          }
+        ],
+
         "Unnecessary Escalation": [
           {
             "move": "move_1",
