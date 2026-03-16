@@ -106,6 +106,7 @@ class Battle2:
     print("SETTING THE STAGE FOOORRRR", stage)
     self.stage = stage
     if stage == "battle" and not self.popup_triggered:
+      self.game.change_music("743699__michaelydian__video-game-battle-music.wav")
       self.enemy_popup = EnemyPopup(self.game, self.enemy)
       self.popup_triggered = True
 
@@ -147,12 +148,14 @@ class Battle2:
       elif self.enemy.curr_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.won = True
+        pygame.mixer.Sound("sound_effects/win.wav").play()
         self.game.dialogue_box.init_dialogue(self.battle_script["win"])
 
         self.game.update_score(True, self.enemy.name)
       elif self.player_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
         self.won = False
+        pygame.mixer.Sound("sound_effects/make_more_sound-8-bit-video-game-lose-sound-version-1-145828.mp3").play()
         self.game.dialogue_box.init_dialogue(self.battle_script["lose"])
         self.game.update_score(False, self.enemy.name)
 

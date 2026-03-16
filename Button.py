@@ -60,7 +60,7 @@ class Button:
 
 
   def hide(self):
-    print("HIDINGGGG")
+    # print("HIDINGGGG")
     self.clickable = False
     self.visible = False
 

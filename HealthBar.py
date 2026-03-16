@@ -34,6 +34,7 @@ class HealthBar:
   def update_health(self, new_health):
     if (new_health < self.curr_health):
       print("SHAKING")
+      pygame.mixer.Sound("sound_effects/r0t0r-8-bit-laser-151672.mp3").play()
       self.shake_frames = 60
       self.shake_intensity = 12
 

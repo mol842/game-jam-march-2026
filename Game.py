@@ -44,6 +44,8 @@ class Game:
     self.wins = []
     self.losses = []
 
+    self.change_music("soft-background-music-409193.mp3")
+
   def set_background_image(self, filename):
     try:
       print("SETTING BACKGROUND IMAGE TO", filename)
@@ -60,16 +62,26 @@ class Game:
     else:
       self.background = None
 
+  def change_music(self, filename):
+    try:
+      pygame.mixer.music.load(f"sound_effects/{filename}")
+      pygame.mixer.music.play(-1)
+      print(f"LOADED MUSIC {filename}")
+    except:
+      print(f"Failed to load music: {filename}")
+
   def init_dialogue(self, dialogue):
     self.dialogue_box.init_dialogue(dialogue)
     self.mode = "dialogue"
 
   def battle_mode(self):
+    self.change_music("743699__michaelydian__video-game-battle-music.wav")
     self.mode = "battle"
 
   def start_room_select(self):
     print("STARTING ROOM SELECTIONs")
     self.set_background_image("house.png")
+    self.change_music("soft-background-music-409193.mp3")
     self.mode = "room_select"
 
   def start_intro_dialogue(self):
