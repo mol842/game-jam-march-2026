@@ -112,7 +112,7 @@
                 "text": "Not that that face doesn’t need the help."
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -148,7 +148,7 @@
                 "text": "Seriously, this is kind of pathetic."
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -176,7 +176,7 @@
                 "text": "You are getting conned right now."
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           }
         ],
@@ -206,7 +206,7 @@
                 "text": "Maybe you should take a bit of time to go outside and heal... all that."
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           },
           {
@@ -234,7 +234,7 @@
                 "text": "And gives you cancer, or something."
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           },
           {
@@ -266,7 +266,7 @@
                 "text": "I mean, if you don’t admit it, that just proves it’s ineffective."
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           }
         ],
@@ -296,7 +296,7 @@
                 "text": "And you might be alone forever."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -324,7 +324,7 @@
                 "text": "Don’t you want to go back to those days?"
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -352,7 +352,7 @@
                 "text": "But you’re not making it easy."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           }
         ],
@@ -374,7 +374,7 @@
                 "text": "You’re a little bitch of a man, Louis!"
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -402,7 +402,7 @@
                 "text": "You’re just causing all your own problems!"
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -430,7 +430,7 @@
                 "text": "... who knows, maybe I’m not the only one who’s father isn’t why we thought."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           }
         ]
@@ -439,12 +439,17 @@
         {
           "move": "4chan insult",
           "description": "",
-          "damage": 5,
+          "damage": 2,
           "dialogue": [
             {
               "speaker": "Narrator",
               "text": "LOUIS used 4CHAN INSULT"
             },
+            {
+              "speaker": "Narrator",
+              "text": "It's embarassingly effective!"
+            },
+
             {
               "speaker": "Louis",
               "text": "You’re just upset because you’ve got beta, true-cel, prey eyes."
@@ -462,7 +467,7 @@
         { 
           "move": "Reddit Conspiracy",
           "description": "",
-          "damage": 5,
+          "damage": 2,
           
           "dialogue": [
             {
@@ -510,7 +515,7 @@
         { 
           "move": "Hyper-Specific Slurs",
           "description": "",
-          "damage": 7,
+          "damage": 3,
           "dialogue": [
             {
               "speaker": "Narrator",
@@ -539,15 +544,11 @@
             {
               "speaker": "You",
               "text": "I don’t even know what some of these mean!"
-            },
-            {
-              "speaker": "You",
-              "text": "Jordan Peterson’s self-help book"
             }
           ] 
         },
         { 
-          "move": "Hyper-Specific Slurs",
+          "move": "Jordan Peterson’s self-help book",
           "description": "",
           "dialogue": [
             {
@@ -559,7 +560,7 @@
               "text": "LOUIS healed"
             }
           ],
-          "damage": 0,
+          "damage": 1,
           "response": ""
         }
       ],

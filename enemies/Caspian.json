@@ -166,7 +166,7 @@
                 "text": "I never believed the cheating, but god to the robot rumours make sense."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -252,7 +252,7 @@
                 "text": "Made for a pretty shit childhood."
               }
             ],
-            "damage": 4,
+            "damage": 3,
             "response": ""
           },
           {
@@ -284,7 +284,7 @@
                 "text": "And I always lost."
               }
             ],
-            "damage": 4,
+            "damage": 3,
             "response": ""
           },
           {
@@ -320,7 +320,7 @@
                 "text": "Do you like who you become?"
               }
             ],
-            "damage": 4,
+            "damage": 3,
             "response": ""
           }
         ],
@@ -346,7 +346,7 @@
                 "text": "Does hearing everyone tell you how successful you are make you feel better?"
               }
             ],
-            "damage": 1,
+            "damage": 2,
             "response": ""
           },
           {
@@ -374,7 +374,7 @@
                 "text": "...I really hated you for that, back in the day."
               }
             ],
-            "damage": 1,
+            "damage": 2,
             "response": ""
           },
           {
@@ -402,7 +402,7 @@
                 "text": "...sometimes I remember I actually am."
               }
             ],
-            "damage": 1,
+            "damage": 2,
             "response": ""
           }
         ]
@@ -557,15 +557,11 @@
               "text": "God, you cried to mum immediately, I got lectured for two hours afterwards."
             }
           ],
-          "damage": 0,
+          "damage": 2,
           "response": ""
         }
       ],
       "intermission-50%": [
-            {
-              "speaker": "Narrator",
-              "text": "Health trigger: 50%"
-            },
             {
               "speaker": "Caspian",
               "text": "Stop."

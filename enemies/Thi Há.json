@@ -4,10 +4,10 @@
   "type": "Magic?",
   "relationship": "Your aunt",
   "start_health": 10,
-  "x": 600,
-  "y": 150,
-  "width": 150,
-  "height": 250,
+  "x": 625,
+  "y": 90,
+  "width": 130,
+  "height": 200,
   "image": "Thi Há.png",
   "battles": [
     {
@@ -18,7 +18,7 @@
         },
         {
           "speaker": "You",
-          "text": "How’s it going? I like your hair, very… bold."
+          "text": "How’s it going? I like your hair, very... bold."
         },
         {
           "speaker": "Thi Há",
@@ -50,11 +50,11 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "I’ve been good. Studying musical composition in Uni… it’s been fun."
+          "text": "I’ve been good. Studying musical composition in Uni... it’s been fun."
         },
         {
           "speaker": "Thi Há",
@@ -98,7 +98,7 @@
         },
         {
           "speaker": "You",
-          "text": "Right… sounds… legitimate…"
+          "text": "Right... sounds... legitimate..."
         },
         {
           "speaker": "You",
@@ -142,11 +142,11 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "… I don’t appreciate your tone, dear."
+          "text": "... I don’t appreciate your tone, dear."
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
@@ -158,11 +158,11 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "… did you just curse me?"
+          "text": "... did you just curse me?"
         }
       ],
       "your-moves": {
@@ -184,7 +184,7 @@
                 "text": "Why does this seem more like an aesthetic choice than an actual commitment to inner-peace?"
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -208,7 +208,7 @@
                 "text": "Looks to me like you’re just mixing and matching random ‘mystic’ bullshit!"
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -232,7 +232,7 @@
                 "text": "Why did you learn how to curse people?"
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           }
         ],
@@ -262,7 +262,7 @@
                 "text": "Louis’s literally caving his face in doing bone-smashing because you’ve been so on your enlightenment bullshit that you aren’t paying attention to him at all."
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           },
           {
@@ -286,7 +286,7 @@
                 "text": "It’s hard enough losing one parent, let alone both at the same time."
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           },
           {
@@ -307,7 +307,7 @@
               },
               {
                 "speaker": "You",
-                "text": "He was a gentle, understanding and empathetic guy from what I remember… then again, so were you."
+                "text": "He was a gentle, understanding and empathetic guy from what I remember... then again, so were you."
               },
               {
                 "speaker": "You",
@@ -318,7 +318,7 @@
                 "text": "I think he might not even recognise who you are anymore."
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           }
         ],
@@ -352,7 +352,7 @@
                 "text": "This is just embarrassing."
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -372,7 +372,7 @@
                 "text": "No wonder Louis doesn’t go outside, I’d avoid people too if I was associated with you."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -385,18 +385,18 @@
               },
               {
                 "speaker": "You",
-                "text": "What’s your zodiac again? I bet you’re really into all that…"
+                "text": "What’s your zodiac again? I bet you’re really into all that..."
               },
               {
                 "speaker": "You",
-                "text": "Let me guess… Libra! No… Cancer!"
+                "text": "Let me guess... Libra! No... Cancer!"
               },
               {
                 "speaker": "You",
                 "text": "I mean that derogatorily, by the way."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           }
         ]
@@ -425,19 +425,20 @@
             {
               "speaker": "You",
               "text": "Jesus Christ, you didn’t even hesitate."
-            },
-            {
-              "speaker": "You",
-              "text": "Actual real magic"
             }
           ],
-          "damage": 0,
+          "damage": 2,
           "response": ""
         },
         {
           "move": "move_2",
           "description": "",
           "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Thi Há used ACTUAL REAL MAGIC!"
+            },
+
             {
               "speaker": "Narrator",
               "text": "It’s super effective!"
@@ -452,7 +453,7 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
@@ -460,20 +461,20 @@
             },
             {
               "speaker": "You",
-              "text": "… what the fuck?"
-            },
-            {
-              "speaker": "You",
-              "text": "Enlightenment"
+              "text": "... what the fuck?"
             }
           ],
-          "damage": 0,
+          "damage": 4,
           "response": ""
         },
         {
           "move": "move_3",
           "description": "",
           "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Thi Há used ENLIGHTENMENT!"
+            },
             {
               "speaker": "Narrator",
               "text": "It’s not very effective"
@@ -497,19 +498,20 @@
             {
               "speaker": "You",
               "text": "Because that’s some ‘I think therefore I am’ bullshit."
-            },
-            {
-              "speaker": "You",
-              "text": "Dismissal"
             }
           ],
-          "damage": 0,
+          "damage": 1,
           "response": ""
         },
         {
           "move": "move_4",
           "description": "",
           "dialogue": [
+              {
+              "speaker": "Narrator",
+              "text": "Thi Há used DISMISSAL!"
+            },
+
             {
               "speaker": "Thi Há",
               "text": "That’s very interesting of you to say."
@@ -527,14 +529,14 @@
               "text": "You’re just ignoring me and making up what you want me to say, aren’t you?"
             }
           ],
-          "damage": 0,
+          "damage": 2,
           "response": ""
         }
       ],
       "intermission-50%": [
             {
               "speaker": "Thi Há",
-              "text": "You seem very agree, sweetheart."
+              "text": "You seem very angry, sweetheart."
             },
             {
               "speaker": "Thi Há",
@@ -546,11 +548,11 @@
             },
             {
               "speaker": "You",
-              "text": "Your son’s literally getting radicalised and you're over here ignoring the problem… and learning magic?"
+              "text": "Your son’s literally getting radicalised and you're over here ignoring the problem... and learning magic?"
             },
             {
               "speaker": "You",
-              "text": "I thought you were busy helping Louis and that’s why you never…"
+              "text": "I thought you were busy helping Louis and that’s why you never..."
             },
             {
               "speaker": "You",
@@ -558,11 +560,11 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
-              "text": "It’s hypocritical since I didn’t exactly visit you guys either, but… the reason mum didn’t take us up to see you guys was because she was so busy dealing the the fallout of dad."
+              "text": "It’s hypocritical since I didn’t exactly visit you guys either, but... the reason mum didn’t take us up to see you guys was because she was so busy dealing the the fallout of dad."
             },
             {
               "speaker": "You",
@@ -570,15 +572,15 @@
             },
             {
               "speaker": "You",
-              "text": "I… I thought you were focusing on Louis…"
+              "text": "I... I thought you were focusing on Louis..."
             },
             {
               "speaker": "You",
-              "text": "It’s why I didn’t think about him that much… but if you weren’t."
+              "text": "It’s why I didn’t think about him that much... but if you weren’t."
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
@@ -586,15 +588,15 @@
             },
             {
               "speaker": "You",
-              "text": "I know Uncle Quan and Lia made the rounds to both of us when everything happened, even though they suck at comforting people…"
+              "text": "I know Uncle Quan and Lia made the rounds to both of us when everything happened, even though they suck at comforting people..."
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
-              "text": "I… feel like the old you wouldn’t have done that…"
+              "text": "I... feel like the old you wouldn’t have done that..."
             },
             {
               "speaker": "You",
@@ -602,7 +604,7 @@
             },
             {
               "speaker": "Thi Há",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Thi Há",
@@ -622,11 +624,11 @@
             },
             {
               "speaker": "Thi Há",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Thi Há",
-              "text": "Perhaps I am different… and Louis’s changed too…"
+              "text": "Perhaps I am different... and Louis’s changed too..."
             },
             {
               "speaker": "Thi Há",
@@ -642,7 +644,7 @@
             },
             {
               "speaker": "Thi Há",
-              "text": "It’s not your father leaving or your mother lying that’s hurt you…"
+              "text": "It’s not your father leaving or your mother lying that’s hurt you..."
             },
             {
               "speaker": "Thi Há",
@@ -662,7 +664,7 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
@@ -710,11 +712,11 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
-          "text": "I’m just trying to find a little peace… is that so much to ask?"
+          "text": "I’m just trying to find a little peace... is that so much to ask?"
         },
         {
           "speaker": "You",
@@ -738,15 +740,15 @@
         },
         {
           "speaker": "You",
-          "text": "You can’t just… just leave people like that!"
+          "text": "You can’t just... just leave people like that!"
         },
         {
           "speaker": "You",
-          "text": "Even if you’re still actually present, you can’t just…"
+          "text": "Even if you’re still actually present, you can’t just..."
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
@@ -754,7 +756,7 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "I’m not leaving Louis’s life… or yours."
+          "text": "I’m not leaving Louis’s life... or yours."
         },
         {
           "speaker": "You",
@@ -762,27 +764,27 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "I’m not exactly religious… and you’re not wrong when you say that most of my problems are because I can’t ever let anything go, but…"
+          "text": "I’m not exactly religious... and you’re not wrong when you say that most of my problems are because I can’t ever let anything go, but..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "If you just let every problem go… doesn’t that just mean you’re not actually caring about the relationships?"
+          "text": "If you just let every problem go... doesn’t that just mean you’re not actually caring about the relationships?"
         },
         {
           "speaker": "You",
-          "text": "You’re right… the reason I get so fucked up over my dad is because I… love him, i guess… even still…"
+          "text": "You’re right... the reason I get so fucked up over my dad is because I... love him, i guess... even still..."
         },
         {
           "speaker": "You",
-          "text": "But then, doesn’t that just mean the reason you’re not messed up at all about Louis… or your husband is because you… don’t… love them…?"
+          "text": "But then, doesn’t that just mean the reason you’re not messed up at all about Louis... or your husband is because you... don’t... love them...?"
         },
         {
           "speaker": "Thi Há",
@@ -794,27 +796,27 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
-          "text": "… is that really what it looks like though?"
+          "text": "... is that really what it looks like though?"
         },
         {
           "speaker": "You",
-          "text": "… a bit…"
+          "text": "... a bit..."
         },
         {
           "speaker": "Thi Há",
-          "text": "… When my husband died… I… didn’t deal with it well."
+          "text": "... When my husband died... I... didn’t deal with it well."
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
-          "text": "You weren’t around at the time, but… grief… it changes people."
+          "text": "You weren’t around at the time, but... grief... it changes people."
         },
         {
           "speaker": "Thi Há",
@@ -822,7 +824,7 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
@@ -830,15 +832,15 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "We knew it was coming, but… part of me didn’t think he’d really die."
+          "text": "We knew it was coming, but... part of me didn’t think he’d really die."
         },
         {
           "speaker": "Thi Há",
-          "text": "He was in and out of hospitals so much… why would this time be any different?"
+          "text": "He was in and out of hospitals so much... why would this time be any different?"
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
@@ -846,51 +848,51 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "The shock softens everything with this air of unreality… detached from the situation."
+          "text": "The shock softens everything with this air of unreality... detached from the situation."
         },
         {
           "speaker": "Thi Há",
-          "text": "I… had a job to do."
+          "text": "I... had a job to do."
         },
         {
           "speaker": "Thi Há",
-          "text": "Money to make, bills to pay, a son to raise…"
+          "text": "Money to make, bills to pay, a son to raise..."
         },
         {
           "speaker": "Thi Há",
-          "text": "I didn’t have time to be depressed, so I… detached."
+          "text": "I didn’t have time to be depressed, so I... detached."
         },
         {
           "speaker": "You",
-          "text": "… isn’t that just… dissociation?"
+          "text": "... isn’t that just... dissociation?"
         },
         {
           "speaker": "You",
-          "text": "That’s… bad, isn’t it?"
+          "text": "That’s... bad, isn’t it?"
         },
         {
           "speaker": "You",
-          "text": "That’s not what… enlightenment or whatever really is."
+          "text": "That’s not what... enlightenment or whatever really is."
         },
         {
           "speaker": "Thi Há",
-          "text": "… maybe."
+          "text": "... maybe."
         },
         {
           "speaker": "Thi Há",
-          "text": "…it’s close enough, though, right?"
+          "text": "...it’s close enough, though, right?"
         },
         {
           "speaker": "You",
-          "text": "I don’t know if it is…"
+          "text": "I don’t know if it is..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
-          "text": "If… if I try to figure out how to… let things go…"
+          "text": "If... if I try to figure out how to... let things go..."
         },
         {
           "speaker": "You",
@@ -898,7 +900,7 @@
         },
         {
           "speaker": "You",
-          "text": "… I’m worried about him…"
+          "text": "... I’m worried about him..."
         },
         {
           "speaker": "You",
@@ -906,7 +908,7 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "… sure, sweetheart."
+          "text": "... sure, sweetheart."
         },
         {
           "speaker": "Thi Há",
@@ -920,7 +922,7 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "Angry and spiteful and clinging onto things long gone…"
+          "text": "Angry and spiteful and clinging onto things long gone..."
         },
         {
           "speaker": "Thi Há",
@@ -968,7 +970,7 @@
         },
         {
           "speaker": "You",
-          "text": "… 49 days?"
+          "text": "... 49 days?"
         },
         {
           "speaker": "You",
@@ -980,11 +982,11 @@
         },
         {
           "speaker": "Thi Há",
-          "text": "Our worldly attachments…"
+          "text": "Our worldly attachments..."
         },
         {
           "speaker": "Thi Há",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Thi Há",
@@ -996,7 +998,7 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
@@ -1012,7 +1014,7 @@
         },
         {
           "speaker": "You",
-          "text": "I… don’t know why I expected better."
+          "text": "I... don’t know why I expected better."
         }
       ]
     }

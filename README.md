@@ -1,6 +1,6 @@
 # KIN SELECTION
 
-Kin Selection (Noun): Kin selection or kin altruism is a form of natural selection. Some animals cooperate with relatives, even if this brings risk to themselves.
+Kin Selection (Noun): A form of natural selection. Some animals cooperate with relatives, even if this brings risk to themselves.
 
 CAN YOU SURVIVE A DYSFUNCTIONAL FAMILY DINNER?
 

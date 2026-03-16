@@ -195,9 +195,9 @@ class Battle2:
   def handle_event(self, event):
     if self.result_popup:
       self.result_popup.handle_event(event, self.game)
-    if self.enemy_popup:
+    elif self.enemy_popup and self.enemy_popup.visible:
       self.enemy_popup.handle_event(event, self.game)
-    if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
+    elif self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list and ((not self.enemy_popup) or (not self.enemy_popup.visible)):
       for btn in self.move_buttons.values():
         if btn.clickable:
           btn.handle_event(event, self.game)

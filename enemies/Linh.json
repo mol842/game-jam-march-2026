@@ -26,7 +26,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "So the prodigal son returns…"
+          "text": "So the prodigal son returns..."
         },
         {
           "speaker": "Linh",
@@ -62,7 +62,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -126,7 +126,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -168,7 +168,7 @@
                 "text": "Then, when you get caught, it ruins our entire family and I get upset, you tell me I’m acting like a child?"
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           },
           {
@@ -204,7 +204,7 @@
                 "text": "Of course I fucking hate him, are you serious?"
               }
             ],
-            "damage": 0,
+            "damage": 3,
             "response": ""
           },
           {
@@ -240,6 +240,25 @@
                 "text": "Is that what you’re saying? Because it sure sounds like it."
               }
             ],
+            "damage": 3,
+            "response": ""
+          }
+        ],
+
+        "Blatant Lie": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You tried to use BLATANT LIE"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "You have been cursed and are currently unable to lie."
+              }
+            ],
             "damage": 0,
             "response": ""
           }
@@ -270,7 +289,7 @@
                 "text": "Am I really that much of a problem to you?"
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -299,14 +318,14 @@
               },
               {
                 "speaker": "You",
-                "text": "…"
+                "text": "..."
               },
               {
                 "speaker": "You",
                 "text": "And he’s gone because of you."
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -323,18 +342,18 @@
               },
               {
                 "speaker": "You",
-                "text": "I got so much shit from dad about how much more accomplished and easier to handle Caspian was…"
+                "text": "I got so much shit from dad about how much more accomplished and easier to handle Caspian was..."
               },
               {
                 "speaker": "You",
-                "text": "I thought you were more fair than him, but I wonder…"
+                "text": "I thought you were more fair than him, but I wonder..."
               },
               {
                 "speaker": "You",
-                "text": "… It you and dad swapped places… would you have left me too?"
+                "text": "... It you and dad swapped places... would you have left me too?"
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           }
         ],
@@ -360,7 +379,7 @@
                 "text": "But now? I’m not sure if he was wrong."
               }
             ],
-            "damage": 0,
+            "damage": 1,
             "response": ""
           },
           {
@@ -384,7 +403,7 @@
                 "text": "I suppose you love someone who just does whatever the fuck you tell them."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           },
           {
@@ -412,14 +431,14 @@
                 "text": "You’ve clearly had one foot out the door anyway."
               }
             ],
-            "damage": 0,
+            "damage": 2,
             "response": ""
           }
         ]
       },
       "their-moves": [
         {
-          "move": "move_1",
+          "move": "move_0",
           "description": "",
           "dialogue": [
             {
@@ -436,7 +455,7 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
@@ -449,11 +468,15 @@
             {
               "speaker": "Linh",
               "text": "I guess he did."
-            },
-            {
-              "speaker": "Linh",
-              "text": "Parental authority"
-            },
+            }
+          ],
+          "damage": 2,
+          "response": ""
+        },
+        {
+          "move": "move_1",
+          "description": "",
+          "dialogue": [
             {
               "speaker": "Linh",
               "text": "LINH used PARENTAL  AUTHORITY"
@@ -479,7 +502,7 @@
               "text": "I really was too lenient on you."
             }
           ],
-          "damage": 0,
+          "damage": 2,
           "response": ""
         },
         {
@@ -504,14 +527,14 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
               "text": "Maybe I expected too much."
             }
           ],
-          "damage": 0,
+          "damage": 2,
           "response": ""
         },
         {
@@ -536,7 +559,7 @@
             },
             {
               "speaker": "Linh",
-              "text": "Why can’t you just… be a little more like him."
+              "text": "Why can’t you just... be a little more like him."
             },
             {
               "speaker": "Linh",
@@ -555,7 +578,7 @@
               "text": "Wow, thanks mum. That really endeared me to your plight."
             }
           ],
-          "damage": 0,
+          "damage": 3,
           "response": ""
         }
       ],
@@ -590,7 +613,7 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
@@ -598,11 +621,11 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
-              "text": "I didn’t know either…"
+              "text": "I didn’t know either..."
             },
             {
               "speaker": "You",
@@ -626,11 +649,11 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
-              "text": "Things with him were… different, than things with your father."
+              "text": "Things with him were... different, than things with your father."
             },
             {
               "speaker": "Linh",
@@ -642,15 +665,15 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
-              "text": "How was it messy? I don’t understand, I… I thought you guys were happy."
+              "text": "How was it messy? I don’t understand, I... I thought you guys were happy."
             },
             {
               "speaker": "Linh",
-              "text": "Before you were born I had… a misscarriage. Two, technically."
+              "text": "Before you were born I had... a misscarriage. Two, technically."
             },
             {
               "speaker": "Linh",
@@ -662,15 +685,15 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
-              "text": "I was… devastated… to say the least."
+              "text": "I was... devastated... to say the least."
             },
             {
               "speaker": "Linh",
-              "text": "And your father was… not particularly… empathetic, in the aftermath."
+              "text": "And your father was... not particularly... empathetic, in the aftermath."
             },
             {
               "speaker": "Linh",
@@ -678,15 +701,15 @@
             },
             {
               "speaker": "Linh",
-              "text": "To your father the twins were more of a concept than a pair of actual children. I was… more connected, not just in the physical sense."
+              "text": "To your father the twins were more of a concept than a pair of actual children. I was... more connected, not just in the physical sense."
             },
             {
               "speaker": "You",
-              "text": "I… didn’t know that happened."
+              "text": "I... didn’t know that happened."
             },
             {
               "speaker": "You",
-              "text": "It sounds… terrible."
+              "text": "It sounds... terrible."
             },
             {
               "speaker": "Linh",
@@ -694,7 +717,7 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
@@ -710,7 +733,7 @@
             },
             {
               "speaker": "Linh",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "Linh",
@@ -730,15 +753,15 @@
             },
             {
               "speaker": "You",
-              "text": "…"
+              "text": "..."
             },
             {
               "speaker": "You",
-              "text": "I guess things were more complicated than they seemed at first…"
+              "text": "I guess things were more complicated than they seemed at first..."
             },
             {
               "speaker": "You",
-              "text": "But…"
+              "text": "But..."
             },
             {
               "speaker": "You",
@@ -750,7 +773,7 @@
             },
             {
               "speaker": "You",
-              "text": "I… don’t know if I can look past that…"
+              "text": "I... don’t know if I can look past that..."
             },
             {
               "speaker": "Linh",
@@ -785,15 +808,15 @@
         },
         {
           "speaker": "Linh",
-          "text": "…not that I regret it."
+          "text": "...not that I regret it."
         },
         {
           "speaker": "Linh",
-          "text": "Caspian is my son, no matter what, but…"
+          "text": "Caspian is my son, no matter what, but..."
         },
         {
           "speaker": "Linh",
-          "text": "When your father proposed to me two years later…"
+          "text": "When your father proposed to me two years later..."
         },
         {
           "speaker": "Linh",
@@ -801,15 +824,15 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
-          "text": "Not because I knew I loved your father, but because… we had a child."
+          "text": "Not because I knew I loved your father, but because... we had a child."
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -817,7 +840,7 @@
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "You",
@@ -825,7 +848,7 @@
         },
         {
           "speaker": "You",
-          "text": "Or did we just… keep you there."
+          "text": "Or did we just... keep you there."
         },
         {
           "speaker": "Linh",
@@ -837,7 +860,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "And your father…"
+          "text": "And your father..."
         },
         {
           "speaker": "Linh",
@@ -849,7 +872,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -861,7 +884,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "Your father was… confident."
+          "text": "Your father was... confident."
         },
         {
           "speaker": "Linh",
@@ -869,7 +892,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "It felt like I was… proving something, when he asked me out."
+          "text": "It felt like I was... proving something, when he asked me out."
         },
         {
           "speaker": "Linh",
@@ -877,7 +900,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -905,7 +928,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -933,7 +956,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "I don’t know if you do…"
+          "text": "I don’t know if you do..."
         },
         {
           "speaker": "Linh",
@@ -941,15 +964,15 @@
         },
         {
           "speaker": "Linh",
-          "text": "Even when he’s gone…"
+          "text": "Even when he’s gone..."
         },
         {
           "speaker": "You",
-          "text": "That’s not…"
+          "text": "That’s not..."
         },
         {
           "speaker": "You",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -961,11 +984,11 @@
         },
         {
           "speaker": "Linh",
-          "text": "But I worry…"
+          "text": "But I worry..."
         },
         {
           "speaker": "Linh",
-          "text": "…I worry that the reason you don’t want to meet him isn’t because you yourself don’t want to,"
+          "text": "...I worry that the reason you don’t want to meet him isn’t because you yourself don’t want to,"
         },
         {
           "speaker": "Linh",
@@ -973,11 +996,11 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
-          "text": "…but he left you."
+          "text": "...but he left you."
         },
         {
           "speaker": "Linh",
@@ -985,25 +1008,25 @@
         },
         {
           "speaker": "You",
-          "text": "I’ll… I’ll think about it."
+          "text": "I’ll... I’ll think about it."
         },
         {
           "speaker": "You",
-          "text": "No promise, but… I’ll actually think about it."
+          "text": "No promise, but... I’ll actually think about it."
         }
       ],
       "lose": [
         {
           "speaker": "Linh",
-          "text": "You are so… childish."
+          "text": "You are so... childish."
         },
         {
           "speaker": "Linh",
-          "text": "Immature, ungrateful and overall just…"
+          "text": "Immature, ungrateful and overall just..."
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -1011,7 +1034,7 @@
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",
@@ -1035,11 +1058,11 @@
         },
         {
           "speaker": "Linh",
-          "text": "You are just…"
+          "text": "You are just..."
         },
         {
           "speaker": "Linh",
-          "text": "…"
+          "text": "..."
         },
         {
           "speaker": "Linh",

@@ -51,7 +51,24 @@ class HealthBar:
           'text': f'-{self.curr_health - new_health}',
           'x': self.x + self.width / 2,
           'y': self.y,
-          'timer': 60
+          'timer': 60,
+          'color': (255, 80, 80)
+      })
+
+    if (new_health > self.curr_health):
+      print("SHAKING")
+      if self.hit_sound:
+        self.hit_sound.play()
+      
+      self.shake_frames = 60
+      self.shake_intensity = 12
+
+      self.damage_popups.append({
+          'text': f'+{self.curr_health - new_health}',
+          'x': self.x + self.width / 2,
+          'y': self.y,
+          'timer': 60,
+          'color': (80, 255, 80)
       })
 
     self.curr_health = max(0, min(new_health, self.max_health))
@@ -97,7 +114,9 @@ class HealthBar:
     for popup in self.damage_popups[:]:
       progress = 1 - (popup['timer'] / 60)
       draw_y = popup['y'] - progress * 40
-      text = font.render(popup['text'], True, (255, 80, 80))
+      # text = font.render(popup['text'], True, (255, 80, 80))
+      text = font.render(popup['text'], True, popup['color'])
+
       text.set_alpha(min(255, popup['timer'] * 6))
       game.screen.blit(text, text.get_rect(center=(popup['x'], draw_y)))
       popup['timer'] -= 1

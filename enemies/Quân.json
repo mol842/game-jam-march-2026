@@ -111,7 +111,24 @@
 
               }
         ]     
+        },
+                { 
+          "move": "Jordan Peterson’s self-help book",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "You",
+              "text": "LOUIS used JORDAN PETERSON’S SELF-HELP BOOK"
+            },
+            {
+              "speaker": "You",
+              "text": "LOUIS healed"
+            }
+          ],
+          "damage": 2,
+          "response": ""
         }
+
 
 
 
