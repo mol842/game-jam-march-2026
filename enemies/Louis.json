@@ -3,6 +3,8 @@
   "description": "Orange-Fingered Yabby - Cherax depressus",
   "type": "Incel",
   "relationship": "Your dipshit cousin",
+  "animal-fact": "",
+
   "start_health": 10,
   "x": 500,
   "y": 200,
@@ -552,12 +554,12 @@
           "description": "",
           "dialogue": [
             {
-              "speaker": "You",
+              "speaker": "Narrator",
               "text": "LOUIS used JORDAN PETERSON’S SELF-HELP BOOK"
             },
             {
-              "speaker": "You",
-              "text": "LOUIS healed"
+              "speaker": "Narrator",
+              "text": "LOUIS healed (he did not)"
             }
           ],
           "damage": 1,

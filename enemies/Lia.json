@@ -3,6 +3,8 @@
   "description": "Vampire Moth - Calyptra minuticornis",
   "type": "",
   "relationship": "Your cousin",
+  "animal-fact": "",
+
   "start_health": 10,
   "x": 600,
   "y": 200,

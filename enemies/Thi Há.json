@@ -3,6 +3,8 @@
   "description": "Costasiella Sea Slug - Costasiella kuroshimae",
   "type": "Magic?",
   "relationship": "Your aunt",
+  "animal-fact": "",
+
   "start_health": 10,
   "x": 625,
   "y": 90,
@@ -489,7 +491,7 @@
               "text": "... what the fuck?"
             }
           ],
-          "damage": 4,
+          "damage": 3,
           "response": ""
         },
         {
@@ -613,7 +615,7 @@
             },
             {
               "speaker": "You",
-              "text": "I know Uncle Quan and Lia made the rounds to both of us when everything happened, even though they suck at comforting people..."
+              "text": "I know Uncle Quân and Lia made the rounds to both of us when everything happened, even though they suck at comforting people..."
             },
             {
               "speaker": "You",

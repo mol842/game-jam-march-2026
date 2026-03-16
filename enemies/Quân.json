@@ -1,171 +1,993 @@
 {
   "name": "Quân",
   "description": "Old World Bearded Vulture - Gypaetus barbatus",
-  "type": "",
+  "type": "Pessimist",
   "relationship": "Your uncle",
+  "animal-fact": "",
+
   "start_health": 10,
   "x": 500,
-  "y": 200,
-  "width": 300,
-  "height": 300,
+  "y": 50,
+  "width": 200,
+  "height": 200,
   "image": "Quân.png",
-  "battles":
-  [
+  "battles": [
     {
-      "intro":
-      [
+      "intro": [
         {
           "speaker": "You",
-          "text": "whatevereer"
+          "text": "Hey… Uncle Quân…"
         },
         {
-          "speaker": "Fred",
-          "text": "whatever2.0"
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "How are–"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Stop mumbling and ask the question."
+        },
+        {
+          "speaker": "You",
+          "text": "How are you doing?"
+        },
+        {
+          "speaker": "You",
+          "text": "I haven’t seen you in a while."
+        },
+        {
+          "speaker": "Quân",
+          "text": "I’m doing the same as always."
+        },
+        {
+          "speaker": "Quân",
+          "text": "And you?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Still caught up on all that shit with Linh’s bastard ex?"
+        },
+        {
+          "speaker": "You",
+          "text": "…yes."
+        },
+        {
+          "speaker": "You",
+          "text": "I’m still ‘caught up in all that shit’ with my father."
+        },
+        {
+          "speaker": "You",
+          "text": "… who raised me for fifteen years."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Sure, he’s that too."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Never liked the guy myself, but whatever."
+        },
+        {
+          "speaker": "You",
+          "text": "Thank you for the commentary."
+        },
+        {
+          "speaker": "You",
+          "text": "There’s been a lot of hating my dad going around since he left."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Sounds like is the majority opinion,"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Probably deserved, then."
+        },
+        {
+          "speaker": "You",
+          "text": "What have you even got against him? He didn’t do anything to you."
+        },
+        {
+          "speaker": "Quân",
+          "text": "I am well within my rights to shit-talk my sisters douche of an ex her ditched her and their fucking kids because of one fucking incident."
+        },
+        {
+          "speaker": "You",
+          "text": "That’s true, but… I mean, mum is the one who cheated."
+        },
+        {
+          "speaker": "Quân",
+          "text": "I honestly don’t give a fuck what my sister did or didn’t do."
+        },
+        {
+          "speaker": "You",
+          "text": "I mean, morally…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Family is family, kid, and as far as I’m concerned, your father’s not part of it anymore. Of his own volition, even."
+        },
+        {
+          "speaker": "Quân",
+          "text": "I’m definitely not going to be taking his side."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Never liked him anyway."
+        },
+        {
+          "speaker": "You",
+          "text": "Rewriting history a bit, aren’t you?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "I’m not a fan of these accusations, kid."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Do you have something to say to me?"
         }
-
       ],
-
-      "your-moves":
-      {
+      "your-moves": {
         "Facts & Logic": [
           {
-            "move": "snopes",
-            "description": "you pull up snopes and wave your phone at him",
+            "move": "move_1",
+            "description": "",
             "dialogue": [
               {
                 "speaker": "Narrator",
-                "text": "You used SNOPES \n It was not effective."
-
+                "text": "You used FACTS AND LOGIC"
               },
-
-
               {
                 "speaker": "You",
-                "text": "Bro look at this"
-
+                "text": "Are you really getting on my case about ‘disrespecting you’ or something while you shit-talk my dad in front of me?"
+              },
+              {
+                "speaker": "You",
+                "text": "You seemed pretty quiet about all that to me growing up."
               }
-
             ],
-            "damage": 1,
-            "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
-
+            "damage": 2,
+            "response": ""
           },
-
           {
-            "move": "wikipedia",
-            "description": "you pull up wikipedia and wave your phone at him",
-            "damage": 1,
-            "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "You",
+                "text": "You don’t seem to share the same resentment for Lia’s mother for not being around."
+              },
+              {
+                "speaker": "You",
+                "text": "Is it different if they leave immediately as opposed to trying for fifteen years?"
+              }
+            ],
+            "damage": 2,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used FACTS AND LOGIC"
+              },
+              {
+                "speaker": "You",
+                "text": "You’re a fucking hypocrit for holding dad accountable for his actions and then turning around and admitting flat out that you wouldn’t care if he was still family."
+              },
+              {
+                "speaker": "You",
+                "text": "Is it because he left? Or is it just because you seemed to have hated him anyway and just wanted an excuse?"
+              }
+            ],
+            "damage": 2,
+            "response": ""
           }
-
-
         ],
-
         "Blatant Lie": [
           {
-            "move": "lie1",
-            "description": "You tell a blatant lie",
-            "damage": 5,
-            "response": "WHAT? THAT'S NOT TRUE!"
-          }
-        ],
-
-        "Emotional Manipulation": [
-          {
-            "move": "manip1",
-            "description": "You manipulate emotionally",
-            "damage": 10,
-            "response": "HOW COULD YOU!"
-          }
-        ],
-
-        "Unnecessary Escalation": [
-          {
-            "move": "esc1",
-            "description": "You escalate unnecessarily",
-            "damage": 10,
-            "response": "ARGGHIUUUGH!"
-          }
-        ]
-
-      },
-
-      "their-moves":
-      [
-        
-        {
-          "move": "4chan conspiracy",
-          "description": "LOOK AT THIS",
-          "damage": 1,
-          "response": "this is... unreadable. you take psychic damage",
-          "dialogue":
-          [
-            {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
                 "speaker": "Narrator",
-                "text": "Fred used 4chan conspiracy \n It was SUPER effective!"
-
+                "text": "You used BLATANT LIE"
               },
               {
                 "speaker": "You",
-                "text": "this is... unreadable. you take 1 psychic damage"
-
+                "text": "I’ve always thought you were kind of sketchy, you know?"
+              },
+              {
+                "speaker": "You",
+                "text": "You always glared and frowned at me as a child."
+              },
+              {
+                "speaker": "You",
+                "text": "Scared the shit out of me back then."
               }
-        ]     
-        },
-                { 
-          "move": "Jordan Peterson’s self-help book",
+            ],
+            "damage": 2,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "You",
+                "text": "I really hated mum for what she did."
+              },
+              {
+                "speaker": "You",
+                "text": "And you for taking her side so heavily that it seems like she didn’t have to introspect at all."
+              }
+            ],
+            "damage": 2,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used BLATANT LIE"
+              },
+              {
+                "speaker": "You",
+                "text": "I don't blame dad for leaving if this was really all he had here."
+              },
+              {
+                "speaker": "You",
+                "text": "I really don’t."
+              }
+            ],
+            "damage": 2,
+            "response": ""
+          }
+        ],
+        "Emotional Manipulation": [
+          {
+            "move": "move_1",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It was super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "You’re talking pretty big for someone who barely showed up himself."
+              },
+              {
+                "speaker": "You",
+                "text": "You weren’t around when Louis dad died, you weren’t around when my dad left."
+              },
+              {
+                "speaker": "You",
+                "text": "If it’s so simple, then where were you?"
+              }
+            ],
+            "damage": 3,
+            "response": ""
+          },
+          {
+            "move": "move_2",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It was super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "I wanted to talk to you after it happened."
+              },
+              {
+                "speaker": "You",
+                "text": "But even before it all happened I barely saw you…"
+              },
+              {
+                "speaker": "You",
+                "text": "I barely saw Lia either…"
+              },
+              {
+                "speaker": "You",
+                "text": "You never visited properly. Doesn’t she even know anyone but you?"
+              }
+            ],
+            "damage": 3,
+            "response": ""
+          },
+          {
+            "move": "move_3",
+            "description": "",
+            "dialogue": [
+              {
+                "speaker": "Narrator",
+                "text": "You used EMOTIONAL MANIPULATION"
+              },
+              {
+                "speaker": "Narrator",
+                "text": "It was super effective!"
+              },
+              {
+                "speaker": "You",
+                "text": "You say ‘family is family’, and you’re quick to criticise anyone you think is doing it wrong, but I’ll be honest, Quân…"
+              },
+              {
+                "speaker": "You",
+                "text": "You never have been particularly warm or easy to talk to."
+              },
+              {
+                "speaker": "You",
+                "text": "… especially not now."
+              }
+            ],
+            "damage": 3,
+            "response": ""
+          }
+        ]
+      },
+      "their-moves": [
+        {
+          "move": "move_1",
           "description": "",
           "dialogue": [
             {
-              "speaker": "You",
-              "text": "LOUIS used JORDAN PETERSON’S SELF-HELP BOOK"
+              "speaker": "Narrator",
+              "text": "Quân used INTIMIDATE"
+            },
+            {
+              "speaker": "Quân",
+              "text": "Spit out your fucking point already, kid."
+            },
+            {
+              "speaker": "Quân",
+              "text": "You’re talking in circles."
+            },
+            {
+              "speaker": "Quân",
+              "text": "Either say what you mean or don’t say anything at all."
             },
             {
               "speaker": "You",
-              "text": "LOUIS healed"
+              "text": "…"
+            },
+            {
+              "speaker": "Quân",
+              "text": "That’s what I thought."
             }
           ],
           "damage": 2,
           "response": ""
+        },
+        {
+          "move": "move_2",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Quân used LORE DROP"
+            },
+            {
+              "speaker": "Quân",
+              "text": "When I was your age, this guy I knew tried to kill me."
+            },
+            {
+              "speaker": "Quân",
+              "text": "I was helping him out with this thing – long story, not important – and when he finally didn’t need my help anymore, he tried to knife me."
+            },
+            {
+              "speaker": "Quân",
+              "text": "unsuccessfully, obviously, he was pretty bad with a knife."
+            },
+            {
+              "speaker": "Quân",
+              "text": "But the important this is that I learned that you need to be careful who you trust and how you let those people treat you."
+            },
+            {
+              "speaker": "Quân",
+              "text": "…"
+            },
+            {
+              "speaker": "Quân",
+              "text": "They’re always circling, waiting for a weakness."
+            }
+          ],
+          "damage": 2,
+          "response": ""
+        },
+        {
+          "move": "move_3",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Quân used OH SHIT, REAL BIRD!"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "It was super effective!"
+            },
+            {
+              "speaker": "Quân",
+              "text": "Con kên kên"
+            },
+            {
+              "speaker": "Quân",
+              "text": "Get him."
+            },
+            {
+              "speaker": "You",
+              "text": "What?"
+            },
+            {
+              "speaker": "You",
+              "text": "Oh Jesus! BIRD! BIRD!"
+            },
+            {
+              "speaker": "You",
+              "text": "What the fuck!"
+            },
+            {
+              "speaker": "You",
+              "text": "I thought those were metaphorical!"
+            }
+          ],
+          "damage": 3,
+          "response": ""
+        },
+        {
+          "move": "move_4",
+          "description": "",
+          "dialogue": [
+            {
+              "speaker": "Narrator",
+              "text": "Quân used JUDGEMENT"
+            },
+            {
+              "speaker": "Narrator",
+              "text": "It’s not very effective."
+            },
+            {
+              "speaker": "Quân",
+              "text": "God damn, kid."
+            },
+            {
+              "speaker": "Quân",
+              "text": "I never knew my expectations for someone could fall so… low."
+            }
+          ],
+          "damage": 1,
+          "response": ""
         }
-
-
-
-
       ],
-
-
-      "intermission-50%":       [
+      "intermission-50%": [
+        {
+          "speaker": "Quân",
+          "text": "Look, kid. What I don’t get is why you’re trying so hard to defend this guy."
+        },
+        {
+          "speaker": "Quân",
+          "text": "He walked out on you."
+        },
+        {
+          "speaker": "Quân",
+          "text": "You’re picking fights with me like I’m not one of the people that’s stuck around."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Which is a low fucking bar, but it’s what you’re measuring aginst at this point."
+        },
+        {
+          "speaker": "Quân",
+          "text": "He wasn’t even that good to you when he was around."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Real piece of shit."
+        },
         {
           "speaker": "You",
-          "text": "you reached 50% health"
-        }
-      ],
-
-      
-      "intermission-25%":       [
+          "text": "I think you’re being a little harsh…"
+        },
         {
           "speaker": "You",
-          "text": "you reached 25% health"
-        }
-      ],
-
-      "win":
-      [
+          "text": "He wasn’t that bad."
+        },
+        {
+          "speaker": "Quân",
+          "text": "He kind of was."
+        },
+        {
+          "speaker": "Quân",
+          "text": "…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "You were practically a fetus when he left–"
+        },
         {
           "speaker": "You",
-          "text": "you won"
-        }
-      ],
-      "lose":
-      [
+          "text": "I was fifteen."
+        },
+        {
+          "speaker": "Quân",
+          "text": "And you’re barely any older now, but take it from a guy who actually saw him on even footing."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Your dad was a piece of work."
+        },
+        {
+          "speaker": "Quân",
+          "text": "…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "You must have been about one or two at the time, but there was a solid period of time when he tried to get Caspian to start calling him his name or fucking ‘sir’ instead of ‘dad’."
+        },
+        {
+          "speaker": "Quân",
+          "text": "This is when Caspian was seven or so…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Something about him having a real kid now, or not wanting to differentiate you two."
+        },
+        {
+          "speaker": "Quân",
+          "text": "… he was always fucking weird about that kid…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Screwed up Caspian at the time too. I remember Linh screaming her head off at the bastard when she found out."
+        },
         {
           "speaker": "You",
-          "text": "you lost"
+          "text": "I… didn’t know about that."
+        },
+        {
+          "speaker": "Quân",
+          "text": "You wouldn’t, Linh shut that shit down."
+        },
+        {
+          "speaker": "Quân",
+          "text": "…heard from Caspian the bastard brought it up a few times when he was older too."
+        },
+        {
+          "speaker": "You",
+          "text": "I… thought they got along better than that."
+        },
+        {
+          "speaker": "You",
+          "text": "Dad always seemed to like Caspian way more than me…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "See, that shit was a fucking nightmare too."
+        },
+        {
+          "speaker": "Quân",
+          "text": "You can make up all these excuses about him doing it subconsciously, or not thinking it did any harm or something,"
+        },
+        {
+          "speaker": "Quân",
+          "text": "But that guy threw you two at each other like it was a blood sport."
+        },
+        {
+          "speaker": "Quân",
+          "text": "And he wasn’t a fucking child, he had to have known what he was doing."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Especially after I pointed it out to the guy."
+        },
+        {
+          "speaker": "You",
+          "text": "I didn’t realise it was a big enough problem to get… pointed out."
+        },
+        {
+          "speaker": "You",
+          "text": "I… thought it was in my head…"
+        },
+        {
+          "speaker": "You",
+          "text": "I mean… he was just… he wanted me to be better at things, I suppose."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Of course you didn’t realise this stuff, you were an infant."
+        },
+        {
+          "speaker": "You",
+          "text": "Again, I was fifteen."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Whatever, same thing."
+        },
+        {
+          "speaker": "Quân",
+          "text": "… Did you ever wonder why you spent so much more time with Thi Ha and Louis than you did with me and Lia?"
+        },
+        {
+          "speaker": "You",
+          "text": "Not really?"
+        },
+        {
+          "speaker": "You",
+          "text": "I assume it was just more convenient. Or that Thi Ha and mum were just closer."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Nah."
+        },
+        {
+          "speaker": "Quân",
+          "text": "It’s because your ‘dad’ hated me."
+        },
+        {
+          "speaker": "Quân",
+          "text": "… or he was scared of me, or something."
+        },
+        {
+          "speaker": "Quân",
+          "text": "I may have punched him once or twice… he deserved it, though."
+        },
+        {
+          "speaker": "You",
+          "text": "That… checks out…"
+        },
+        {
+          "speaker": "You",
+          "text": "You are kind of… intimidating…"
+        },
+        {
+          "speaker": "You",
+          "text": "Though, I can’t really imagine dad being scared of anything, not enough to avoid you like that."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Let me tell you a little something about human relationships: It’s all about the give and take."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Funny thing is, for the most part, the whole thing is unequal."
+        },
+        {
+          "speaker": "Quân",
+          "text": "What you’ve got to decide is what relationships are worth giving more of yourself to than you get in return."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Or which ones you need to defend yourself against."
+        },
+        {
+          "speaker": "You",
+          "text": "That’s… bleak."
+        },
+        {
+          "speaker": "You",
+          "text": "Wouldn’t you only want relationships that give you more back?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Sure."
+        },
+        {
+          "speaker": "Quân",
+          "text": "That’s called being a selfish fucking bastard."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Like your dad."
+        },
+        {
+          "speaker": "You",
+          "text": "That felt unnecessarily pointed."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Did it? I wonder why."
         }
-
+      ],
+      "intermission-25%": [],
+      "win": [
+        {
+          "speaker": "Quân",
+          "text": "You’re a good kid, y’know?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "I mean, you’re stumbling through these conversations like a drunken baby giraffe that’s never had a real thought in its life, but…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Five years away from the family… it’d be easier to just drift off and run away from it all."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Takes some determination, if nothing else, to come back and try to make things work."
+        },
+        {
+          "speaker": "You",
+          "text": "You could just say something nice."
+        },
+        {
+          "speaker": "You",
+          "text": "The giraffe thing was unnecessary."
+        },
+        {
+          "speaker": "Quân",
+          "text": "That’s why it’s so fucking sad that you’re still bleeding yourself dry making excuses for that bastard after all this time."
+        },
+        {
+          "speaker": "Quân",
+          "text": "And not even because you’re trying to contact him…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "You’re just waiting."
+        },
+        {
+          "speaker": "Quân",
+          "text": "If you really wanted answers, kid… he’s not that hard to find."
+        },
+        {
+          "speaker": "You",
+          "text": "I’ve tried to contact him. I’m not just sitting around."
+        },
+        {
+          "speaker": "You",
+          "text": "He just… doesn’t answer…"
+        },
+        {
+          "speaker": "You",
+          "text": "But he hasn’t blocked me either."
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t know…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "We’re in the fucking information age, kid."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Just stalking him to find where he is and show up in person."
+        },
+        {
+          "speaker": "Quân",
+          "text": "That’s the only way you’re gonna get any answers, and if you need that to move one then go and get it."
+        },
+        {
+          "speaker": "You",
+          "text": "He’s not gonna be happy to see me if I do that."
+        },
+        {
+          "speaker": "You",
+          "text": "He hates confrontations."
+        },
+        {
+          "speaker": "Quân",
+          "text": "So you are aware that he’s a coward."
+        },
+        {
+          "speaker": "You",
+          "text": "That’s not what I said."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Fine, but it’s what I think."
+        },
+        {
+          "speaker": "Quân",
+          "text": "The guy only ever deals with people he thinks are weaker than him."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Ones that he can tell are about to drop out of the fight any second."
+        },
+        {
+          "speaker": "Quân",
+          "text": "That’s why he hated me, and that's why he barely fought for anything in the divorce with Linh."
+        },
+        {
+          "speaker": "Quân",
+          "text": "He hates losing, so he doesn’t fight."
+        },
+        {
+          "speaker": "You",
+          "text": "Everybody hates losing."
+        },
+        {
+          "speaker": "You",
+          "text": "I hate losing, why do you think I keep getting into these stupid arguments."
+        },
+        {
+          "speaker": "You",
+          "text": "It’s not exactly a revelation."
+        },
+        {
+          "speaker": "Quân",
+          "text": "…Well, you’re not wrong."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Hell, I hate losing too…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "But that’s why you’ve always got to go for fucking gold."
+        },
+        {
+          "speaker": "Quân",
+          "text": "If you don’t try you’ve already lost… and once you start losing, it’s hard to stop."
+        },
+        {
+          "speaker": "Quân",
+          "text": "People tend to kick you when you’re down."
+        },
+        {
+          "speaker": "You",
+          "text": "You are a fountain of incredibly pessimistic advice."
+        },
+        {
+          "speaker": "You",
+          "text": "I guess I get why Lia’s such a weirdo now."
+        },
+        {
+          "speaker": "Quân",
+          "text": "There’s a life lesson I learned on the boat down to Australia after we left Vietnam, y’know?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Coming down the coast of Malaysia, needing to restock, but the Malaysian government's policy on boat people was to turn them away…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "We got out supplies for the last leg of the journey from the Western tourists on a beach resort because we were a sad enough sight for them to pity us."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Literally begging for scraps…"
+        },
+        {
+          "speaker": "You",
+          "text": "You learned that people are actually kind and will help you if they can?"
+        },
+        {
+          "speaker": "You",
+          "text": "And that humanity has some inherent good in us?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "I mean, yeah, sure, that too."
+        },
+        {
+          "speaker": "Quân",
+          "text": "But I learned something about myself, and the people on that boat."
+        },
+        {
+          "speaker": "Quân",
+          "text": "Inside even the most proud person, is a survivalist."
+        },
+        {
+          "speaker": "Quân",
+          "text": "The people on that boat used to be well connected, affluent people before the fucking communists did their shit."
+        },
+        {
+          "speaker": "Quân",
+          "text": "But when push comes to shove, they were prepared to let go of their pride."
+        },
+        {
+          "speaker": "You",
+          "text": "You’re saying that like it’s a bad thing."
+        },
+        {
+          "speaker": "Quân",
+          "text": "It's not…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Just that I’ve had an awareness, I suppose, of how much everyone has in them the capacity to take… and how to go for the weakest link."
+        },
+        {
+          "speaker": "You",
+          "text": "Tourists?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "They’re sure easier to convince than the government."
+        },
+        {
+          "speaker": "You",
+          "text": "So… what does that have to do with me?"
+        },
+        {
+          "speaker": "You",
+          "text": "Or dad?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Just to be careful not to let him take advantage of you because you’re too sentimental for some version of him in your head that isn’t real."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "… noted."
+        }
+      ],
+      "lose": [
+        {
+          "speaker": "Quân",
+          "text": "You are a stubborn, stupid kid aren’t you?"
+        },
+        {
+          "speaker": "Quân",
+          "text": "And here I thought Louis was gonna be the kid to worry about."
+        },
+        {
+          "speaker": "Quân",
+          "text": "…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "But at least Louis doesn’t come into the family get togethers swinging like you do."
+        },
+        {
+          "speaker": "Quân",
+          "text": "You’re a real landmine of a kid, you know?"
+        },
+        {
+          "speaker": "You",
+          "text": "What’s that supposed to mean?"
+        },
+        {
+          "speaker": "You",
+          "text": "You’re the one who sicked a bird on me!"
+        },
+        {
+          "speaker": "Quân",
+          "text": "It just means I don’t know whether it’s really worth inviting you to these at all."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "Quân",
+          "text": "Now get out of my fucking face."
+        }
       ]
     }
-
   ]
 }

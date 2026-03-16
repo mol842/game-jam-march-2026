@@ -3,6 +3,8 @@
   "description": "Inland Taipan Snake - Oxyuranus microlepidotus",
   "type": "Psychic",
   "relationship": "Your mother",
+  "animal-fact": "",
+
   "start_health": 10,
   "x": 600,
   "y": 200,
