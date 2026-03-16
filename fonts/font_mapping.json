@@ -1,0 +1,53 @@
+{
+  "Fred": {
+    "font": "Mansalva/Mansalva-Regular.ttf",
+    "box-colour": "(34, 139, 34)",
+    "text-colour": "(0,0,0)"
+  },
+  "You": {
+    "font": "PT_Serif/PTSerif-Bold.ttf",
+    "box-colour": "(112,128,144)",
+    "text-colour": "(0,0,0)"
+  },
+  "Narrator": {
+    "font": "Crimson_Text/CrimsonText-Regular.ttf",
+    "box-colour": "(34, 139, 34)",
+    "text-colour": "(0,0,0)"
+  },
+
+  "Louis": {
+    "font": "Boogaloo/Boogaloo-Regular.ttf",
+    "box-colour": "(34, 139, 34)",
+    "text-colour": "(0,0,0)"
+  },
+  "Caspian": {
+    "font": "SourGummy/SourGummy-Regular.ttf",
+    "box-colour": "(209, 160, 111)",
+    "text-colour": "(0,0,0)"
+  },
+
+  "Lia": {
+    "font": "Texturina/Texturina_14pt-Regular.ttf",
+    "box-colour": "(128, 0, 128)",
+    "text-colour": "(0,0,0)"
+  },
+
+  "Linh": {
+    "font": "Lobster_Two/LobsterTwo-Regular.ttf",
+    "box-colour": "(0, 128, 0)",
+    "text-colour": "(0,0,0)"
+  },
+
+  "Quân": {
+    "font": "Mansalva/Mansalva-Regular.ttf",
+    "box-colour": "(139, 69, 19)",
+    "text-colour": "(0,0,0)"
+  },
+
+  "Thi Há": {
+    "font": "Emilys_Candy/EmilysCandy-Regular.ttf",
+    "box-colour": "(0, 191, 255)",
+    "text-colour": "(0,0,0)"
+  }
+
+}

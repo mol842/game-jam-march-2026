@@ -1,7 +1,7 @@
 __pycache__
 .vscode
 
-fonts
+# fonts
 .DS_Store
 parser
 old_files
