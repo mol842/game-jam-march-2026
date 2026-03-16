@@ -1,6 +1,7 @@
 import pygame
 from Button import *
 from Battle2 import *
+from PopupConfirm import Popup
 
 class RoomSelect:
   def __init__(self, game):
@@ -10,7 +11,7 @@ class RoomSelect:
     self.room_names = ["lounge", "library", "verandah", "kitchen"]
     self.current_room = None
     self.room_enemies = [
-      ["Louis", "fred"],
+      ["Louis", "Linh"],
       ["Quân", "Lia"],
       ["Caspian", "fred"] ,
       ["Thi Há", "fred"]
@@ -25,8 +26,9 @@ class RoomSelect:
       self.room_buttons.append(button)
     
     # PROCEED BUTTON BUT HIDDEN (REVEALED WHEN YOUVE DONE ALL THE ROOMS)
-    self.proceed_button = Button(self.game, 350, 400, 100, 50, "Leave the party", self.go_to_end)
+    self.proceed_button = Button(self.game, 350, 400, 200, 50, "Leave the party", self.handle_proceed_click, color=(48, 25, 52))
     # self.proceed_button.hide()
+    self.popup = None
 
   def start_room(self, room_index):
     if not self.visited_rooms[room_index]:
@@ -73,11 +75,25 @@ class RoomSelect:
     print("STARTING END SCREEN")
     self.game.start_end_screen()
 
+  def handle_proceed_click(self):
+    if len(self.game.wins + self.game.losses) < 6:
+      n = 6 - len(self.game.wins + self.game.losses) 
+      message = f"Do you really want to leave the party?\nyou still have {n} people to speak to"
+      self.popup = Popup.confirm(self.game, message, "I'm sure, leave", "Stay", self.go_to_end, self.close_popup)
+    else:
+      self.go_to_end()
+
+  def close_popup(self):
+    self.popup = None
+
   def handle_event(self, event, game):
-    for button in self.room_buttons:
-      button.handle_event(event, game)
-    if self.proceed_button.visible:
-      self.proceed_button.handle_event(event, game)
+    if self.popup:
+      self.popup.handle_event(event, game)
+    else:
+      for button in self.room_buttons:
+        button.handle_event(event, game)
+      if self.proceed_button.visible:
+        self.proceed_button.handle_event(event, game)
 
   def draw(self, game):
     # TITLE
@@ -125,3 +141,6 @@ class RoomSelect:
       button.draw(game)
     
     self.proceed_button.draw(game)
+
+    if self.popup:
+      self.popup.draw(game)

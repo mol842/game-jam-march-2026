@@ -4,6 +4,7 @@ import json
 from Enemy2 import Enemy2
 from Button import Button
 from HealthBar import HealthBar
+from PopupConfirm import Popup
 
 class Battle2:
   def __init__(self, enemy_name, game, end_callback=None):
@@ -20,6 +21,7 @@ class Battle2:
     self.player_health_bar = HealthBar(self.game, 100, 100, 300, 40, "Your Health", self.player_start_health, self.player_health)
 
     self.result_popup = None
+    self.won = None
     self.turn = 'player'
     self.enemy_moveion_time = 0
 
@@ -136,15 +138,13 @@ class Battle2:
       ## WIN / LOSE!
       elif self.enemy.curr_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
-        self.result_popup = {"text": f"YOU WON THE ARGUMENT\nAGAINST {self.enemy.name.upper()}", "timer": 180, "won": True}
+        self.won = True
         self.game.dialogue_box.init_dialogue(self.battle_script["win"])
 
         self.game.update_score(True, self.enemy.name)
       elif self.player_health <= 0 and not self.game.dialogue_box.dialogue_list:
         self.stage = "end"
-
-        self.result_popup = {"text": f"YOU LOST THE ARGUMENT\nAGAINST {self.enemy.name.upper()}", "timer": 180, "won": False}
-
+        self.won = False
         self.game.dialogue_box.init_dialogue(self.battle_script["lose"])
         self.game.update_score(False, self.enemy.name)
 
@@ -154,17 +154,20 @@ class Battle2:
 
     elif self.stage == "end":
       if not self.game.dialogue_box.dialogue_list:
-        # print("ENDING BATTLE")
-        # enddddd battle
-        if self.end_callback:
-          self.end_callback()
-        else:
-          self.stage = "stopped"
-          self.game.start_room_select()
-          # self.game.mode = "room_select"
+        if not self.result_popup:
+          self.result_popup = Popup.result(self.game, self.enemy.name, self.won)
+        if self.result_popup and not self.result_popup.visible:
+          self.result_popup = None
+          if self.end_callback:
+            self.end_callback()
+          else:
+            self.stage = "stopped"
+            self.game.start_room_select()
 
 
   def handle_event(self, event):
+    if self.result_popup:
+      self.result_popup.handle_event(event, self.game)
     if self.stage == "battle" and self.turn == 'player' and not self.game.dialogue_box.dialogue_list:
       for btn in self.move_buttons.values():
         if btn.clickable:
@@ -190,38 +193,4 @@ class Battle2:
               btn.draw(game)
 
     if self.result_popup:
-      self.result_popup["timer"] -= 1
-      timer = self.result_popup["timer"]
-      won = self.result_popup["won"]
-
-      if timer > 160:
-        alpha = int(255 * (180 - timer) / 20)
-      elif timer < 40:
-        alpha = int(255 * timer / 40)
-      else:
-        alpha = 255
-
-      colour = (120, 220, 120) if won else (220, 100, 100)
-      big_font = pygame.font.Font(None, int(64 * (game.height / 500.0)))
-      small_font = pygame.font.Font(None, int(32 * (game.height / 500.0)))
-
-      lines = self.result_popup["text"].split("\n")
-
-      # DARKENNNN SCREEEEN
-      overlay = pygame.Surface((game.width, game.height), pygame.SRCALPHA)
-      overlay.fill((0, 0, 0, min(160, alpha)))
-      game.screen.blit(overlay, (0, 0))
-
-      line_height = int(70 * (game.height / 500.0))
-      total_h = len(lines) * line_height
-      start_y = game.height // 2 - total_h // 2
-
-      for i, line in enumerate(lines):
-        font = big_font if i == 0 else small_font
-        text = font.render(line, True, colour)
-        text.set_alpha(alpha)
-        rect = text.get_rect(center=(game.width // 2, start_y + i * line_height))
-        game.screen.blit(text, rect)
-
-      if timer <= 0:
-        self.result_popup = None
+      self.result_popup.draw(self.game)

@@ -62,8 +62,11 @@ class EndScreen:
     
     if self.showing_image: # FINAL ANIMAL
       title_font = pygame.font.Font(None, int(48 * scale))
+      animal_label = title_font.render(f"You are a {self.your_animal}!", True, WHITE)
+      game.screen.blit(animal_label, animal_label.get_rect(center=(game.width // 2 - 4, int(340 * scale) - 38)))
       animal_label = title_font.render(f"You are a {self.your_animal}!", True, BLACK)
       game.screen.blit(animal_label, animal_label.get_rect(center=(game.width // 2, int(340 * scale) - 40)))
+
 
       msg_font = pygame.font.Font(None, int(26 * scale))
       words = self.your_animal_message.split()
