@@ -8,8 +8,8 @@
   "start_health": 10,
   "x": 600,
   "y": 200,
-  "width": 150,
-  "height": 300,
+  "width": 200,
+  "height": 200,
   "image": "Linh.png",
   "battles": [
     {

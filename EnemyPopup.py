@@ -7,12 +7,12 @@ from utils import *
 import textwrap
 
 
-DEFAULT_TEXT_TITLE = (255, 210, 100)
-DEFAULT_TEXT_WHITE = (240, 235, 245)
+DEFAULT_TEXT_TITLE = (255, 255, 255)
+DEFAULT_TEXT_WHITE = (255, 255, 255)
 
 BG_DARK       = (28, 24, 32)
 BG_MID        = (40, 34, 48)
-TEXT_MUTED    = (170, 155, 185)
+TEXT_MUTED    = (255, 255, 255)
 OVERLAY_COLOR = (0, 0, 0)
 
 class EnemyPopup(Popup):
@@ -40,21 +40,25 @@ class EnemyPopup(Popup):
       self.font_title = pygame.font.Font(None, int(22 * sy))
       self.font_label = pygame.font.Font(None, int(18 * sy))
       self.font_body = pygame.font.Font(None, int(16 * sy))
+      self.font_animal_fact = pygame.font.Font(None, int(14 * sy))
     else:
       accent_color = eval(entry.get("box-colour", "")) or DEFAULT_TEXT_TITLE
       text_colour = eval(entry.get("text-colour", "")) or DEFAULT_TEXT_WHITE
       self.accent_color = accent_color
-      self.text_title = text_colour
-      self.text_white = text_colour
+      self.text_title = (255, 255, 255)
+      self.text_white = (255, 255, 255)
       font_path = entry.get("font")
       self.font_title = pygame.font.Font(None, int(22 * sy))
       self.font_label = pygame.font.Font(None, int(18 * sy))
       self.font_body = pygame.font.Font(None, int(16 * sy))
+
+
       if font_path:
         full_path = os.path.join(resource_path("fonts"), font_path)
         self.font_title = pygame.font.Font(full_path, int(22 * sy))
         self.font_label = pygame.font.Font(full_path, int(18 * sy))
         self.font_body = pygame.font.Font(full_path, int(16 * sy))
+        self.font_animal_fact = pygame.font.Font(full_path, int(14 * sy)) if font_path else pygame.font.Font(None, int(14 * sy))
 
     self.border_dim = tuple(int(c * 0.45 + 20) for c in self.accent_color)
     self.border_lit = tuple(min(255, int(c * 0.7 + 80)) for c in self.accent_color)
@@ -145,7 +149,7 @@ class EnemyPopup(Popup):
       ("Description",  [part.strip() for part in self.enemy.description.split("-")] if "-" in self.enemy.description else [self.enemy.description]),
     ]
     if self.enemy.animal_fact:
-      fields.append(("Animal Fact", textwrap.wrap(self.enemy.animal_fact, width=50)))
+      fields.append(("Animal Fact", textwrap.wrap(self.enemy.animal_fact, width=60)))
 
     y = body_y
     for label, values in fields:
@@ -154,9 +158,12 @@ class EnemyPopup(Popup):
         label_w = label_surf.get_width() + int(8 * sx)
         card.blit(label_surf, (text_x, y))
       else:
-        label_w = 0
+        label_w = -40
       for value in values:
-        value_surf = self.font_body.render(value, True, self.text_white)
+        if label == "Animal Fact":
+          value_surf = self.font_animal_fact.render(value, True, self.text_white)
+        else:
+          value_surf = self.font_body.render(value, True, self.text_white)
         card.blit(value_surf, (text_x + label_w, y))
         y += line_h
 

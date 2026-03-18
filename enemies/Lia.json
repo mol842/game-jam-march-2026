@@ -1,156 +1,190 @@
 {
   "name": "Lia",
   "description": "Vampire Moth - Calyptra minuticornis",
-  "type": "",
+  "type": "Spooky",
   "relationship": "Your cousin",
   "animal-fact": "The Vampire Moth is one of the few moth species that retains it's mouth after metamorphosis. Though a cute and fluffy creature that can subsist off fruit juice, this moth is known to have a painful bite and a taste for blood.",
 
-  "start_health": 10,
+  "start_health": 0,
   "x": 600,
   "y": 200,
   "width": 300,
   "height": 300,
   "image": "Lia.png",
-  "battles":
-  [
+  "battles": [
     {
-      "intro":
-      [
+      "intro": [
         {
           "speaker": "You",
-          "text": "whatevereer"
+          "text": "Lia, it’s been a while."
         },
         {
-          "speaker": "Fred",
-          "text": "whatever2.0"
-        }
-
-      ],
-
-      "your-moves":
-      {
-        "Facts & Logic": [
-          {
-            "move": "snopes",
-            "description": "you pull up snopes and wave your phone at him",
-            "dialogue": [
-              {
-                "speaker": "Narrator",
-                "text": "You used SNOPES \n It was not effective."
-
-              },
-
-
-              {
-                "speaker": "You",
-                "text": "Bro look at this"
-
-              }
-
-            ],
-            "damage": 1,
-            "response": "AHA, YOU REALLY BELIEVE THAT BULLSHIT?"
-
-          },
-
-          {
-            "move": "wikipedia",
-            "description": "you pull up wikipedia and wave your phone at him",
-            "damage": 1,
-            "response": "AHA, WIIPEDIA IS WOKE LEFTIST BULLSHIT"
-          }
-
-
-        ],
-
-        "Blatant Lie": [
-          {
-            "move": "lie1",
-            "description": "You tell a blatant lie",
-            "damage": 5,
-            "response": "WHAT? THAT'S NOT TRUE!"
-          }
-        ],
-
-        "Emotional Manipulation": [
-          {
-            "move": "manip1",
-            "description": "You manipulate emotionally",
-            "damage": 10,
-            "response": "HOW COULD YOU!"
-          }
-        ],
-
-        "Unnecessary Escalation": [
-          {
-            "move": "esc1",
-            "description": "You escalate unnecessarily",
-            "damage": 10,
-            "response": "ARGGHIUUUGH!"
-          }
-        ]
-
-      },
-
-      "their-moves":
-      [
-        
-        {
-          "move": "4chan conspiracy",
-          "description": "LOOK AT THIS",
-          "damage": 1,
-          "response": "this is... unreadable. you take psychic damage",
-          "dialogue":
-          [
-            {
-                "speaker": "Narrator",
-                "text": "Fred used 4chan conspiracy \n It was SUPER effective!"
-
-              },
-              {
-                "speaker": "You",
-                "text": "this is... unreadable. you take 1 psychic damage"
-
-              }
-        ]     
-        }
-
-
-
-      ],
-
-
-      "intermission-50%":       [
+          "speaker": "Lia",
+          "text": "Nice of you to finally join us, daddy issues."
+        },
         {
           "speaker": "You",
-          "text": "you reached 50% health"
-        }
-      ],
-
-      
-      "intermission-25%":       [
+          "text": "What, no ‘hey, hello, how’s it been?’"
+        },
         {
           "speaker": "You",
-          "text": "you reached 25% health"
-        }
-      ],
-
-      "win":
-      [
+          "text": "Is the lack of manners a sign of your mummy issues?"
+        },
+        {
+          "speaker": "Lia",
+          "text": "Can’t have mummy issues if I don’t have a mother."
+        },
+        {
+          "speaker": "Lia",
+          "text": "Unlike you."
+        },
+        {
+          "speaker": "Lia",
+          "text": "You’ve been collecting all the issues."
+        },
         {
           "speaker": "You",
-          "text": "you won"
-        }
-      ],
-      "lose":
-      [
+          "text": "You’re the worst. Is this why we never talked as kids?"
+        },
+        {
+          "speaker": "Lia",
+          "text": "We didn’t talk because I’m almost a decade older than you and you were a literal infant."
+        },
         {
           "speaker": "You",
-          "text": "you lost"
+          "text": "You sound exactly like uncle Quan when you say that."
+        },
+        {
+          "speaker": "Lia",
+          "text": "Sure do."
+        },
+        {
+          "speaker": "Lia",
+          "text": "Who do you think you sound more like, your mum or your dad?"
+        },
+        {
+          "speaker": "You",
+          "text": "I don’t know? Why would you ask that?"
+        },
+        {
+          "speaker": "You",
+          "text": "Kind of insensitive."
+        },
+        {
+          "speaker": "Lia",
+          "text": "I’ve been told I have a tendency to pick at open wounds."
+        },
+        {
+          "speaker": "Lia",
+          "text": "In more than just the literal sense."
+        },
+        {
+          "speaker": "You",
+          "text": "You work with dead people, I know."
+        },
+        {
+          "speaker": "Lia",
+          "text": "Forensic mortician is a lively job you know."
+        },
+        {
+          "speaker": "Lia",
+          "text": "Aside from the obvious."
+        },
+        {
+          "speaker": "Lia",
+          "text": "It’s just a fun exploration of cause and effect."
+        },
+        {
+          "speaker": "Lia",
+          "text": "It makes me want to poke you with a cattle prod to see why you’re like this."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "That’s concerning?"
+        },
+        {
+          "speaker": "Lia",
+          "text": "Most of us are pretty sure it’s your dad that's got you messed up, but I hypothesise that he’s just the symptom of your bigger problem."
+        },
+        {
+          "speaker": "You",
+          "text": "… I’m gonna regret this, but…"
+        },
+        {
+          "speaker": "You",
+          "text": "What is my bigger problem?"
+        },
+        {
+          "speaker": "Lia",
+          "text": "Your crippling sense of inadequacy for one thing."
+        },
+        {
+          "speaker": "Lia",
+          "text": "Your imposter syndrome – that’s somehow worse than Caspian’s – for another."
+        },
+        {
+          "speaker": "Lia",
+          "text": "But it mostly comes down to your crippling sense of self worth manifesting as consistent self-sabotage from all social relationships and then taking it as evidence that those relationships themselves were the problem and not you."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "Lia",
+          "text": "Argue with me. Come on, I’m ready for it."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "It was lovely talking to Lia, really."
+        },
+        {
+          "speaker": "You",
+          "text": "I love catching up with you."
+        },
+        {
+          "speaker": "You",
+          "text": "…"
+        },
+        {
+          "speaker": "You",
+          "text": "I’m gonna have to head off now, though… but, uh… catch you later."
+        },
+        {
+          "speaker": "Lia",
+          "text": "That’s a shame, I was looking forward to this."
+        },
+        {
+          "speaker": "Lia",
+          "text": "…"
+        },
+        {
+          "speaker": "Lia",
+          "text": "Ah well, can’t be helped."
+        },
+        {
+          "speaker": "Lia",
+          "text": "I’ll see you around!"
+        },
+        {
+          "speaker": "Lia",
+          "text": "… probably soon."
         }
-
-      ]
+      ],
+      "your-moves": {},
+      "their-moves": [],
+      "intermission-50%": [],
+      "intermission-25%": [],
+      "win": [],
+      "lose": []
     }
-
   ]
 }

@@ -6,10 +6,10 @@
   "animal-fact": "The Costasiella Sea Slug, also known as the 'leaf sheep' drifts through life, unconcerned by the world around it. It is one of the only known animals that is part plant. Rather than digesting the sea-grass it eats, it absorbs its food into its body and grows with it, using it to photosynthesise. ",
 
   "start_health": 10,
-  "x": 625,
-  "y": 90,
-  "width": 130,
-  "height": 200,
+  "x": 580,
+  "y": 60,
+  "width": 270,
+  "height": 270,
   "image": "Thi_Há.png",
   "battles": [
     {

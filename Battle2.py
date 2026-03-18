@@ -116,6 +116,12 @@ class Battle2:
     self.switch_turn()
 
   def set_stage(self, stage):
+
+    if self.enemy.name == "Lia":
+      self.game.update_score(True, self.enemy.name)
+      self.stage = "stopped"
+      self.game.start_room_select()
+    
     print("SETTING THE STAGE FOOORRRR", stage)
     self.stage = stage
     if stage == "battle" and not self.popup_triggered:

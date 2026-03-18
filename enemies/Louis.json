@@ -3,13 +3,13 @@
   "description": "Orange Fingered Yabby - Cherax depressus",
   "type": "Incel",
   "relationship": "Your dipshit cousin",
-  "animal-fact": "The Orange Fingered Yabby is a type of freshwater crayfish closely related to the Cherax destructor, but do not mistake these for each other... ",
+  "animal-fact": "The Orange Fingered Yabby is a type of freshwater crayfish closely related to the Cherax destructor, but do not mistake one for the other... ",
   "start_health": 10,
-  "x": 550,
-  "y": 200,
+  "x": 595,
+  "y": 150,
   "width": 300,
   "height": 300,
-  "image": "louis.png",
+  "image": "Louis.png",
   "battles": [
     {
       "intro": [

@@ -263,16 +263,16 @@ class RoomSelect:
     mouse_pos = pygame.mouse.get_pos()
     tally_rect = pygame.Rect(tally_x, tally_y, box_width, box_height)
     if tally_rect.collidepoint(mouse_pos) and (game.wins or game.losses):
-        all_names = [f"WIN: {n}" for n in game.wins] + [f"LOSS: {n}" for n in game.losses]
-        hover_y = tally_y + box_height + padding
-        hover_w = int(150 * (game.width / 800.0))
-        hover_h = int(len(all_names) * 22 * (game.height / 500.0) + padding * 2)
-        pygame.draw.rect(game.screen, (40, 40, 40), (tally_x, hover_y, hover_w, hover_h), border_radius=6)
-        pygame.draw.rect(game.screen, (120, 120, 120), (tally_x, hover_y, hover_w, hover_h), 1, border_radius=6)
-        for i, name in enumerate(all_names):
-            colour = (100, 220, 100) if name.startswith("WIN") else (220, 100, 100)
-            label = small_font.render(name, True, colour)
-            game.screen.blit(label, (tally_x + padding, hover_y + padding + i * int(22 * (game.height / 500.0))))
+      all_names = [f"WIN: {n}" for n in game.wins] + [f"LOSS: {n}" for n in game.losses]
+      hover_y = tally_y + box_height + padding
+      hover_w = int(150 * (game.width / 800.0))
+      hover_h = int(len(all_names) * 22 * (game.height / 500.0) + padding * 2)
+      pygame.draw.rect(game.screen, (40, 40, 40), (tally_x, hover_y, hover_w, hover_h), border_radius=6)
+      pygame.draw.rect(game.screen, (120, 120, 120), (tally_x, hover_y, hover_w, hover_h), 1, border_radius=6)
+      for i, name in enumerate(all_names):
+        colour = (100, 220, 100) if name.startswith("WIN") else (220, 100, 100)
+        label = small_font.render(name, True, colour)
+        game.screen.blit(label, (tally_x + padding, hover_y + padding + i * int(22 * (game.height / 500.0))))
 
 
     # ROOM BUTTONS

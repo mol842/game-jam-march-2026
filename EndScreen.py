@@ -200,7 +200,7 @@ class EndScreen:
       self.your_animal = "Clam"
       self.your_animal_image = "Clam.png"
       self.your_animal_message = (
-        "The clam is a solitary creature. It lives inside it's own head. It has no brain, and it has no friends. "
+        "The clam is a solitary creature. It lives inside its own head. It has no brain, and it has no friends. "
         "Did you even come to the party? You didn't even try.  "
       )
 
